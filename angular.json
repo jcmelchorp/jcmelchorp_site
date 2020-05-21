@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "jcmelchorp"
+    }
+  },
+  "defaultProject": "jcmelchorp",
+  "cli": {
+    "analytics": "01aab30a-0d35-4d75-b425-0d3a70882169"
+  }
 }
