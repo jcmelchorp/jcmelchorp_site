@@ -10,7 +10,8 @@ import {MaterialModule} from './material-module';
 // Theme container for recursively theme implementation
 import {OverlayContainer} from '@angular/cdk/overlay';
 import {LayoutModule} from '@angular/cdk/layout';
-import { MainModule } from "./core/main/main.module";
+import {DefaultModule} from "./layout/default/default.module";
+
 
 
 @NgModule({
@@ -23,7 +24,7 @@ import { MainModule } from "./core/main/main.module";
     BrowserAnimationsModule,
     MaterialModule,
     LayoutModule,
-    MainModule,
+    DefaultModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from "@angular/router";
 import { CommonModule } from '@angular/common';
 import { MainComponent } from './main.component';
-import { LayoutModule } from '@angular/cdk/layout';
 import {MaterialModule} from '../../material-module';
 
 
@@ -10,8 +10,8 @@ import {MaterialModule} from '../../material-module';
   declarations: [MainComponent ],
   imports: [
     CommonModule,
-    LayoutModule,
     MaterialModule,
+    RouterModule
   ]
 })
 export class MainModule { }
