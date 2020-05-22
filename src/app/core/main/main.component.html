@@ -3,9 +3,13 @@
       <mat-toolbar>
       </mat-toolbar>
       <mat-nav-list>
-        <a mat-list-item href="#" (click)="drawer.toggle()">Link 1</a>
-        <a mat-list-item href="#" (click)="drawer.toggle()">Link 2</a>
-        <a mat-list-item href="#" (click)="drawer.toggle()">Link 3</a>
+        <a mat-list-item href="#" (click)="drawer.toggle()">Informaci&oacute;n general</a>
+        <a mat-list-item href="#" (click)="drawer.toggle()">Experiencia</a>
+        <a mat-list-item href="#" (click)="drawer.toggle()">Publicaciones</a>
+        <a mat-list-item href="#" (click)="drawer.toggle()">Portafolio</a>
+        <a mat-list-item href="#" (click)="drawer.toggle()"></a>
+
+
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
@@ -23,6 +27,75 @@
       <div class="grid-container">
         <h1 class="mat-h1">Julio C&eacute;sar Melchor Pinto</h1>
         <h3 class="mat-h3">F&iacute;sico, analista y desarrollador</h3>
+        
+        
+            <mat-accordion class="app-headers-align">
+                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <strong>Descripci&oacute;n</strong>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p>Especialista en modelado computacional de fen&oacute;menos clim&aacute;ticos, c&aacute;lculo
+                        num&eacute;rico y an&aacute;lisis de datos.
+                        Creador y desarrollador de software en m&uacute;ltiples plataformas y lenguajes, con experiencia en
+                        projectos <strong>DevOps</strong>.
+                        Habituado al trabajo bajo los m&eacute;todos <strong>Scrumb</strong> y <strong>Agile</strong>,
+                        apegados a la cultura de servicio. Preferencia por proyectos que se venefician
+                        de metodolog&iacute;as para la reducci&oacute;n de defectos <strong>Six-Sigma</strong></p>
+                </mat-expansion-panel>
+            
+            
+                <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <strong>Datos Personales</strong>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                        Direccion:
+                        Tel&eacute;fonos:
+                        Estado civil:
+                </mat-expansion-panel>
+            
+                <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <strong>Formaci&oacute;n acad&eacute;mica</strong>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                Universidad Nacional Aut&oacute;noma de M&eacute;xico
+                            </div>
+                            <div class="card-subtitle">
+                                Doctorado en Ciencias de la Tierra con especialidad en Ciencias
+                                de la Atmosf&eacute;ricas, Planetarias y Espaciales.
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div>
+                                <p>Grupo de Modelos Clim&aacute;ticos</p>
+                                <p>Centro de Ciencias de la Atm&oacute;sfera CCA-UNAM</p>
+                                <p>An&aacute;lisis, diseño e implementaci&oacute;n de un
+                                    <a target="_blank"
+                                        href="https://dgapa.unam.mx/images/papiit/transparencia/proyxanio/2018/IN102415_Informe_Final_2015.pdf">modelo
+                                        termodin&aacute;mico de clima</a> a escala global.</p>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+
+
+
+
+
+
+
+
+
         <mat-grid-list cols="2" rowHeight="350px">
             <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
               <mat-card class="dashboard-card">

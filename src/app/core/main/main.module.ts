@@ -5,6 +5,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import {MaterialModule} from '../../material-module';
 
 
+
 @NgModule({
   declarations: [MainComponent ],
   imports: [

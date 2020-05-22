@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
-import {MatSidenav} from '@angular/material/sidenav';
+import { map } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-main',
@@ -10,7 +9,19 @@ import {MatSidenav} from '@angular/material/sidenav';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  
+  step = 0;
+
+  setStep(index: number) {
+    this.step = index;
+  }
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
+  }
   /** Based on the screen size, switch from standard to one column per row */
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
