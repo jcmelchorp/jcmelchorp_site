@@ -4,6 +4,9 @@ import { RouterModule } from "@angular/router";
 
 import { MainComponent } from './main/main.component';
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
+import { AlertModule } from 'ngx-bootstrap/alert';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 
 
 @NgModule({
@@ -13,7 +16,9 @@ import { PageNotFoundComponent } from "./page-not-found/page-not-found.component
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    AlertModule,
+    CarouselModule
   ],
   exports:[
     MainComponent,

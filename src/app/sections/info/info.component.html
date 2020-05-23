@@ -29,29 +29,89 @@
     <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
         <mat-expansion-panel-header>
             <mat-panel-title>
-                <strong>Formaci&oacute;n acad&eacute;mica</strong>
+                <strong>Servicios</strong>
             </mat-panel-title>
         </mat-expansion-panel-header>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-title">
-                    Universidad Nacional Aut&oacute;noma de M&eacute;xico
+     
+            <div class="row">
+                <div fxLayout="column">
+                    <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+                        <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">
+                            <div class="container">
+                                <!-- Service box 1 -->
+                                <div class="service-box">
+                                    <div>
+                                        <i class="icon icon_building_alt"></i>
+                                    </div>
+                                    <div>
+                                        <h3>Desarrollo en negocios</h3>
+                                        <p>Analista y desarrollador de sistemas de inventarios
+                                            y trazabilidad de productos, aplicaciones de control de personal,
+                                            puntos de venta y servicios administrativos.
+                                            Creaci&oacute;n, migraci&oacute;n, respaldo y
+                                            optimizaci&oacute;n de bases de datos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div flexorder="2" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">
+                            <div class="container">
+                                <div class="service-box">
+                                    <div>
+                                        <i class="icon icon_mobile"></i>
+                                    </div>
+                                    <div>
+                                        <h3>Desarrollo</h3>
+                                        <p>Creaci&oacute;n de aplicaciones m&oacute;viles en iOS y Android.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-subtitle">
-                    Doctorado en Ciencias de la Tierra con especialidad en Ciencias
-                    de la Atmosf&eacute;ricas, Planetarias y Espaciales.
-                </div>
+                <div fxLayout="column">
+                    <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+                        <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">
+                            <div class="container">
+                                <!-- Service box 3 -->
+                                <div class="service-box">
+                                    <div>
+                                        <i class="icon social_myspace"></i>
+                                    </div>
+                                    <div>
+                                        <h3>Conectividad y SEO</h3>
+                                        <p>Mercadotecnia de redes sociales, posicionamiento en motores de
+                                            b&uacute;squeda.
+                                            Servicios en nube como an&aacute;lisis de contenido, estad&iacute;sticas de
+                                            uso,
+                                            administraci&oacute;n del cliente.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div flexorder="2" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">
+                            <div class="container">
+                                <!-- Service box 2 -->
+                                <div class="service-box">
+                                    <div>
+                                        <i class="icon icon_pens"></i>
+                                    </div>
+                                    <div>
+                                        <h3>Docencia</h3>
+                                        <p>Clases particulares, creador de contenidos y educaci&oacute;n continua con
+                                            especialidad en ciencias exactas, filosof&iacute;a y tecnolog&iacute;as de
+                                            la
+                                            informaci&oacute;n. Atenci&oacute;n a estudiantes con discapacidad en lengua
+                                            de señas y braille.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end row -->
             </div>
-            <div class="card-content">
-                <div>
-                    <p>Grupo de Modelos Clim&aacute;ticos</p>
-                    <p>Centro de Ciencias de la Atm&oacute;sfera CCA-UNAM</p>
-                    <p>An&aacute;lisis, diseño e implementaci&oacute;n de un
-                        <a target="_blank"
-                            href="https://dgapa.unam.mx/images/papiit/transparencia/proyxanio/2018/IN102415_Informe_Final_2015.pdf">modelo
-                            termodin&aacute;mico de clima</a> a escala global.</p>
-                </div>
-            </div>
-        </div>
     </mat-expansion-panel>
 </mat-accordion>

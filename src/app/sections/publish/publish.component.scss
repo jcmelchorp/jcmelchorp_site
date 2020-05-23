@@ -1,0 +1,77 @@
+/* Publicaciones */
+.blog-post a, .submit-style {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.1s linear 0s;
+}
+button.mfp-close:hover {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    opacity: 1;
+}
+.popup-box {
+    background: #fff none repeat scroll 0 0;
+    margin: 0 auto;
+    max-width: 640px;
+    position: relative;
+    width: auto;
+}
+.popup-box div {
+    padding: 30px;
+}
+.popup-box img {
+    width: 100%;
+}
+
+.blog-background {
+    padding: 100px 0 0;
+}
+.blogWrapper {
+    padding: 0;
+}
+.blog-img {
+    position: relative;
+}
+.post-ver-date {
+    bottom: 13px;
+    color: #fff;
+    left: 15px;
+    position: absolute;
+    z-index: 9999;
+}
+.blog-dis > h3 {
+    margin: 15px 0 9px;
+}
+.blog-post.row, .copyright .row {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
+.blog-post {
+    margin-bottom: 50px;
+}
+.blog-post:last-child {
+    margin: 0;
+}
+.blog-post img {
+    width: 100%;
+}
+.blog-post h3 {
+    font-size: 20px;
+}
+.blog-post a {
+    margin-top: 25px;
+    transition: all 0.1s linear 0s;
+}
+.blog-post a:focus, .blog-post a:hover {
+    border-color: #141414;
+}
+.blog-post::after, .lines::after, .lines::before, .skill-outer h4 span::before, .testimonial-content h4 span::before {
+    content: "";
+}
+
+.submit-style:focus, a, a:focus, a:hover {
+    outline: 0 none;
+}
+
+.footer-background, .imageHover, .popup-box h3,  .social-media {
+    text-align: center;
+}

@@ -12,6 +12,9 @@ import {OverlayContainer} from '@angular/cdk/overlay';
 import {LayoutModule} from '@angular/cdk/layout';
 import {DefaultModule} from "./layout/default/default.module";
 
+import { AlertModule } from 'ngx-bootstrap/alert';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ProgressbarModule } from "ngx-bootstrap/progressbar";
 
 
 @NgModule({
@@ -25,6 +28,9 @@ import {DefaultModule} from "./layout/default/default.module";
     MaterialModule,
     LayoutModule,
     DefaultModule,
+    AlertModule.forRoot(),
+    CarouselModule.forRoot(),
+    ProgressbarModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

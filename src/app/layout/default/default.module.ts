@@ -13,10 +13,8 @@ import { ExperienceComponent } from 'src/app/sections/experience/experience.comp
 import { ProjectsComponent } from 'src/app/sections/projects/projects.component';
 import { PublishComponent } from 'src/app/sections/publish/publish.component';
 import { ContactComponent } from 'src/app/sections/contact/contact.component';
-
-
-
-
+import { SkillsComponent } from 'src/app/sections/skills/skills.component';
+import { PortfolioComponent } from 'src/app/sections/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +25,8 @@ import { ContactComponent } from 'src/app/sections/contact/contact.component';
     ProjectsComponent,
     PublishComponent,
     ContactComponent,
+    SkillsComponent,
+    PortfolioComponent,
   ],
   imports: [
     CommonModule,
