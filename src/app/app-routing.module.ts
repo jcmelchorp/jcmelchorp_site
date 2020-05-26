@@ -3,6 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DefaultComponent } from "./layout/default/default.component";
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
+import { WellcomeComponent } from './core/wellcome/wellcome.component';
+
+
 import { InfoComponent } from './sections/info/info.component';
 import { EducationComponent } from './sections/education/education.component';
 import { ExperienceComponent } from './sections/experience/experience.component';
@@ -15,7 +18,8 @@ import { PortfolioComponent } from './sections/portfolio/portfolio.component';
 
 const routes: Routes = [
   { path:'', component: DefaultComponent, children: [
-      {path: '',   redirectTo: '/info', pathMatch: 'full'},
+      {path: '',   redirectTo: '/welcome', pathMatch: 'full'},
+      {path:'wellcome',component: WellcomeComponent},
       {path:'info',component: InfoComponent},
       {path:'education',component: EducationComponent},
       {path:'experience',component: ExperienceComponent},
@@ -26,6 +30,7 @@ const routes: Routes = [
       {path:'portfolio',component: PortfolioComponent},
       ]
   },
+  
   {path: '**', component: PageNotFoundComponent}
 ];
 

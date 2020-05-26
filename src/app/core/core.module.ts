@@ -4,6 +4,9 @@ import { RouterModule } from "@angular/router";
 
 import { MainComponent } from './main/main.component';
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
+import { WellcomeComponent } from './wellcome/wellcome.component';
+
+
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
@@ -13,6 +16,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
   declarations: [
     MainComponent,
     PageNotFoundComponent,
+    WellcomeComponent,
   ],
   imports: [
     CommonModule,
@@ -23,6 +27,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
   exports:[
     MainComponent,
     PageNotFoundComponent,
+    WellcomeComponent,
   ]
 })
 export class CoreModule { }
