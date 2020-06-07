@@ -15,6 +15,8 @@ import {DefaultModule} from "./layout/default/default.module";
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ProgressbarModule } from "ngx-bootstrap/progressbar";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -31,6 +33,7 @@ import { ProgressbarModule } from "ngx-bootstrap/progressbar";
     AlertModule.forRoot(),
     CarouselModule.forRoot(),
     ProgressbarModule.forRoot(),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
