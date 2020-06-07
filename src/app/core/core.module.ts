@@ -7,6 +7,8 @@ import { PageNotFoundComponent } from "./page-not-found/page-not-found.component
 import { WellcomeComponent } from './wellcome/wellcome.component';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ButtonsModule } from "ngx-bootstrap/buttons";
+
 
 
 
@@ -20,7 +22,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     CommonModule,
     RouterModule,
     AlertModule,
-    CarouselModule
+    CarouselModule,
+    ButtonsModule
   ],
   exports:[
     MainComponent,

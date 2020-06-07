@@ -1,9 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #drawer class="sidenav" fixedInViewport mode="push" role="navigation">
       <mat-toolbar>
-        <div class="avatar-container">
-          <img class="user-pic" mat-card-lg-image src="assets/icons/icon-144x144.png">
-        </div>
+          <img src="assets/icons/android-icon-48x48.png">
       </mat-toolbar>
       <mat-nav-list>
         <a mat-list-item (click)="drawer.toggle()" routerLink="/info">Information</a>
@@ -21,7 +19,7 @@
           <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
             <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
           </button>
-          <span></span>
+          <span>{{titleService.getTitle()}}</span>
         </mat-toolbar>
       <app-main></app-main>
     </mat-sidenav-content>

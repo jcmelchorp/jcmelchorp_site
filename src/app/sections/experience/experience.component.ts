@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { map } from 'rxjs/operators';
+import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
@@ -27,9 +28,10 @@ export class ExperienceComponent implements OnInit {
       ];
     })
   );
-  constructor(private breakpointObserver: BreakpointObserver) { }
-
-  ngOnInit(): void {
-  }
+  title = 'Experience';
+  constructor(
+    private titleService: Title,
+    private breakpointObserver: BreakpointObserver) {}
+  ngOnInit() { this.titleService.setTitle(this.title); }
 
 }

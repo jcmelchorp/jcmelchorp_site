@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-education',
@@ -7,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducationComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  title = 'Education';
+  constructor(private titleService: Title) {}
+  ngOnInit() { this.titleService.setTitle(this.title); }
 
 }

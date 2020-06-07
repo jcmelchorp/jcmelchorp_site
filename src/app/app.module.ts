@@ -11,12 +11,13 @@ import {MaterialModule} from './material-module';
 import {OverlayContainer} from '@angular/cdk/overlay';
 import {LayoutModule} from '@angular/cdk/layout';
 import {DefaultModule} from "./layout/default/default.module";
-
+import { FullPageModule } from "./layout/full-page/full-page.module";
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ProgressbarModule } from "ngx-bootstrap/progressbar";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { FullPageComponent } from './layout/full-page/full-page.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { environment } from '../environments/environment';
     MaterialModule,
     LayoutModule,
     DefaultModule,
+    FullPageModule,
     AlertModule.forRoot(),
     CarouselModule.forRoot(),
     ProgressbarModule.forRoot(),

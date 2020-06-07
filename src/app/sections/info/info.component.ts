@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-info',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent implements OnInit {
+
   step = 0;
 
   setStep(index: number) {
@@ -19,10 +21,9 @@ export class InfoComponent implements OnInit {
   prevStep() {
     this.step--;
   }
-  
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+  title = 'Information';
+  constructor(private titleService: Title) {}
+  ngOnInit() { this.titleService.setTitle(this.title); }
 
 }

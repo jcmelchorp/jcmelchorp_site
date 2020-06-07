@@ -13,24 +13,26 @@ import { PublishComponent } from './sections/publish/publish.component';
 import { ContactComponent } from './sections/contact/contact.component';
 import { SkillsComponent } from './sections/skills/skills.component';
 import { PortfolioComponent } from './sections/portfolio/portfolio.component';
-
+import { FullPageComponent } from './layout/full-page/full-page.component';
 
 const routes: Routes = [
-  { path:'', component: DefaultComponent, children: [
-      {path: '',   redirectTo: '/wellcome', pathMatch: 'full'},
-      {path:'wellcome',component: WellcomeComponent},
-      {path:'info',component: InfoComponent},
-      {path:'education',component: EducationComponent},
-      {path:'experience',component: ExperienceComponent},
-      {path:'projects',component: ProjectsComponent},
-      {path:'publish',component: PublishComponent},
-      {path:'contact',component: ContactComponent},
-      {path:'skills',component: SkillsComponent},
-      {path:'portfolio',component: PortfolioComponent},
-      ]
+  { path: '', component: FullPageComponent, children: [
+      { path: '', redirectTo: '/wellcome', pathMatch: 'full' },
+      { path: 'wellcome', component: WellcomeComponent }
+    ]
   },
-
-  {path: '**', component: PageNotFoundComponent}
+  { path: '', component: DefaultComponent, children: [
+      { path: 'info', component: InfoComponent },
+      { path: 'education', component: EducationComponent },
+      { path: 'experience', component: ExperienceComponent },
+      { path: 'projects', component: ProjectsComponent },
+      { path: 'publish', component: PublishComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: 'skills', component: SkillsComponent },
+      { path: 'portfolio', component: PortfolioComponent },
+    ]
+  },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

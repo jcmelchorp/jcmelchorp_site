@@ -4,17 +4,15 @@ import { MaterialModule } from 'src/app/material-module';
 import { RouterModule } from "@angular/router";
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { CoreModule } from 'src/app/core/core.module';
+
 import { FullPageComponent } from './full-page.component';
-import { PageNotFoundComponent } from 'src/app/core/page-not-found/page-not-found.component';
-import { WellcomeComponent } from 'src/app/core/wellcome/wellcome.component';
-
-
 
 
 @NgModule({
-  declarations: [FullPageComponent, PageNotFoundComponent, WellcomeComponent],
+  declarations: [FullPageComponent],
   imports: [
-    CommonModule, MaterialModule, RouterModule,FlexLayoutModule
+    CommonModule, RouterModule, MaterialModule, FlexLayoutModule, CoreModule
   ]
 })
 export class FullPageModule { }
