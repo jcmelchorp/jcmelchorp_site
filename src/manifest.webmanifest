@@ -3,6 +3,8 @@
   "short_name": "jcmelchorp",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
+  "lang": "es-MX",
+  "description": "Aplicación para la creación de un portafolio personal de trabajo",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
