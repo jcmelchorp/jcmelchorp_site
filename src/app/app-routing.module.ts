@@ -5,7 +5,6 @@ import { DefaultComponent } from "./layout/default/default.component";
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 import { WellcomeComponent } from './core/wellcome/wellcome.component';
 
-
 import { InfoComponent } from './sections/info/info.component';
 import { EducationComponent } from './sections/education/education.component';
 import { ExperienceComponent } from './sections/experience/experience.component';
