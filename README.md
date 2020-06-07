@@ -1,27 +1,18 @@
-# Jcmelchorp
+# Curriculum - Julio Melchor
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
+Angular Application for curriculum vitae.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project includes the following features:
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Angular 9.1.7
+- 🚀 Full Angular Progressive Web Application & SEO.
+- 🔨 Angular MetaService for metadata injection.
+- 🔥 Google Firebase for FireHosting and Realtime Database.
+- 📌 Google Tag Manager
+- Angular Material 9.2.4 with custom theme.
+- Ngx-Bootstrap 5.6.1
+- Responsive flex layout.
+- Elegant Icons & Font Awesome.
+- Local server side with json-server for development.
