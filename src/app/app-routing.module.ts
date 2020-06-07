@@ -18,7 +18,7 @@ import { PortfolioComponent } from './sections/portfolio/portfolio.component';
 
 const routes: Routes = [
   { path:'', component: DefaultComponent, children: [
-      {path: '',   redirectTo: '/welcome', pathMatch: 'full'},
+      {path: '',   redirectTo: '/wellcome', pathMatch: 'full'},
       {path:'wellcome',component: WellcomeComponent},
       {path:'info',component: InfoComponent},
       {path:'education',component: EducationComponent},
@@ -30,7 +30,7 @@ const routes: Routes = [
       {path:'portfolio',component: PortfolioComponent},
       ]
   },
-  
+
   {path: '**', component: PageNotFoundComponent}
 ];
 
