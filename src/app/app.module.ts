@@ -12,6 +12,7 @@ import {OverlayContainer} from '@angular/cdk/overlay';
 import {LayoutModule} from '@angular/cdk/layout';
 import {DefaultModule} from "./layout/default/default.module";
 import {FullPageModule} from "./layout/full-page/full-page.module";
+import { PdfViewerModule } from "ng2-pdf-viewer";
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ProgressbarModule } from "ngx-bootstrap/progressbar";
@@ -32,6 +33,7 @@ import { environment } from '../environments/environment';
     LayoutModule,
     DefaultModule,
     FullPageModule,
+    PdfViewerModule,
     AlertModule.forRoot(),
     CarouselModule.forRoot(),
     ProgressbarModule.forRoot(),

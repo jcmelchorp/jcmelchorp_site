@@ -8,6 +8,7 @@ import { ImageModalComponent } from '../shared/image-modal/image-modal.component
 export interface DialogData {
   title: string;
   name: string;
+  page: number;
 }
 
 @Component({
@@ -26,12 +27,13 @@ export class EducationComponent implements OnInit {
   ) { }
   modalTitle: string;
   modalSrc: string;
+  modalPage: number;
 
   showModal(modal:string) {
     switch(modal) {
       case 'thesis': {
-        this.modalTitle='Thesis'
-        this.modalSrc='assets/images/tesis01.png'
+        this.modalTitle='Thesis';
+        this.modalSrc='assets/images/tesis01.png';
         const dialogRef = this.dialog.open(ImageModalComponent, {
           data:{
             title:this.modalTitle,
@@ -40,8 +42,8 @@ export class EducationComponent implements OnInit {
         break;
       }
       case 'physics': {
-        this.modalTitle='Certificate'
-        this.modalSrc='assets/images/physics.png'
+        this.modalTitle='Certificate';
+        this.modalSrc='assets/images/physics.png';
         const dialogRef = this.dialog.open(ImageModalComponent, {
           data:{
             title:this.modalTitle,
@@ -50,8 +52,8 @@ export class EducationComponent implements OnInit {
         break;
       }
       case 'master': {
-        this.modalTitle='Certificate'
-        this.modalSrc='assets/images/master.jpg'
+        this.modalTitle='Certificate',
+        this.modalSrc='assets/images/master.jpg';
         const dialogRef = this.dialog.open(ImageModalComponent, {
           data:{
             title:this.modalTitle,
@@ -60,12 +62,24 @@ export class EducationComponent implements OnInit {
         break;
       }
       case 'project': {
-        this.modalTitle='PhD. Proyect'
-        this.modalSrc='https://dgapa.unam.mx/images/papiit/transparencia/proyxanio/2018/IN102415_Informe_Final_2015.pdf'
+        this.modalTitle='PhD. Proyect';
+        this.modalSrc='assets/pdf/IN102415_Informe_Final_2015.pdf';
         const dialogRef = this.dialog.open(PdfModalComponent, {
           data:{
             title:this.modalTitle,
             name:this.modalSrc
+          }});
+        break;
+      }
+      case 'publish1': {
+        this.modalTitle='Publication';
+        this.modalSrc='assets/pdf/EMS2016_programme_book.pdf';
+        this.modalPage=57;
+        const dialogRef = this.dialog.open(PdfModalComponent, {
+          data:{
+            title:this.modalTitle,
+            name:this.modalSrc,
+            page:this.modalPage
           }});
         break;
       }
