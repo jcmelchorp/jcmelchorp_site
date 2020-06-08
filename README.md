@@ -30,7 +30,46 @@ Besides the built-in commands from @angular/cli, this proyect contains other som
 
 ### Local server
 
+First, generate a mock database with *faker*:
+
+```` bash
+npm run generate:db
+````
+
+And, run server on localhost with *json-server*:
+
+```` bash
+npm run server:db
+````
+
 ### Documentation
+
+By default, this project generate documentation with Material Theme in *docs/* directory.
+
+To generate documentation:
+
+```` bash
+ npm run doc:g
+````
+
+To serve docuemntation on your browser via localhost:
+
+```` bash
+npm run doc:s
+````
 
 ### Deployment
 
+Build in production environment and deploy on Google Firebase
+
+```` bash
+npm run deploy
+````
+
+### Reset project to default
+
+To reset project just type:
+
+```` bash
+npm run reset
+````
