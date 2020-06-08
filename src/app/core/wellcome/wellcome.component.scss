@@ -1,13 +1,12 @@
 .wellcome-container {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     background: url("../../../assets/background/eberhard-grossgasteiger-x4cLB3M81D8-unsplash.jpg") no-repeat center top;
     background-size: cover;
     opacity: 1.0;
-    content: '';
     z-index: 0;
 }
 .wellcome-heading {

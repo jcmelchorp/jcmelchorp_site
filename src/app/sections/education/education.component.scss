@@ -1,3 +1,9 @@
 mat-vertical-stepper {
   background: none;
+  max-width: max-content;
+}
+.button-container {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: inherit;
 }

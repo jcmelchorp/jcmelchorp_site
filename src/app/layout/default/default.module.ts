@@ -16,6 +16,13 @@ import { ContactComponent } from 'src/app/sections/contact/contact.component';
 import { SkillsComponent } from 'src/app/sections/skills/skills.component';
 import { PortfolioComponent } from 'src/app/sections/portfolio/portfolio.component';
 
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
+import { PdfModalComponent } from 'src/app/sections/shared/pdf-modal/pdf-modal.component';
+import { ImageModalComponent } from 'src/app/sections/shared/image-modal/image-modal.component';
+
+
+
 @NgModule({
   declarations: [
     DefaultComponent,
@@ -27,6 +34,8 @@ import { PortfolioComponent } from 'src/app/sections/portfolio/portfolio.compone
     ContactComponent,
     SkillsComponent,
     PortfolioComponent,
+    PdfModalComponent,
+    ImageModalComponent
   ],
   imports: [
     CommonModule,
@@ -34,6 +43,7 @@ import { PortfolioComponent } from 'src/app/sections/portfolio/portfolio.compone
     MaterialModule,
     FlexLayoutModule,
     CoreModule,
+    PdfViewerModule
   ]
 })
 export class DefaultModule {

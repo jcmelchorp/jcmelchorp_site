@@ -1,6 +1,9 @@
 <mat-vertical-stepper>
   <mat-step>
-    <ng-template matStepLabel>Doctorado <span class="">(2016 - actual)</span></ng-template>
+    <ng-template matStepLabel>Doctorado (2016 - actual)</ng-template>
+    <ng-template matStepperIcon>
+      <mat-icon>school</mat-icon>
+    </ng-template>
     <mat-card class="mt-2">
       <mat-card-header>
         <img mat-card-avatar src="assets/images/unam.png">
@@ -9,17 +12,23 @@
         <mat-card-subtitle>Centro de Ciencias de la Atm&oacute;sfera CCA-UNAM</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        <p>Doctorado en Ciencias de la Tierra con especialidad en Ciencias Atmosf&eacute;ricas, Planetarias y
-          Espaciales.</p>
-        <p>An&aacute;lisis, diseño e implementaci&oacute;n de un
-          <a target="_blank"
-            href="https://dgapa.unam.mx/images/papiit/transparencia/proyxanio/2018/IN102415_Informe_Final_2015.pdf">modelo
-            termodin&aacute;mico de clima</a> a escala global.</p>
+        <p>Doctorado en Ciencias de la Tierra.<br>
+          <span class="text-grey">Especialidad en Ciencias Atmosf&eacute;ricas, Planetarias y
+            Espaciales.</span></p>
+        <p>An&aacute;lisis, diseño e implementaci&oacute;n de un modelo termodin&aacute;mico de clima a escala global.</p>
       </mat-card-content>
+      <mat-card-footer>
+        <div class="button-container">
+          <button mat-button color="primary" (click)="showModal('project')">Proyect</button>
+        </div>
+      </mat-card-footer>
     </mat-card>
   </mat-step>
   <mat-step>
-    <ng-template matStepLabel>Maestr&iacute;a <span class="">(2011-2013)</span></ng-template>
+    <ng-template matStepLabel>Maestr&iacute;a (2011 - 2013)</ng-template>
+    <ng-template matStepperIcon>
+      <mat-icon>school</mat-icon>
+    </ng-template>
     <mat-card class="mt-2">
       <mat-card-header>
         <img mat-card-avatar src="assets/images/unam.png">
@@ -30,16 +39,27 @@
       </mat-card-header>
       <mat-card-content>
         <!--   <p>Grupo de Modelos Clim&aacute;ticos</p> -->
-        <p>Maestr&iacute;a en Ciencias de la Tierra con especialidad en Ciencias Atmosf&eacute;ricas, Planetarias y
-          Espaciales.</p>
-        <p>Pron&oacute;stico estacional de temperatura y precipitaci&oacute;n usando el Modelo
-          Termodin&aacute;mico de Clima con &eacute;nfasis en la Rep&uacute;blica Mexicana.
+        <p>Maestr&iacute;a en Ciencias de la Tierra.<br>
+          <span class="text-grey">Especialidad en Ciencias Atmosf&eacute;ricas, Planetarias y
+            Espaciales.</span></p>
+        <p>Pron&oacute;stico estacional de temperatura y precipitaci&oacute;n usando el<br>
+          ModeloTermodin&aacute;mico de Clima con &eacute;nfasis en la Rep&uacute;blica Mexicana.
         </p>
       </mat-card-content>
+      <mat-card-footer>
+        <div class="button-container">
+          <button mat-button color="primary" (click)="showModal('thesis')">Thesis</button>
+          <button mat-button color="primary" (click)="showModal('master')">Certificate</button>
+
+        </div>
+      </mat-card-footer>
     </mat-card>
   </mat-step>
   <mat-step>
-    <ng-template matStepLabel>Licenciatura <span class="">(2004-2009)</span></ng-template>
+    <ng-template matStepLabel>Licenciatura (2004 - 2009)</ng-template>
+    <ng-template matStepperIcon="school">
+      <mat-icon>school</mat-icon>
+    </ng-template>
     <mat-card class="mt-2">
       <mat-card-header>
         <mat-card-title>Universidad Aut&oacute;noma de Baja California</mat-card-title>
@@ -47,8 +67,13 @@
         <img mat-card-avatar src="assets/images/uabc.png">
       </mat-card-header>
       <mat-card-content>
-        <p>Licenciatura en F&iacute;sica.</p>
+        <p>F&iacute;sico</p>
       </mat-card-content>
+      <mat-card-footer>
+        <div class="button-container">
+          <button mat-button color="primary" (click)="showModal('physics')">Certificate</button>
+        </div>
+      </mat-card-footer>
     </mat-card>
   </mat-step>
 </mat-vertical-stepper>
