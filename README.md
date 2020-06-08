@@ -21,8 +21,8 @@ This project includes the following features:
 
 ## Demo & Doc
 
-Find a demostration on [https://jcmelchorp.web.app](https://jcmelchorp.web.app "Firebase Hosting").
-For documentation, see [docs/](https://juliomelchorpinto.github.io/jcmelchorp/docs "Github Pages").
+Find a demostration on [https://jcmelchorp.web.app](https://jcmelchorp.web.app/ "Firebase Hosting").
+For documentation, see [docs/](https://juliomelchorpinto.github.io/jcmelchorp/ "Github Pages").
 
 ## Commands
 

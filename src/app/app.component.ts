@@ -1,11 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+/**
+ * AppComponent
+ *
+ * Main Component who passes routing to layouts and first declaration
+ * of metadata in MetaServices and TitleService (from @angular/platform-browser).
+ */
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Curriculum';
   constructor(
     private metaTagService: Meta,

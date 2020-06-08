@@ -28,9 +28,9 @@
     "reset": "rm -rf ./node_modules ./package-lock.json && npm install",
     "dist": "ng build",
     "prod": "ng build --prod",
-    "compodoc:g": "compodoc -p src/tsconfig.app.json",
-    "compodoc:s": "compodoc -p src/tsconfig.app.json --serve",
-    "compodoc:w": "compodoc -p src/tsconfig.app.json --serve --watch",
+    "doc:g": "compodoc -p tsconfig.app.json  --output docs --name \"Web Application Documentation\" --theme material",
+    "doc:s": "compodoc -p tsconfig.app.json --serve",
+    "doc:w": "compodoc -p tsconfig.app.json --serve --watch"
   },
   "private": true,
   "dependencies": {
