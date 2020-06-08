@@ -18,3 +18,19 @@ This project includes the following features:
 - Local server side with json-server for development.
 - PDF Viewer in dialog box.
 - CompoDoc for automated documentation.
+
+## Demo & Doc
+
+Find a demostration on [https://jcmelchorp.web.app](https://jcmelchorp.web.app "Firebase Hosting").
+For documentation, see [docs/](https://juliomelchorpinto.github.io/jcmelchorp/docs "Github Pages").
+
+## Commands
+
+Besides the built-in commands from @angular/cli, this proyect contains other some:
+
+### Local server
+
+### Documentation
+
+### Deployment
+
