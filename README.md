@@ -7,7 +7,7 @@ Angular Application for curriculum vitae.
 This project includes the following features:
 
 - Angular 9.1.7
-- 🚀 Full Angular Progressive Web Application & SEO.
+- 🚀 Full Angular Progressive Web Application, Lasy Loading & SEO.
 - 🔨 Angular MetaService for metadata injection.
 - 🔥 Google Firebase for FireHosting and Realtime Database.
 - 📌 Google Tag Manager
@@ -16,3 +16,4 @@ This project includes the following features:
 - Responsive flex layout.
 - Elegant Icons & Font Awesome.
 - Local server side with json-server for development.
+- PDF Viewer in dialog box.

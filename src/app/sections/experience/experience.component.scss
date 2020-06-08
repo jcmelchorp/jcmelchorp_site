@@ -1,5 +1,14 @@
 mat-vertical-stepper {
   background: none;
+  max-width: 750px;
+}
+.card-container {
+  width: fit-content;
+}
+.button-container {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: inherit;
 }
 
 .business-image {

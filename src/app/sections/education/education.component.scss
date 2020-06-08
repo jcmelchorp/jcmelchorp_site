@@ -1,6 +1,9 @@
 mat-vertical-stepper {
   background: none;
-  max-width: max-content;
+  max-width: 750px;
+}
+.card-container {
+  width: fit-content;
 }
 .button-container {
   display: flex;
