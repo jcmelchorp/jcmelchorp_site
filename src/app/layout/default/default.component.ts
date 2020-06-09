@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -6,12 +6,10 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './default.component.html',
   styleUrls: ['./default.component.scss']
 })
-export class DefaultComponent implements OnInit {
-
+export class DefaultComponent {
 
   constructor(public titleService: Title) { }
 
-  ngOnInit() {
-  }
+
 
 }

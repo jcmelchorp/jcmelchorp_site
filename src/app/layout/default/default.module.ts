@@ -20,20 +20,20 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 import { PdfModalComponent } from 'src/app/sections/shared/pdf-modal/pdf-modal.component';
 import { ImageModalComponent } from 'src/app/sections/shared/image-modal/image-modal.component';
+import { InfoModule } from 'src/app/sections/info/info.module';
+import { ContactModule } from 'src/app/sections/contact/contact.module';
+import { PortfolioModule } from 'src/app/sections/portfolio/portfolio.module';
+import { ProjectsModule } from 'src/app/sections/projects/projects.module';
+import { EducationModule } from 'src/app/sections/education/education.module';
+import { ExperienceModule } from 'src/app/sections/experience/experience.module';
+import { PublishModule } from 'src/app/sections/publish/publish.module';
+import { SkillsModule } from 'src/app/sections/skills/skills.module';
 
 
 
 @NgModule({
   declarations: [
     DefaultComponent,
-    InfoComponent,
-    EducationComponent,
-    ExperienceComponent,
-    ProjectsComponent,
-    PublishComponent,
-    ContactComponent,
-    SkillsComponent,
-    PortfolioComponent,
     PdfModalComponent,
     ImageModalComponent
   ],
@@ -43,7 +43,16 @@ import { ImageModalComponent } from 'src/app/sections/shared/image-modal/image-m
     MaterialModule,
     FlexLayoutModule,
     CoreModule,
-    PdfViewerModule
+    PdfViewerModule,
+    InfoModule,
+    ContactModule,
+    PortfolioModule,
+    ProjectsModule,
+    ContactModule,
+    EducationModule,
+    ExperienceModule,
+    PublishModule,
+    SkillsModule
   ]
 })
 export class DefaultModule {
