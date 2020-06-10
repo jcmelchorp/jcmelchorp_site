@@ -19,9 +19,9 @@
     "deploy": "ng build --prod && npx firebase deploy",
     "generate:db": "node ./server/generate.js > ./server/database.json",
     "server:db": "json-server --watch ./server/database.json",
-    "doc:g": "compodoc -p tsconfig.app.json --output ./docs --name \"Web Application Documentation\" --theme material",
-    "doc:s": "compodoc -p tsconfig.app.json --output ./docs --name \"Web Application Documentation\" --theme material --serve",
-    "doc:w": "compodoc -p tsconfig.app.json --output ./docs --name \"Web Application Documentation\" --theme material --serve --watch",
+    "doc:g": "compodoc -p tsconfig.json --output ./docs --name \"Web Application Documentation\" --theme material",
+    "doc:s": "compodoc -p tsconfig.json --output ./docs --name \"Web Application Documentation\" --theme material --serve",
+    "doc:w": "compodoc -p tsconfig.json --output ./docs --name \"Web Application Documentation\" --theme material --serve --watch",
     "pwa:assets":"npx pwa-asset-generator ./src/assets/icons/ms-icon-310x310.png ./src/assets/icons/ --manifest ./src/manifest.webmanifest --index ./src/index.html",
     "pwa:audit":"npx lighthouse https://jcmelchorp.web.app --chrome-flags=\"--headless\" --view"
   },

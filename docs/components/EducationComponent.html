@@ -1,0 +1,843 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Web Application Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Web Application Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>EducationComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/sections/education/education.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Education component</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                            <code>{
+    provide: STEPPER_GLOBAL_OPTIONS, useValue: { displayDefaultIndicatorType: false }
+}</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-education</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./education.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./education.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialog">dialog</a>
+                            </li>
+                            <li>
+                                <a href="#modalPage">modalPage</a>
+                            </li>
+                            <li>
+                                <a href="#modalSrc">modalSrc</a>
+                            </li>
+                            <li>
+                                <a href="#modalTitle">modalTitle</a>
+                            </li>
+                            <li>
+                                <a href="#title">title</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#showModal">showModal</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(titleService: <a href="https://angular.io/api/platform-browser/Title" target="_blank">Title</a>, dialog: MatDialog)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/sections/education/education.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>titleService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/platform-browser/Title" target="_blank" >Title</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/sections/education/education.component.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showModal"></a>
+                    <span class="name">
+                        <b>
+                            showModal
+                        </b>
+                        <a href="#showModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showModal(modal: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">src/app/sections/education/education.component.ts:35</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Open dialog box</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>modal</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The switch variable for triggering dialog box {</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <b>Example :</b>
+                        <div>
+                            <pre class="line-numbers"><code class="language-html">showModal(&amp;#39;thesis&amp;#39;)</code></pre>
+                        </div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The processed target number</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dialog"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            dialog</b>
+                            <a href="#dialog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatDialog</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/sections/education/education.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modalPage"></a>
+                        <span class="name">
+                            <b>
+                            modalPage</b>
+                            <a href="#modalPage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/sections/education/education.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modalSrc"></a>
+                        <span class="name">
+                            <b>
+                            modalSrc</b>
+                            <a href="#modalSrc"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/sections/education/education.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modalTitle"></a>
+                        <span class="name">
+                            <b>
+                            modalTitle</b>
+                            <a href="#modalTitle"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/sections/education/education.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="title"></a>
+                        <span class="name">
+                            <b>
+                            title</b>
+                            <a href="#title"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;Education&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/sections/education/education.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Title } from &#x27;@angular/platform-browser&#x27;;
+import { STEPPER_GLOBAL_OPTIONS } from &#x27;@angular/cdk/stepper&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { PdfModalComponent } from &#x27;../shared/pdf-modal/pdf-modal.component&#x27;;
+import { ImageModalComponent } from &#x27;../shared/image-modal/image-modal.component&#x27;;
+/**
+ * Education component
+ */
+@Component({
+  selector: &#x27;app-education&#x27;,
+  templateUrl: &#x27;./education.component.html&#x27;,
+  styleUrls: [&#x27;./education.component.scss&#x27;],
+  providers: [{
+    provide: STEPPER_GLOBAL_OPTIONS, useValue: { displayDefaultIndicatorType: false }
+  }]
+})
+export class EducationComponent implements OnInit {
+  title &#x3D; &#x27;Education&#x27;;
+  constructor(
+    private titleService: Title,
+    public dialog: MatDialog
+  ) { }
+  modalTitle: string;
+  modalSrc: string;
+  modalPage: number;
+  /**
+   * Open dialog box
+   * @example
+   * showModal(&#x27;thesis&#x27;)
+   *
+   * @param modal  The switch variable for triggering dialog box {@link MatDialog}
+   * @returns The processed target number
+   */
+  showModal(modal: string) {
+    switch (modal) {
+      case &#x27;thesis&#x27;: {
+        this.modalTitle &#x3D; &#x27;Thesis&#x27;;
+        this.modalSrc &#x3D; &#x27;assets/images/tesis01.png&#x27;;
+        const dialogRef &#x3D; this.dialog.open(ImageModalComponent, {
+          data: {
+            title: this.modalTitle,
+            name: this.modalSrc
+          }
+        });
+        break;
+      }
+      case &#x27;physics&#x27;: {
+        this.modalTitle &#x3D; &#x27;Certificate&#x27;;
+        this.modalSrc &#x3D; &#x27;assets/images/physics.png&#x27;;
+        const dialogRef &#x3D; this.dialog.open(ImageModalComponent, {
+          data: {
+            title: this.modalTitle,
+            name: this.modalSrc
+          }
+        });
+        break;
+      }
+      case &#x27;master&#x27;: {
+        this.modalTitle &#x3D; &#x27;Certificate&#x27;,
+          this.modalSrc &#x3D; &#x27;assets/images/master.jpg&#x27;;
+        const dialogRef &#x3D; this.dialog.open(ImageModalComponent, {
+          data: {
+            title: this.modalTitle,
+            name: this.modalSrc
+          }
+        });
+        break;
+      }
+      case &#x27;project&#x27;: {
+        this.modalTitle &#x3D; &#x27;PhD. Proyect&#x27;;
+        this.modalSrc &#x3D; &#x27;assets/pdf/IN102415_Informe_Final_2015.pdf&#x27;;
+        const dialogRef &#x3D; this.dialog.open(PdfModalComponent, {
+          data: {
+            title: this.modalTitle,
+            name: this.modalSrc
+          }
+        });
+        break;
+      }
+      case &#x27;publish1&#x27;: {
+        this.modalTitle &#x3D; &#x27;Publication&#x27;;
+        this.modalSrc &#x3D; &#x27;assets/pdf/EMS2016_programme_book.pdf&#x27;;
+        this.modalPage &#x3D; 57;
+        const dialogRef &#x3D; this.dialog.open(PdfModalComponent, {
+          data: {
+            title: this.modalTitle,
+            name: this.modalSrc,
+            page: this.modalPage
+          }
+        });
+        break;
+      }
+
+    }
+  }
+  ngOnInit() { this.titleService.setTitle(this.title); }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-vertical-stepper&gt;
+  &lt;mat-step&gt;
+    &lt;ng-template matStepLabel&gt;PhD. (2016 - actual)&lt;/ng-template&gt;
+    &lt;ng-template matStepperIcon&gt;
+      &lt;mat-icon&gt;school&lt;/mat-icon&gt;
+    &lt;/ng-template&gt;
+    &lt;mat-card class&#x3D;&quot;mt-2&quot;&gt;
+      &lt;mat-card-header&gt;
+        &lt;img mat-card-avatar src&#x3D;&quot;assets/images/unam.png&quot; alt&#x3D;&quot;logo UNAM&quot;&gt;
+        &lt;img mat-card-avatar src&#x3D;&quot;assets/images/cca.png&quot; alt&#x3D;&quot;logo CCA-UNAM&quot;&gt;
+        &lt;mat-card-title&gt;Universidad Nacional Aut&amp;oacute;noma de M&amp;eacute;xico&lt;/mat-card-title&gt;
+        &lt;mat-card-subtitle&gt;Centro de Ciencias de la Atm&amp;oacute;sfera CCA-UNAM&lt;/mat-card-subtitle&gt;
+      &lt;/mat-card-header&gt;
+      &lt;mat-card-content&gt;
+        &lt;div class&#x3D;&quot;card-container&quot;&gt;
+          &lt;p&gt;Doctorado en Ciencias de la Tierra.&lt;br&gt;
+            &lt;span class&#x3D;&quot;text-grey&quot;&gt;Especialidad en Ciencias Atmosf&amp;eacute;ricas, Planetarias y
+              Espaciales.&lt;/span&gt;&lt;/p&gt;
+          &lt;p&gt;An&amp;aacute;lisis, diseño y construcci&amp;oacute;n de un Modelo Termodin&amp;aacute;mico de Clima Global para experimentos clim&amp;aacute;ticos con el fen&amp;oacute;meno de El Niño y La Niña en M&amp;eacute;xico.
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/mat-card-content&gt;
+      &lt;mat-card-footer&gt;
+        &lt;div class&#x3D;&quot;button-container&quot;&gt;
+          &lt;button mat-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;showModal(&#x27;project&#x27;)&quot;&gt;Project&lt;/button&gt;
+          &lt;button mat-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;showModal(&#x27;publish1&#x27;)&quot;&gt;Publication&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/mat-card-footer&gt;
+    &lt;/mat-card&gt;
+  &lt;/mat-step&gt;
+  &lt;mat-step&gt;
+    &lt;ng-template matStepLabel&gt;Master Degree (2011 - 2013)&lt;/ng-template&gt;
+    &lt;ng-template matStepperIcon&gt;
+      &lt;mat-icon&gt;school&lt;/mat-icon&gt;
+    &lt;/ng-template&gt;
+    &lt;mat-card class&#x3D;&quot;mt-2&quot;&gt;
+      &lt;mat-card-header&gt;
+        &lt;img mat-card-avatar src&#x3D;&quot;assets/images/unam.png&quot; alt&#x3D;&quot;logo UNAM&quot;&gt;
+        &lt;img mat-card-avatar src&#x3D;&quot;assets/images/cca.png&quot; alt&#x3D;&quot;logo CCA-UNAM&quot;&gt;
+        &lt;mat-card-title&gt;Universidad Nacional Aut&amp;oacute;noma de M&amp;eacute;xico&lt;/mat-card-title&gt;
+        &lt;mat-card-subtitle&gt;Centro de Ciencias de la Atm&amp;oacute;sfera CCA-UNAM
+        &lt;/mat-card-subtitle&gt;
+      &lt;/mat-card-header&gt;
+      &lt;mat-card-content&gt;
+        &lt;div class&#x3D;&quot;card-container&quot;&gt;
+          &lt;p&gt;Maestr&amp;iacute;a en Ciencias de la Tierra.&lt;br&gt;
+            &lt;span class&#x3D;&quot;text-grey&quot;&gt;Especialidad en Ciencias Atmosf&amp;eacute;ricas, Planetarias y
+              Espaciales.&lt;/span&gt;&lt;/p&gt;
+          &lt;p&gt;Pron&amp;oacute;stico estacional de temperatura y precipitaci&amp;oacute;n usando el&lt;br&gt;
+            ModeloTermodin&amp;aacute;mico de Clima con &amp;eacute;nfasis en la Rep&amp;uacute;blica Mexicana.
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/mat-card-content&gt;
+      &lt;mat-card-footer&gt;
+        &lt;div class&#x3D;&quot;button-container&quot;&gt;
+          &lt;button mat-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;showModal(&#x27;thesis&#x27;)&quot;&gt;Thesis&lt;/button&gt;
+          &lt;button mat-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;showModal(&#x27;master&#x27;)&quot;&gt;Certificate&lt;/button&gt;
+
+        &lt;/div&gt;
+      &lt;/mat-card-footer&gt;
+    &lt;/mat-card&gt;
+  &lt;/mat-step&gt;
+  &lt;mat-step&gt;
+    &lt;ng-template matStepLabel&gt;Bachelor Degree (2004 - 2009)&lt;/ng-template&gt;
+    &lt;ng-template matStepperIcon&#x3D;&quot;school&quot;&gt;
+      &lt;mat-icon&gt;school&lt;/mat-icon&gt;
+    &lt;/ng-template&gt;
+    &lt;mat-card class&#x3D;&quot;mt-2&quot;&gt;
+      &lt;mat-card-header&gt;
+        &lt;mat-card-title&gt;Universidad Aut&amp;oacute;noma de Baja California&lt;/mat-card-title&gt;
+        &lt;mat-card-subtitle&gt;Facultad de Ciencias&lt;/mat-card-subtitle&gt;
+        &lt;img mat-card-avatar src&#x3D;&quot;assets/images/uabc.png&quot; alt&#x3D;&quot;logo UABC&quot;&gt;
+      &lt;/mat-card-header&gt;
+      &lt;mat-card-content&gt;
+        &lt;div class&#x3D;&quot;card-container&quot;&gt;
+          &lt;p&gt;F&amp;iacute;sico&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/mat-card-content&gt;
+      &lt;mat-card-footer&gt;
+        &lt;div class&#x3D;&quot;button-container&quot;&gt;
+          &lt;button mat-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;showModal(&#x27;physics&#x27;)&quot;&gt;Certificate&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/mat-card-footer&gt;
+    &lt;/mat-card&gt;
+  &lt;/mat-step&gt;
+&lt;/mat-vertical-stepper&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./education.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">mat-vertical-stepper {
+  background: none;
+  max-width: 750px;
+}
+.card-container {
+  width: fit-content;
+}
+.button-container {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: inherit;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-vertical-stepper>  <mat-step>    <ng-template matStepLabel>PhD. (2016 - actual)</ng-template>    <ng-template matStepperIcon>      <mat-icon>school</mat-icon>    </ng-template>    <mat-card class="mt-2">      <mat-card-header>        <img mat-card-avatar src="assets/images/unam.png" alt="logo UNAM">        <img mat-card-avatar src="assets/images/cca.png" alt="logo CCA-UNAM">        <mat-card-title>Universidad Nacional Aut&oacute;noma de M&eacute;xico</mat-card-title>        <mat-card-subtitle>Centro de Ciencias de la Atm&oacute;sfera CCA-UNAM</mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <div class="card-container">          <p>Doctorado en Ciencias de la Tierra.<br>            <span class="text-grey">Especialidad en Ciencias Atmosf&eacute;ricas, Planetarias y              Espaciales.</span></p>          <p>An&aacute;lisis, diseño y construcci&oacute;n de un Modelo Termodin&aacute;mico de Clima Global para experimentos clim&aacute;ticos con el fen&oacute;meno de El Niño y La Niña en M&eacute;xico.          </p>        </div>      </mat-card-content>      <mat-card-footer>        <div class="button-container">          <button mat-button color="primary" (click)="showModal(\'project\')">Project</button>          <button mat-button color="primary" (click)="showModal(\'publish1\')">Publication</button>        </div>      </mat-card-footer>    </mat-card>  </mat-step>  <mat-step>    <ng-template matStepLabel>Master Degree (2011 - 2013)</ng-template>    <ng-template matStepperIcon>      <mat-icon>school</mat-icon>    </ng-template>    <mat-card class="mt-2">      <mat-card-header>        <img mat-card-avatar src="assets/images/unam.png" alt="logo UNAM">        <img mat-card-avatar src="assets/images/cca.png" alt="logo CCA-UNAM">        <mat-card-title>Universidad Nacional Aut&oacute;noma de M&eacute;xico</mat-card-title>        <mat-card-subtitle>Centro de Ciencias de la Atm&oacute;sfera CCA-UNAM        </mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <div class="card-container">          <p>Maestr&iacute;a en Ciencias de la Tierra.<br>            <span class="text-grey">Especialidad en Ciencias Atmosf&eacute;ricas, Planetarias y              Espaciales.</span></p>          <p>Pron&oacute;stico estacional de temperatura y precipitaci&oacute;n usando el<br>            ModeloTermodin&aacute;mico de Clima con &eacute;nfasis en la Rep&uacute;blica Mexicana.          </p>        </div>      </mat-card-content>      <mat-card-footer>        <div class="button-container">          <button mat-button color="primary" (click)="showModal(\'thesis\')">Thesis</button>          <button mat-button color="primary" (click)="showModal(\'master\')">Certificate</button>        </div>      </mat-card-footer>    </mat-card>  </mat-step>  <mat-step>    <ng-template matStepLabel>Bachelor Degree (2004 - 2009)</ng-template>    <ng-template matStepperIcon="school">      <mat-icon>school</mat-icon>    </ng-template>    <mat-card class="mt-2">      <mat-card-header>        <mat-card-title>Universidad Aut&oacute;noma de Baja California</mat-card-title>        <mat-card-subtitle>Facultad de Ciencias</mat-card-subtitle>        <img mat-card-avatar src="assets/images/uabc.png" alt="logo UABC">      </mat-card-header>      <mat-card-content>        <div class="card-container">          <p>F&iacute;sico</p>        </div>      </mat-card-content>      <mat-card-footer>        <div class="button-container">          <button mat-button color="primary" (click)="showModal(\'physics\')">Certificate</button>        </div>      </mat-card-footer>    </mat-card>  </mat-step></mat-vertical-stepper></div>'
+    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'EducationComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'EducationComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

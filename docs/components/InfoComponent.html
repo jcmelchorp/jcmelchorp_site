@@ -1,0 +1,759 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Web Application Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Web Application Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>InfoComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/sections/info/info.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Info component</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-info</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./info.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./info.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#step">step</a>
+                            </li>
+                            <li>
+                                <a href="#title">title</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#nextStep">nextStep</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#prevStep">prevStep</a>
+                            </li>
+                            <li>
+                                <a href="#setStep">setStep</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(titleService: <a href="https://angular.io/api/platform-browser/Title" target="_blank">Title</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/sections/info/info.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>titleService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/platform-browser/Title" target="_blank" >Title</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="nextStep"></a>
+                    <span class="name">
+                        <b>
+                            nextStep
+                        </b>
+                        <a href="#nextStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>nextStep()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/sections/info/info.component.ts:19</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/sections/info/info.component.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="prevStep"></a>
+                    <span class="name">
+                        <b>
+                            prevStep
+                        </b>
+                        <a href="#prevStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>prevStep()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="23"
+                            class="link-to-prism">src/app/sections/info/info.component.ts:23</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setStep"></a>
+                    <span class="name">
+                        <b>
+                            setStep
+                        </b>
+                        <a href="#setStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setStep(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="15"
+                            class="link-to-prism">src/app/sections/info/info.component.ts:15</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="step"></a>
+                        <span class="name">
+                            <b>
+                            step</b>
+                            <a href="#step"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/sections/info/info.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="title"></a>
+                        <span class="name">
+                            <b>
+                            title</b>
+                            <a href="#title"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;Information&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/sections/info/info.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Title } from &#x27;@angular/platform-browser&#x27;;
+/**
+ * Info component
+ */
+@Component({
+  selector: &#x27;app-info&#x27;,
+  templateUrl: &#x27;./info.component.html&#x27;,
+  styleUrls: [&#x27;./info.component.scss&#x27;]
+})
+export class InfoComponent implements OnInit {
+  title &#x3D; &#x27;Information&#x27;;
+  step &#x3D; 0;
+
+  setStep(index: number) {
+    this.step &#x3D; index;
+  }
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
+  }
+
+
+  constructor(private titleService: Title) { }
+  ngOnInit() { this.titleService.setTitle(this.title); }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-accordion class&#x3D;&quot;app-headers-align&quot;&gt;
+    &lt;mat-expansion-panel [expanded]&#x3D;&quot;step &#x3D;&#x3D;&#x3D; 0&quot; (opened)&#x3D;&quot;setStep(0)&quot; hideToggle&gt;
+        &lt;mat-expansion-panel-header&gt;
+            &lt;mat-panel-title&gt;
+                &lt;strong&gt;Descripci&amp;oacute;n&lt;/strong&gt;
+            &lt;/mat-panel-title&gt;
+        &lt;/mat-expansion-panel-header&gt;
+        &lt;p&gt;Especialista en modelado computacional de fen&amp;oacute;menos clim&amp;aacute;ticos, c&amp;aacute;lculo
+            num&amp;eacute;rico y an&amp;aacute;lisis de datos.
+            Creador y desarrollador de software en m&amp;uacute;ltiples plataformas y lenguajes, con experiencia en
+            projectos &lt;strong&gt;DevOps&lt;/strong&gt;.
+            Habituado al trabajo bajo los m&amp;eacute;todos &lt;strong&gt;Scrumb&lt;/strong&gt; y &lt;strong&gt;Agile&lt;/strong&gt;,
+            apegados a la cultura de servicio. Preferencia por proyectos que se venefician
+            de metodolog&amp;iacute;as para la reducci&amp;oacute;n de defectos &lt;strong&gt;Six-Sigma&lt;/strong&gt;&lt;/p&gt;
+    &lt;/mat-expansion-panel&gt;
+
+
+    &lt;mat-expansion-panel [expanded]&#x3D;&quot;step &#x3D;&#x3D;&#x3D; 1&quot; (opened)&#x3D;&quot;setStep(1)&quot; hideToggle&gt;
+        &lt;mat-expansion-panel-header&gt;
+            &lt;mat-panel-title&gt;
+                &lt;strong&gt;Datos Personales&lt;/strong&gt;
+            &lt;/mat-panel-title&gt;
+        &lt;/mat-expansion-panel-header&gt;
+            Direccion:
+            Tel&amp;eacute;fonos:
+            Estado civil:
+    &lt;/mat-expansion-panel&gt;
+
+    &lt;mat-expansion-panel [expanded]&#x3D;&quot;step &#x3D;&#x3D;&#x3D; 2&quot; (opened)&#x3D;&quot;setStep(2)&quot; hideToggle&gt;
+        &lt;mat-expansion-panel-header&gt;
+            &lt;mat-panel-title&gt;
+                &lt;strong&gt;Servicios&lt;/strong&gt;
+            &lt;/mat-panel-title&gt;
+        &lt;/mat-expansion-panel-header&gt;
+     
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div fxLayout&#x3D;&quot;column&quot;&gt;
+                    &lt;div fxLayout&#x3D;&quot;row&quot; fxLayout.sm&#x3D;&quot;column&quot; fxLayout.xs&#x3D;&quot;column&quot;&gt;
+                        &lt;div flexorder&#x3D;&quot;1&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;25%&quot;&gt;
+                            &lt;div class&#x3D;&quot;container&quot;&gt;
+                                &lt;!-- Service box 1 --&gt;
+                                &lt;div class&#x3D;&quot;service-box&quot;&gt;
+                                    &lt;div&gt;
+                                        &lt;i class&#x3D;&quot;icon icon_building_alt&quot;&gt;&lt;/i&gt;
+                                    &lt;/div&gt;
+                                    &lt;div&gt;
+                                        &lt;h3&gt;Desarrollo en negocios&lt;/h3&gt;
+                                        &lt;p&gt;Analista y desarrollador de sistemas de inventarios
+                                            y trazabilidad de productos, aplicaciones de control de personal,
+                                            puntos de venta y servicios administrativos.
+                                            Creaci&amp;oacute;n, migraci&amp;oacute;n, respaldo y
+                                            optimizaci&amp;oacute;n de bases de datos.
+                                        &lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div flexorder&#x3D;&quot;2&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;25%&quot;&gt;
+                            &lt;div class&#x3D;&quot;container&quot;&gt;
+                                &lt;div class&#x3D;&quot;service-box&quot;&gt;
+                                    &lt;div&gt;
+                                        &lt;i class&#x3D;&quot;icon icon_mobile&quot;&gt;&lt;/i&gt;
+                                    &lt;/div&gt;
+                                    &lt;div&gt;
+                                        &lt;h3&gt;Desarrollo&lt;/h3&gt;
+                                        &lt;p&gt;Creaci&amp;oacute;n de aplicaciones m&amp;oacute;viles en iOS y Android.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div fxLayout&#x3D;&quot;column&quot;&gt;
+                    &lt;div fxLayout&#x3D;&quot;row&quot; fxLayout.sm&#x3D;&quot;column&quot; fxLayout.xs&#x3D;&quot;column&quot;&gt;
+                        &lt;div flexorder&#x3D;&quot;1&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;25%&quot;&gt;
+                            &lt;div class&#x3D;&quot;container&quot;&gt;
+                                &lt;!-- Service box 3 --&gt;
+                                &lt;div class&#x3D;&quot;service-box&quot;&gt;
+                                    &lt;div&gt;
+                                        &lt;i class&#x3D;&quot;icon social_myspace&quot;&gt;&lt;/i&gt;
+                                    &lt;/div&gt;
+                                    &lt;div&gt;
+                                        &lt;h3&gt;Conectividad y SEO&lt;/h3&gt;
+                                        &lt;p&gt;Mercadotecnia de redes sociales, posicionamiento en motores de
+                                            b&amp;uacute;squeda.
+                                            Servicios en nube como an&amp;aacute;lisis de contenido, estad&amp;iacute;sticas de
+                                            uso,
+                                            administraci&amp;oacute;n del cliente.
+                                        &lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div flexorder&#x3D;&quot;2&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;25%&quot;&gt;
+                            &lt;div class&#x3D;&quot;container&quot;&gt;
+                                &lt;!-- Service box 2 --&gt;
+                                &lt;div class&#x3D;&quot;service-box&quot;&gt;
+                                    &lt;div&gt;
+                                        &lt;i class&#x3D;&quot;icon icon_pens&quot;&gt;&lt;/i&gt;
+                                    &lt;/div&gt;
+                                    &lt;div&gt;
+                                        &lt;h3&gt;Docencia&lt;/h3&gt;
+                                        &lt;p&gt;Clases particulares, creador de contenidos y educaci&amp;oacute;n continua con
+                                            especialidad en ciencias exactas, filosof&amp;iacute;a y tecnolog&amp;iacute;as de
+                                            la
+                                            informaci&amp;oacute;n. Atenci&amp;oacute;n a estudiantes con discapacidad en lengua
+                                            de señas y braille.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!-- end row --&gt;
+            &lt;/div&gt;
+    &lt;/mat-expansion-panel&gt;
+&lt;/mat-accordion&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./info.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-accordion class="app-headers-align">    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>        <mat-expansion-panel-header>            <mat-panel-title>                <strong>Descripci&oacute;n</strong>            </mat-panel-title>        </mat-expansion-panel-header>        <p>Especialista en modelado computacional de fen&oacute;menos clim&aacute;ticos, c&aacute;lculo            num&eacute;rico y an&aacute;lisis de datos.            Creador y desarrollador de software en m&uacute;ltiples plataformas y lenguajes, con experiencia en            projectos <strong>DevOps</strong>.            Habituado al trabajo bajo los m&eacute;todos <strong>Scrumb</strong> y <strong>Agile</strong>,            apegados a la cultura de servicio. Preferencia por proyectos que se venefician            de metodolog&iacute;as para la reducci&oacute;n de defectos <strong>Six-Sigma</strong></p>    </mat-expansion-panel>    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>        <mat-expansion-panel-header>            <mat-panel-title>                <strong>Datos Personales</strong>            </mat-panel-title>        </mat-expansion-panel-header>            Direccion:            Tel&eacute;fonos:            Estado civil:    </mat-expansion-panel>    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>        <mat-expansion-panel-header>            <mat-panel-title>                <strong>Servicios</strong>            </mat-panel-title>        </mat-expansion-panel-header>                 <div class="row">                <div fxLayout="column">                    <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">                        <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">                            <div class="container">                                <!-- Service box 1 -->                                <div class="service-box">                                    <div>                                        <i class="icon icon_building_alt"></i>                                    </div>                                    <div>                                        <h3>Desarrollo en negocios</h3>                                        <p>Analista y desarrollador de sistemas de inventarios                                            y trazabilidad de productos, aplicaciones de control de personal,                                            puntos de venta y servicios administrativos.                                            Creaci&oacute;n, migraci&oacute;n, respaldo y                                            optimizaci&oacute;n de bases de datos.                                        </p>                                    </div>                                </div>                            </div>                        </div>                                                <div flexorder="2" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">                            <div class="container">                                <div class="service-box">                                    <div>                                        <i class="icon icon_mobile"></i>                                    </div>                                    <div>                                        <h3>Desarrollo</h3>                                        <p>Creaci&oacute;n de aplicaciones m&oacute;viles en iOS y Android.</p>                                    </div>                                </div>                            </div>                        </div>                    </div>                </div>                <div fxLayout="column">                    <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">                        <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">                            <div class="container">                                <!-- Service box 3 -->                                <div class="service-box">                                    <div>                                        <i class="icon social_myspace"></i>                                    </div>                                    <div>                                        <h3>Conectividad y SEO</h3>                                        <p>Mercadotecnia de redes sociales, posicionamiento en motores de                                            b&uacute;squeda.                                            Servicios en nube como an&aacute;lisis de contenido, estad&iacute;sticas de                                            uso,                                            administraci&oacute;n del cliente.                                        </p>                                    </div>                                </div>                            </div>                        </div>                        <div flexorder="2" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">                            <div class="container">                                <!-- Service box 2 -->                                <div class="service-box">                                    <div>                                        <i class="icon icon_pens"></i>                                    </div>                                    <div>                                        <h3>Docencia</h3>                                        <p>Clases particulares, creador de contenidos y educaci&oacute;n continua con                                            especialidad en ciencias exactas, filosof&iacute;a y tecnolog&iacute;as de                                            la                                            informaci&oacute;n. Atenci&oacute;n a estudiantes con discapacidad en lengua                                            de señas y braille.</p>                                    </div>                                </div>                            </div>                        </div>                    </div>                </div><!-- end row -->            </div>    </mat-expansion-panel></mat-accordion></div>'
+    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'InfoComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'InfoComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
