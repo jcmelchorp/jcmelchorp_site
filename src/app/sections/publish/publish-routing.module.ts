@@ -3,11 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { PublishComponent } from './publish.component';
 
 
-const routes: Routes = [  {path:'',component:PublishComponent}
+const APP_ROUTES: Routes = [
+  { path: '', component: PublishComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(APP_ROUTES)],
   exports: [RouterModule]
 })
 export class PublishRoutingModule { }

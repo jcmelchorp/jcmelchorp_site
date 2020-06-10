@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-
+/**
+ * Default component
+ */
 @Component({
   selector: 'app-default',
   templateUrl: './default.component.html',

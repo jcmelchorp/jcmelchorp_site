@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-
+/**
+ * Projects component
+ */
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',

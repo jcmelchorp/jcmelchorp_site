@@ -1,13 +1,27 @@
 {
   "name": "jcmelchorp",
   "short_name": "jcmelchorp",
-  "theme_color": "#1976d2",
+  "theme_color": "gray",
   "background_color": "#fafafa",
-  "lang": "es-MX",
+  "lang": "es",
   "description": "Aplicación para la creación de un portafolio personal de trabajo",
-  "display": "standalone",
+  "display": "fullscreen",
+  "orientation": "portrait",
   "scope": "./",
   "start_url": "./?utm_source=a2hs",
+  "screenshots": [{
+    "src": "./assets/images/screenshot01.png",
+    "sizes": "853x711",
+    "type": "image/png"
+  },{
+    "src": "./assets/images/screenshot02.png",
+    "sizes": "837x729",
+    "type": "image/png"
+  },{
+    "src": "./assets/images/screenshot03.png",
+    "sizes": "1000x757",
+    "type": "image/png"
+  }],
   "icons": [
     {
       "src": "assets/icons/manifest-icon-192.jpg",

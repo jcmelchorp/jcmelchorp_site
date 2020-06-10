@@ -37,7 +37,7 @@
 <p>This project includes the following features:</p>
 <ul>
 <li>Angular 9.1.7</li>
-<li>🚀 Full Angular Progressive Web Application, Lasy Loading &amp; SEO.</li>
+<li>🚀 Full Angular PWA, Lasy Loading &amp; SEO.</li>
 <li>🔨 Angular MetaService for metadata injection.</li>
 <li>🔥 Google Firebase for FireHosting and Realtime Database.</li>
 <li>📌 Google Tag Manager.</li>
@@ -48,6 +48,7 @@
 <li>Local server side with json-server for development.</li>
 <li>PDF Viewer in dialog box.</li>
 <li>CompoDoc for automated documentation.</li>
+<li>Angular PWA assets generator for icons.</li>
 </ul>
 <h2 id="demo--doc">Demo &amp; Doc</h2>
 <p>Find a demostration on <a href="https://jcmelchorp.web.app/" title="Firebase Hosting">https://jcmelchorp.web.app</a>.
@@ -55,9 +56,19 @@ For documentation, see <a href="https://juliomelchorpinto.github.io/jcmelchorp/"
 <h2 id="commands">Commands</h2>
 <p>Besides the built-in commands from @angular/cli, this proyect contains other some:</p>
 <h3 id="local-server">Local server</h3>
-<h3 id="documentation">Documentation</h3>
-<h3 id="deployment">Deployment</h3>
-
+<p>First, generate a mock database with <em>faker</em>:</p>
+<div><pre class="line-numbers"><code class="language-bash">npm run generate:db</code></pre></div><p>And, run server on localhost with <em>json-server</em>:</p>
+<div><pre class="line-numbers"><code class="language-bash">npm run server:db</code></pre></div><h3 id="documentation">Documentation</h3>
+<p>By default, this project generate documentation with Material Theme in <em>docs/</em> directory.</p>
+<p>To generate documentation:</p>
+<div><pre class="line-numbers"><code class="language-bash"> npm run doc:g</code></pre></div><p>To serve docuemntation on your browser via localhost:</p>
+<div><pre class="line-numbers"><code class="language-bash">npm run doc:s</code></pre></div><h3 id="deployment">Deployment</h3>
+<p>Build in production environment and deploy on Google Firebase</p>
+<div><pre class="line-numbers"><code class="language-bash">npm run deploy</code></pre></div><h3 id="reset-project-to-default">Reset project to default</h3>
+<p>To reset project just type:</p>
+<div><pre class="line-numbers"><code class="language-bash">npm run reset</code></pre></div><h3 id="pwa-assets-generator">PWA Assets Generator</h3>
+<p>To generate Apple icons and splash run:</p>
+<div><pre class="line-numbers"><code class="language-bash">npm run pwa:assets</code></pre></div>
 
 
 

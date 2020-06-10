@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from 'src/app/material-module';
-import { RouterModule } from "@angular/router";
+import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { CoreModule } from "../../core/core.module";
+import { CoreModule } from '../../core/core.module';
 
 import { DefaultComponent } from './default.component';
 import { InfoComponent } from 'src/app/sections/info/info.component';
@@ -17,7 +17,6 @@ import { SkillsComponent } from 'src/app/sections/skills/skills.component';
 import { PortfolioComponent } from 'src/app/sections/portfolio/portfolio.component';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
-
 import { PdfModalComponent } from 'src/app/sections/shared/pdf-modal/pdf-modal.component';
 import { ImageModalComponent } from 'src/app/sections/shared/image-modal/image-modal.component';
 import { InfoModule } from 'src/app/sections/info/info.module';
@@ -28,9 +27,9 @@ import { EducationModule } from 'src/app/sections/education/education.module';
 import { ExperienceModule } from 'src/app/sections/experience/experience.module';
 import { PublishModule } from 'src/app/sections/publish/publish.module';
 import { SkillsModule } from 'src/app/sections/skills/skills.module';
-
-
-
+/**
+ * Default module
+ */
 @NgModule({
   declarations: [
     DefaultComponent,
@@ -55,6 +54,4 @@ import { SkillsModule } from 'src/app/sections/skills/skills.module';
     SkillsModule
   ]
 })
-export class DefaultModule {
-
- }
+export class DefaultModule {}

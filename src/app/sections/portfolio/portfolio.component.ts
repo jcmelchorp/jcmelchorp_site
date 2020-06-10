@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-
+/**
+ * Portfolio component
+ */
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Title } from '@angular/platform-browser';
+/**
+ * FullPage component
+ */
 @Component({
   selector: 'app-full-page',
   templateUrl: './full-page.component.html',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FullPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public titleService: Title) { }
 
   ngOnInit(): void {
   }

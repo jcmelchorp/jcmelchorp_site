@@ -1,7 +1,10 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { EducationComponent, DialogData } from '../../education/education.component';
-
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { EducationComponent } from '../../education/education.component';
+import { DialogPdf } from '../viewmodels/dialog-pdf';
+/**
+ * ImageModal component
+ */
 @Component({
   selector: 'app-image-modal',
   templateUrl: './image-modal.component.html',
@@ -11,7 +14,7 @@ export class ImageModalComponent implements OnInit {
 
   constructor(
     public dialogRef: MatDialogRef<EducationComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData
+    @Inject(MAT_DIALOG_DATA) public data: DialogPdf
     ) {}
 
   onNoClick(): void {

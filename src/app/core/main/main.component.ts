@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
-
+/**
+ * Main component
+ */
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { DefaultComponent } from "./layout/default/default.component";
+import { DefaultComponent } from './layout/default/default.component';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 import { WellcomeComponent } from './core/wellcome/wellcome.component';
 
@@ -15,7 +15,7 @@ import { SkillsComponent } from './sections/skills/skills.component';
 import { PortfolioComponent } from './sections/portfolio/portfolio.component';
 import { FullPageComponent } from './layout/full-page/full-page.component';
 
-const routes: Routes = [
+const APP_ROUTES: Routes = [
   /*   { path: '', redirectTo: 'wellcome', pathMatch: 'full' },*/
   {
     path: '', component: FullPageComponent, children: [
@@ -74,9 +74,11 @@ const routes: Routes = [
       import('./core/core.module').then((m) => m.CoreModule)
   }
 ];
-
+/**
+ * AppRouting module
+ */
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(APP_ROUTES)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -1,8 +1,9 @@
 <div class="wellcome-container">
-    <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-md-8 text-center fadeIn animated">
+    <div class="row justify-content-center align-items-center">
+        <div class="text-center">
             <h1 class="wellcome-heading mb-4">Julio César Melchor Pinto</h1>
-            <a mat-button routerLink="/info">Ingresar</a>
+            <a type="button" class="btn btn-success" [routerLink]="['/info']" routerLinkActive="router-link-active" >Ingresar</a>
         </div>
     </div>
 </div>
+  <img class="wellcome-image" src="assets/background/piso.jpg" alt="Piso hecho con tablas de madera">

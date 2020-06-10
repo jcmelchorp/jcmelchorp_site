@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { map } from 'rxjs/operators';
 import { Title } from '@angular/platform-browser';
+/**
+ * Experience component
+ *
+ */
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',

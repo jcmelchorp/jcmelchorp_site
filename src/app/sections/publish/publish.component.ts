@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-
+/**
+ * Publish component
+ */
 @Component({
   selector: 'app-publish',
   templateUrl: './publish.component.html',

@@ -3,11 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { ExperienceComponent } from './experience.component';
 
 
-const routes: Routes = [  {path:'',component:ExperienceComponent}
+const APP_ROUTES: Routes = [
+  { path: '', component: ExperienceComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(APP_ROUTES)],
   exports: [RouterModule]
 })
 export class ExperienceRoutingModule { }

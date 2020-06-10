@@ -1,20 +1,9 @@
 {
   "name": "jcmelchorp",
   "version": "0.0.1",
-  "author": "Julio Melchor",
+  "author": "Julio César Melchor Pinto",
   "description": "Angular Application for curriculum vitae.",
-  "keywords": [
-    "angular",
-    "angular 9",
-    "firebase",
-    "material",
-    "nosql",
-    "oauth",
-    "curriculum",
-    "ngx-bootstrap",
-    "seo",
-    "progressive web application"
-  ],
+  "keywords": ["angular","angular 9","firebase","material","nosql","oauth","curriculum","ngx-bootstrap","seo","progressive web application"],
   "repository": "https://github.com/juliomelchorpinto/jcmelchorp",
   "license": "MIT",
   "angular-cli": {},
@@ -27,13 +16,14 @@
     "e2e": "ng e2e",
     "reset": "rm -rf ./node_modules ./package-lock.json && npm install",
     "prod": "ng build --prod",
-    "deploy": "ng build --prod && firebase deploy",
+    "deploy": "ng build --prod && npx firebase deploy",
     "generate:db": "node ./server/generate.js > ./server/database.json",
     "server:db": "json-server --watch ./server/database.json",
     "doc:g": "compodoc -p tsconfig.app.json --output ./docs --name \"Web Application Documentation\" --theme material",
     "doc:s": "compodoc -p tsconfig.app.json --output ./docs --name \"Web Application Documentation\" --theme material --serve",
     "doc:w": "compodoc -p tsconfig.app.json --output ./docs --name \"Web Application Documentation\" --theme material --serve --watch",
-    "pwa:assets":"npx pwa-asset-generator ./src/assets/icons/ms-icon-310x310.png ./src/assets/icons/ --manifest ./src/manifest.webmanifest --index ./src/index.html"
+    "pwa:assets":"npx pwa-asset-generator ./src/assets/icons/ms-icon-310x310.png ./src/assets/icons/ --manifest ./src/manifest.webmanifest --index ./src/index.html",
+    "pwa:audit":"npx lighthouse https://jcmelchorp.web.app --chrome-flags=\"--headless\" --view"
   },
   "private": true,
   "dependencies": {
