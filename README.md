@@ -25,13 +25,23 @@ This project includes the following features:
 Find a demostration on [https://jcmelchorp.web.app](https://jcmelchorp.web.app/ "Firebase Hosting").
 For documentation, see [docs/](https://juliomelchorpinto.github.io/jcmelchorp/ "Github Pages").
 
+## Screenshots
+
+![](src/assets/images/screenshot01.png)
+
+** Fig. 1** - View example
+
+![](src/assets/images/screenshot03.png)
+
+** Fig. 2** - Wellcome page
+
 ## Install this repository
 
 If you want to use this repository as a template, run:
 
-´´´´
+````
 git clone https://github.com/JulioMelchorPinto/jcmelchorp.git
-´´´´
+````
 
 ## Build requirements
 
@@ -44,9 +54,9 @@ This repository has the following pre-requisites:
 
 The Angular CLI, CompoDoc, PWA asset generator comes with NPM install. If you want to use Angular CLI as a shell command:
 
-´´´´ bash
+```` bash
 npm -i -g @angular/cli
-´´´´
+````
 
 ## Commands
 
