@@ -1,7 +1,8 @@
 <mat-toolbar [class.mat-elevation-z4]="true">
   <span class="fill-space"></span>
   <a type="button" class="btn btn-xs" [routerLink]="['/login']" routerLinkActive="router-link-active">
-    <i class="fa fa-sign-in"></i>
+    <fa-icon [icon]="login"></fa-icon>
   </a>
+  <fa-icon [icon]="toggledark"></fa-icon>
 </mat-toolbar>
 <app-wellcome></app-wellcome>

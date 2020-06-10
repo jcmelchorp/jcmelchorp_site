@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+// Angular Material Design Module import
 import { MaterialModule } from 'src/app/material-module';
+// Font Awesome module
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -16,7 +19,7 @@ import { AlertModalComponent } from 'src/app/sections/shared/alert-modal/alert-m
     FullPageComponent,
     AlertModalComponent ],
   imports: [
-    CommonModule, RouterModule, MaterialModule, FlexLayoutModule, CoreModule
+    CommonModule, RouterModule, MaterialModule, FlexLayoutModule, CoreModule, FontAwesomeModule
   ]
 })
 export class FullPageModule { }

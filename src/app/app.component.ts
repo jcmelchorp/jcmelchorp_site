@@ -30,6 +30,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.titleService.setTitle(this.title);
     this.metaTagService.addTags([
+      { charset: 'UTF-8' },
+      { httpEquiv:'X-UA-Compatible', content:'IE=edge'},
       { name: 'description', content: 'Curriculum vitae for Julio César Melchor Pinto' },
       { name: 'keywords', content: 'curriculum vitae, angular material, julio Melchor, julio melchor pinto, melchor' },
       { name: 'robots', content: 'index, follow' },
@@ -40,6 +42,7 @@ export class AppComponent implements OnInit {
       { name: 'apple-mobile-web-app-status-bar', content: 'black-translucent' },
       { name: 'theme-color', content: 'white' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      { name: 'mobile-web-app-capable', content: 'yes' },
       // OpenGraph metatags
       { property: 'og:title', content: 'Julio Melchor' },
       { property: 'og:type', content: 'profile' },
@@ -54,8 +57,7 @@ export class AppComponent implements OnInit {
       { property: 'og:image:alt', content: 'Website view example' },
       { property: 'og:image:type', content: 'image/png' },
       { property: 'og:description', content: 'Curriculum vitae for Julio César Melchor Pinto' },
-      { property: 'twitter:card', content: 'summary_large_image' },
-      { charset: 'UTF-8' }
+      { property: 'twitter:card', content: 'summary_large_image' }
     ]);
     if (this.swUpdate.isEnabled) {
       this.swUpdate.available.subscribe(async () => {

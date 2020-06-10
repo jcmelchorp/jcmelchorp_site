@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { faAward } from "@fortawesome/free-solid-svg-icons";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import { MatDialog } from '@angular/material/dialog';
 import { PdfModalComponent } from '../shared/pdf-modal/pdf-modal.component';
@@ -17,6 +19,8 @@ import { ImageModalComponent } from '../shared/image-modal/image-modal.component
 })
 export class EducationComponent implements OnInit {
   title = 'Education';
+  badge = faAward;
+  grad = faGraduationCap;
   constructor(
     private titleService: Title,
     public dialog: MatDialog

@@ -3,7 +3,18 @@
   "version": "0.0.1",
   "author": "Julio César Melchor Pinto",
   "description": "Angular Application for curriculum vitae.",
-  "keywords": ["angular","angular 9","firebase","material","nosql","oauth","curriculum","ngx-bootstrap","seo","progressive web application"],
+  "keywords": [
+    "angular",
+    "angular 9",
+    "firebase",
+    "material",
+    "nosql",
+    "oauth",
+    "curriculum",
+    "ngx-bootstrap",
+    "seo",
+    "progressive web application"
+  ],
   "repository": "https://github.com/juliomelchorpinto/jcmelchorp",
   "license": "MIT",
   "angular-cli": {},
@@ -22,8 +33,8 @@
     "doc:g": "compodoc -p tsconfig.json --output ./docs --name \"Web Application Documentation\" --theme material",
     "doc:s": "compodoc -p tsconfig.json --output ./docs --name \"Web Application Documentation\" --theme material --serve",
     "doc:w": "compodoc -p tsconfig.json --output ./docs --name \"Web Application Documentation\" --theme material --serve --watch",
-    "pwa:assets":"npx pwa-asset-generator ./src/assets/icons/ms-icon-310x310.png ./src/assets/icons/ --manifest ./src/manifest.webmanifest --index ./src/index.html",
-    "pwa:audit":"npx lighthouse https://jcmelchorp.web.app --chrome-flags=\"--headless\" --view"
+    "pwa:assets": "npx pwa-asset-generator ./src/assets/icons/ms-icon-310x310.png ./src/assets/icons/ --manifest ./src/manifest.webmanifest --index ./src/index.html",
+    "pwa:audit": "npx lighthouse https://jcmelchorp.web.app --chrome-flags=\"--headless\" --view"
   },
   "private": true,
   "dependencies": {
@@ -41,6 +52,11 @@
     "@angular/router": "~9.1.7",
     "@angular/service-worker": "~9.1.7",
     "@compodoc/compodoc": "^1.1.11",
+    "@fortawesome/angular-fontawesome": "^0.6.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-regular-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "bootstrap": "4.5.0",
     "faker": "^4.1.0",
     "jquery": "^3.5.1",

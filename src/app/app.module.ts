@@ -45,8 +45,4 @@ import { environment } from '../environments/environment';
   bootstrap: [AppComponent]
 })
 
-export class AppModule {
-  constructor(overlayContainer: OverlayContainer) {
-    overlayContainer.getContainerElement().classList.add('app-light-theme');
-  }
-}
+export class AppModule {}

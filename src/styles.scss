@@ -3,6 +3,17 @@
 // Plus imports for other components in your app.
 html, body { height: 100%; }
 body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 1;
+  }
+/*This is for flagging conainers*/
+.container {
+  border: solid;
+  border-color: darkred;
+}
 /* Class for disable text selection*/
 .disable-select {
   user-select: none; /* supported by Chrome and Opera */

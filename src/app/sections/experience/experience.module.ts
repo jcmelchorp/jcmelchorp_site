@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+// Angular Material Design Module import
+import { MaterialModule } from 'src/app/material-module';
+// Font Awesome module
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ExperienceRoutingModule } from './experience-routing.module';
 import { ExperienceComponent } from './experience.component';
-import { MaterialModule } from 'src/app/material-module';
 
 
 @NgModule({
@@ -11,7 +13,8 @@ import { MaterialModule } from 'src/app/material-module';
   imports: [
     CommonModule,
     ExperienceRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FontAwesomeModule
   ]
 })
 export class ExperienceModule { }

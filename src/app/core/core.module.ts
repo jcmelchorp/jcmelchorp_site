@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { RouterModule } from '@angular/router';
 
 import { MainComponent } from './main/main.component';
@@ -19,10 +21,11 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
   ],
   imports: [
     CommonModule,
+    BrowserAnimationsModule,
     RouterModule,
     AlertModule,
     CarouselModule,
-    ButtonsModule
+    ButtonsModule,
   ],
   exports: [
     MainComponent,

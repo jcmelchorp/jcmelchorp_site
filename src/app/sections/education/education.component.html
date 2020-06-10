@@ -1,9 +1,8 @@
 <mat-vertical-stepper>
   <mat-step>
     <ng-template matStepLabel>PhD. (2016 - actual)</ng-template>
-    <ng-template matStepperIcon>
-      <mat-icon>school</mat-icon>
-    </ng-template>
+    <ng-template matStepperIcon=edit><fa-icon [icon]="grad"></fa-icon></ng-template>
+    <ng-template matStepperIcon=done><fa-icon [icon]="grad"></fa-icon></ng-template>
     <mat-card class="mt-2">
       <mat-card-header>
         <img mat-card-avatar src="assets/images/unam.png" alt="logo UNAM">
@@ -30,9 +29,6 @@
   </mat-step>
   <mat-step>
     <ng-template matStepLabel>Master Degree (2011 - 2013)</ng-template>
-    <ng-template matStepperIcon>
-      <mat-icon>school</mat-icon>
-    </ng-template>
     <mat-card class="mt-2">
       <mat-card-header>
         <img mat-card-avatar src="assets/images/unam.png" alt="logo UNAM">
@@ -62,9 +58,6 @@
   </mat-step>
   <mat-step>
     <ng-template matStepLabel>Bachelor Degree (2004 - 2009)</ng-template>
-    <ng-template matStepperIcon="school">
-      <mat-icon>school</mat-icon>
-    </ng-template>
     <mat-card class="mt-2">
       <mat-card-header>
         <mat-card-title>Universidad Aut&oacute;noma de Baja California</mat-card-title>

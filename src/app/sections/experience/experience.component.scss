@@ -2,6 +2,17 @@ mat-vertical-stepper {
   background: none;
   max-width: 750px;
 }
+
+.mat-step-custom-click {
+  top: 0;
+  left: 10px;
+  width: 130px; // as per your need
+  height: 72px; // as per your need
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .card-container {
   width: fit-content;
 }
