@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     this.titleService.setTitle(this.title);
     this.metaTagService.addTags([
       { charset: 'UTF-8' },
-      { httpEquiv:'X-UA-Compatible', content:'IE=edge'},
+      { httpEquiv: 'X-UA-Compatible', content: 'IE=edge' },
       { name: 'description', content: 'Curriculum vitae for Julio César Melchor Pinto' },
       { name: 'keywords', content: 'curriculum vitae, angular material, julio Melchor, julio melchor pinto, melchor' },
       { name: 'robots', content: 'index, follow' },

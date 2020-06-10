@@ -27,7 +27,7 @@
     "e2e": "ng e2e",
     "reset": "rm -rf ./node_modules ./package-lock.json && npm install",
     "prod": "ng build --prod",
-    "deploy": "ng build --prod && npx firebase deploy",
+    "deploy": "ng build --prod && doc:g && firebase deploy",
     "generate:db": "node ./server/generate.js > ./server/database.json",
     "server:db": "npx json-server --watch ./server/database.json",
     "doc:g": "npx compodoc -p tsconfig.json --output ./docs --name \"Web Application Documentation\" --theme material",
