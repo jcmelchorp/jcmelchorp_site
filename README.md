@@ -28,12 +28,10 @@ For documentation, see [docs/](https://juliomelchorpinto.github.io/jcmelchorp/ "
 ## Screenshots
 
 ![](src/assets/images/screenshot01.png)
-
-** Fig. 1** - View example
+**Fig. 1** - View example
 
 ![](src/assets/images/screenshot03.png)
-
-** Fig. 2** - Wellcome page
+**Fig. 2** - Wellcome page
 
 ## Install this repository
 
