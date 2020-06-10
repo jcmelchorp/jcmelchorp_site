@@ -61,7 +61,7 @@ export class AppComponent implements OnInit {
       this.swUpdate.available.subscribe(async () => {
         const alert = await this.matDialog.open(AlertModalComponent, {
           data: {
-            header: `App update!`,
+            header: `This app has been updated!`,
             message: `Newer version of the app is available. It's a quick refresh away!`
           }
         });
