@@ -30,11 +30,11 @@
     "deploy": "ng build --prod && doc:g && firebase deploy",
     "generate:db": "node ./server/generate.js > ./server/database.json",
     "server:db": "npx json-server --watch ./server/database.json",
-    "doc:g": "npx compodoc -p tsconfig.json --output ./docs --name \"Web Application Documentation\" --theme material",
-    "doc:s": "npx compodoc -p tsconfig.json --output ./docs --name \"Web Application Documentation\" --theme material --serve",
-    "doc:w": "npx compodoc -p tsconfig.json --output ./docs --name \"Web Application Documentation\" --theme material --serve --watch",
+    "doc:g": "npx @compodoc/compodoc -p ./tsconfig.json --output ./docs --name \"Curriculum Web Application Documentation\" --theme material",
+    "doc:s": "npx compodoc -p ./tsconfig.json --output ./docs --name \"Curriculum Web Application Documentation\" --theme material --serve",
+    "doc:w": "npx compodoc -p ./tsconfig.json --output ./docs --name \"Curriculum Web Application Documentation\" --theme material --serve --watch",
     "pwa:assets": "npx pwa-asset-generator ./src/assets/icons/ms-icon-310x310.png ./src/assets/icons/ --manifest ./src/manifest.webmanifest --index ./src/index.html",
-    "pwa:audit": "npx lighthouse https://jcmelchorp.web.app --chrome-flags=\"--headless\" --view"
+    "pwa:audit": "npx lighthouse https://jcmelchorp.web.app --chrome-flags=\"--headless\""
   },
   "private": true,
   "dependencies": {
@@ -71,9 +71,10 @@
     "@angular-devkit/build-angular": "~0.901.6",
     "@angular/cli": "~9.1.6",
     "@angular/compiler-cli": "~9.1.7",
-    "@types/node": "^12.11.1",
+    "@compodoc/compodoc": "^1.1.11",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",

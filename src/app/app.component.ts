@@ -4,6 +4,7 @@ import { SwUpdate } from '@angular/service-worker';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { DialogAlert } from './sections/shared/viewmodels/dialog-alert';
 import { AlertModalComponent } from './sections/shared/alert-modal/alert-modal.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
 /**
  * App component
  *
@@ -24,6 +25,7 @@ export class AppComponent implements OnInit {
     private metaTagService: Meta,
     private titleService: Title,
     private swUpdate: SwUpdate,
+    private _snackBar: MatSnackBar,
     public matDialog: MatDialog,
   ) { }
 
@@ -53,7 +55,7 @@ export class AppComponent implements OnInit {
       { property: 'og:site_name', content: 'Personal Portfolio' },
       { property: 'og:url', content: 'https://jcmelchorp.web.app' },
       { property: 'og:image:url', content: 'https://jcmelchorp.web.app/assets/images/screenshot01.png' },
-      { property: 'og:image:secure_url', content: 'https://jcmelchorp.web.app/assets/images/screenshot02.png' },
+      { property: 'og:image:secure_url', content: 'https://jcmelchorp.web.app/assets/images/screenshot03.png' },
       { property: 'og:image:alt', content: 'Website view example' },
       { property: 'og:image:type', content: 'image/png' },
       { property: 'og:description', content: 'Curriculum vitae for Julio César Melchor Pinto' },
@@ -61,6 +63,8 @@ export class AppComponent implements OnInit {
     ]);
     if (this.swUpdate.isEnabled) {
       this.swUpdate.available.subscribe(async () => {
+        this._snackBar.open('Se han hecho cambios desde la última visita.!')
+
         const alert = await this.matDialog.open(AlertModalComponent, {
           data: {
             header: `This app has been updated!`,

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Web Application Documentation</title>
+        <title>CWA documentación</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">Web Application Documentation</a>
+            <a href="../" class="navbar-brand">CWA documentación</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -141,6 +141,9 @@
                                 <a href="#cards">cards</a>
                             </li>
                             <li>
+                                <a href="#industry">industry</a>
+                            </li>
+                            <li>
                                 <a href="#title">title</a>
                             </li>
                         </ul>
@@ -181,7 +184,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/sections/experience/experience.component.ts:35</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/sections/experience/experience.component.ts:37</a></div>
                             </td>
                         </tr>
 
@@ -262,8 +265,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="39"
-                            class="link-to-prism">src/app/sections/experience/experience.component.ts:39</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">src/app/sections/experience/experience.component.ts:41</a></div>
                 </td>
             </tr>
 
@@ -322,7 +325,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/sections/experience/experience.component.ts:16</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/sections/experience/experience.component.ts:18</a></div>
                             </td>
                         </tr>
 
@@ -332,6 +335,32 @@
 </div>
                     </td>
                 </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="industry"></a>
+                        <span class="name">
+                            <b>
+                            industry</b>
+                            <a href="#industry"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faIndustry</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/sections/experience/experience.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
 
             </tbody>
         </table>
@@ -360,7 +389,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/sections/experience/experience.component.ts:35</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/sections/experience/experience.component.ts:37</a></div>
                             </td>
                         </tr>
 
@@ -377,6 +406,7 @@
 import { BreakpointObserver, Breakpoints } from &#x27;@angular/cdk/layout&#x27;;
 import { map } from &#x27;rxjs/operators&#x27;;
 import { Title } from &#x27;@angular/platform-browser&#x27;;
+import { faIndustry } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
 /**
  * Experience component
  *
@@ -387,6 +417,7 @@ import { Title } from &#x27;@angular/platform-browser&#x27;;
   styleUrls: [&#x27;./experience.component.scss&#x27;]
 })
 export class ExperienceComponent implements OnInit {
+  industry &#x3D; faIndustry;
    /** Based on the screen size, switch from standard to one column per row */
    cards &#x3D; this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) &#x3D;&gt; {
@@ -420,17 +451,21 @@ export class ExperienceComponent implements OnInit {
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;mat-vertical-stepper&gt;
   &lt;mat-step&gt;
-    &lt;ng-template matStepLabel&gt;2019&lt;/ng-template&gt;
+    &lt;ng-template matStepLabel&gt;
+      &lt;div class&#x3D;&quot;mat-step-custom-click&quot;&gt;&lt;span&gt;2019&lt;/span&gt;&lt;/div&gt;
+    &lt;/ng-template&gt;
+    &lt;ng-template matStepperIcon&#x3D;edit&gt;&lt;fa-icon [icon]&#x3D;&quot;industry&quot;&gt;&lt;/fa-icon&gt;&lt;/ng-template&gt;
+    &lt;ng-template matStepperIcon&#x3D;done&gt;&lt;fa-icon [icon]&#x3D;&quot;industry&quot;&gt;&lt;/fa-icon&gt;&lt;/ng-template&gt;
     &lt;mat-card class&#x3D;&quot;mt-2&quot;&gt;
       &lt;mat-card-header&gt;
         &lt;mat-card-title&gt;
-          &lt;a href&#x3D;&quot;https://www.guerreroimports.com/&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener&quot;&gt;Floral and Sea Designs S. de R.L. de C.V.&lt;/a&gt;&lt;/mat-card-title&gt;
+          &lt;a href&#x3D;&quot;https://www.guerreroimports.com/&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener&quot;&gt;Guerrero Floral and Sea Designs S. de R.L. de C.V.&lt;/a&gt;&lt;/mat-card-title&gt;
         &lt;mat-card-subtitle&gt;Gerente de Sistemas de Información.
         &lt;/mat-card-subtitle&gt;
       &lt;/mat-card-header&gt;
       &lt;mat-card-content&gt;
         &lt;img mat-card-image class&#x3D;&quot;business-image&quot; alt&#x3D;&quot;logo de empresa Guerrero Floral&quot;
-          src&#x3D;&quot;https://ii.ct-stc.com/2/logos/empresas/2017/03/23/fdc24b5167804e0e817f235818thumbnail.jpeg&quot;&gt;
+          src&#x3D;&quot;assets/images/guerrero_floral.png&quot;&gt;
         &lt;p&gt;An&amp;aacute;lisis y reestructuraci&amp;oacute;n de procesos de producci&amp;oacute;n,
           control de mermas y manejo de personal implementando tecnolog&amp;iacute;as de la
           informaci&amp;oacute;n.&lt;/p&gt;
@@ -448,8 +483,9 @@ export class ExperienceComponent implements OnInit {
         &lt;/mat-card-subtitle&gt;
       &lt;/mat-card-header&gt;
       &lt;mat-card-content&gt;
-        &lt;img mat-card-image class&#x3D;&quot;business-image&quot; alt&#x3D;&quot;logo de empresa Grupo Okunoba&quot;
-         src&#x3D;&quot;http://grupookunoba.com/site/wp-content/uploads/2018/09/logo-okunoba-new.png&quot;&gt;
+        &lt;img mat-card-image class&#x3D;&quot;business-image&quot;
+             alt&#x3D;&quot;logo de empresa Grupo Okunoba&quot;
+             src&#x3D;&quot;assets/images/okunoba.png&quot;&gt;
         &lt;p&gt;An&amp;aacute;lisis, diseño, desarrollo e implementaci&amp;oacute;n de un sistema
           personalizado para el control de inventarios para el uso dentro de la empresa con usuarios,
           roles y restricciones.
@@ -468,8 +504,9 @@ export class ExperienceComponent implements OnInit {
         &lt;mat-card-subtitle&gt;Desarrollador Jr.&lt;/mat-card-subtitle&gt;
       &lt;/mat-card-header&gt;
       &lt;mat-card-content&gt;
-        &lt;img mat-card-image class&#x3D;&quot;business-image&quot; alt&#x3D;&quot;logo de empresa Softtek&quot;
-         src&#x3D;&quot;https://arizent.brightspotcdn.com/dims4/default/9bacc72/2147483647/strip/true/crop/600x307+0+0/resize/400x205!/quality/90/?url&#x3D;https%3A%2F%2Farizent.brightspotcdn.com%2F16%2Fcc%2F859a992340dda428af7b5574526a%2Fsofttek.png&quot;&gt;
+        &lt;img mat-card-image class&#x3D;&quot;business-image&quot;
+        alt&#x3D;&quot;logo de empresa Softtek&quot;
+         src&#x3D;&quot;assets/images/softtek.gif&quot;&gt;
         &lt;p&gt;An&amp;aacute;lisis, diseño en implementaci&amp;oacute;n de un sistema administrativo para
           restaurantes (backoffice y aplicación m&amp;oacute;vil)
           Tecnologias usadas: OutSystems, Microsoft Teams, ASP.NET, NodeJS, AngularJS, MonoDevelop.
@@ -488,7 +525,7 @@ export class ExperienceComponent implements OnInit {
       &lt;/mat-card-header&gt;
       &lt;mat-card-content&gt;
         &lt;img mat-card-image class&#x3D;&quot;business-image&quot; alt&#x3D;&quot;logo de empresa Freelancer.com&quot;
-        src&#x3D;&quot;https://pngimage.net/wp-content/uploads/2018/06/freelancer-logo-png-6.png&quot;&gt;
+        src&#x3D;&quot;assets/images/freelancer.png&quot;&gt;
         &lt;p&gt;Desarrollo de una aplicaci&amp;oacute;n m&amp;oacute;vil para Android usando Google Maps API en
           Android Studio.
         &lt;/p&gt;
@@ -507,7 +544,7 @@ export class ExperienceComponent implements OnInit {
       &lt;/mat-card-header&gt;
       &lt;mat-card-content&gt;
         &lt;img mat-card-image class&#x3D;&quot;business-image&quot; alt&#x3D;&quot;logo de la facultad de ciencias UNAM&quot;
-         src&#x3D;&quot;http://elecciones.fciencias.unam.mx/imgs/logoFC.svg&quot;&gt;
+         src&#x3D;&quot;assets/images/logoFC.svg&quot;&gt;
         &lt;p&gt;Profesor de la Facultad de Ciencias en la asignatura Modelaci&amp;oacute;n Clim&amp;aacute;tica de la
           Licenciatura en Ciencias de la Tierra.
         &lt;/p&gt;
@@ -526,7 +563,7 @@ export class ExperienceComponent implements OnInit {
       &lt;/mat-card-header&gt;
       &lt;mat-card-content&gt;
         &lt;img mat-card-image class&#x3D;&quot;business-image&quot; alt&#x3D;&quot;logo de BENED&quot;
-         src&#x3D;&quot;https://caedacapulco.files.wordpress.com/2015/06/bneed.jpg&quot;&gt;
+         src&#x3D;&quot;assets/images/caed.png&quot;&gt;
         &lt;p&gt;Profesor en las materias de F&amp;iacute;sica, Matem&amp;aacute;ticas y Qu&amp;iacute;mica en el Centro de
           Atenci&amp;oacute;n a Estudiantes con Discapacidad (CAED)
           del sistema de Preparatoria Abierta de la Direcci&amp;oacute;n General de Bachillerato de la Secretear&amp;iacute;a de
@@ -584,6 +621,17 @@ export class ExperienceComponent implements OnInit {
                 <pre class="line-numbers"><code class="language-scss">mat-vertical-stepper {
   background: none;
   max-width: 750px;
+}
+
+.mat-step-custom-click {
+  top: 0;
+  left: 10px;
+  width: 130px; // as per your need
+  height: 72px; // as per your need
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .card-container {
   width: fit-content;
@@ -649,7 +697,7 @@ export class ExperienceComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-vertical-stepper>  <mat-step>    <ng-template matStepLabel>2019</ng-template>    <mat-card class="mt-2">      <mat-card-header>        <mat-card-title>          <a href="https://www.guerreroimports.com/" target="_blank" rel="noopener">Floral and Sea Designs S. de R.L. de C.V.</a></mat-card-title>        <mat-card-subtitle>Gerente de Sistemas de Información.        </mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <img mat-card-image class="business-image" alt="logo de empresa Guerrero Floral"          src="https://ii.ct-stc.com/2/logos/empresas/2017/03/23/fdc24b5167804e0e817f235818thumbnail.jpeg">        <p>An&aacute;lisis y reestructuraci&oacute;n de procesos de producci&oacute;n,          control de mermas y manejo de personal implementando tecnolog&iacute;as de la          informaci&oacute;n.</p>      </mat-card-content>    </mat-card>  </mat-step>  <mat-step>    <ng-template matStepLabel>2018</ng-template>    <mat-card class="mt-2">      <mat-card-header>        <mat-card-title>          <a href="http://grupookunoba.com/site/" target="_blank" rel="noopener">Grupo Okunoba S.A. de C.V.</a>        </mat-card-title>        <mat-card-subtitle>Desarrollador .NET        </mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <img mat-card-image class="business-image" alt="logo de empresa Grupo Okunoba"         src="http://grupookunoba.com/site/wp-content/uploads/2018/09/logo-okunoba-new.png">        <p>An&aacute;lisis, diseño, desarrollo e implementaci&oacute;n de un sistema          personalizado para el control de inventarios para el uso dentro de la empresa con usuarios,          roles y restricciones.          Tecnolog&iacute;as usadas: Microsoft .NET Core, Microsoft SQL Server, Apache2.        </p>      </mat-card-content>    </mat-card>  </mat-step>  <mat-step>    <ng-template matStepLabel> <span class="">2017 - 2018</span></ng-template>    <mat-card class="mt-2">      <mat-card-header>        <mat-card-title>          <a href="https://www.softtek.com/es/" target="_blank" rel="noopener">Softtek</a>        </mat-card-title>        <mat-card-subtitle>Desarrollador Jr.</mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <img mat-card-image class="business-image" alt="logo de empresa Softtek"         src="https://arizent.brightspotcdn.com/dims4/default/9bacc72/2147483647/strip/true/crop/600x307+0+0/resize/400x205!/quality/90/?url=https%3A%2F%2Farizent.brightspotcdn.com%2F16%2Fcc%2F859a992340dda428af7b5574526a%2Fsofttek.png">        <p>An&aacute;lisis, diseño en implementaci&oacute;n de un sistema administrativo para          restaurantes (backoffice y aplicación m&oacute;vil)          Tecnologias usadas: OutSystems, Microsoft Teams, ASP.NET, NodeJS, AngularJS, MonoDevelop.        </p>      </mat-card-content>    </mat-card>  </mat-step>  <mat-step>    <ng-template matStepLabel> <span class="">2017</span></ng-template>    <mat-card class="mt-2">      <mat-card-header>        <mat-card-title>          <a href="https://www.freelancer.com/" target="_blank" rel="noopener">Freelancer.com</a>        </mat-card-title>        <mat-card-subtitle>Desarrollador de Android</mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <img mat-card-image class="business-image" alt="logo de empresa Freelancer.com"        src="https://pngimage.net/wp-content/uploads/2018/06/freelancer-logo-png-6.png">        <p>Desarrollo de una aplicaci&oacute;n m&oacute;vil para Android usando Google Maps API en          Android Studio.        </p>      </mat-card-content>    </mat-card>  </mat-step>  <mat-step>    <ng-template matStepLabel> <span class="">2015 - 2016</span></ng-template>    <mat-card class="mt-2">      <mat-card-header>        <mat-card-title>          <a href="http://www.fciencias.unam.mx/directorio/83353" target="_blank" rel="noopener">Universidad Nacional Aut&oacute;noma de M&eacute;xico</a></mat-card-title>        <mat-card-subtitle>            Profesor de Asignatura A - Departamento de F&iacute;sica        </mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <img mat-card-image class="business-image" alt="logo de la facultad de ciencias UNAM"         src="http://elecciones.fciencias.unam.mx/imgs/logoFC.svg">        <p>Profesor de la Facultad de Ciencias en la asignatura Modelaci&oacute;n Clim&aacute;tica de la          Licenciatura en Ciencias de la Tierra.        </p>      </mat-card-content>    </mat-card>  </mat-step>  <mat-step>    <ng-template matStepLabel> <span class="">2013 - 2015</span></ng-template>    <mat-card class="mt-2">      <mat-card-header>        <mat-card-title>          <a href="https://sites.google.com/site/nuplespa/" target="_blank" rel="noopener">Bachillerato no Escolarizado para Estudiantes con Discapacidad (BNEED)</a></mat-card-title>        <mat-card-subtitle>          Profesor en el &aacute;rea de Ciencias.        </mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <img mat-card-image class="business-image" alt="logo de BENED"         src="https://caedacapulco.files.wordpress.com/2015/06/bneed.jpg">        <p>Profesor en las materias de F&iacute;sica, Matem&aacute;ticas y Qu&iacute;mica en el Centro de          Atenci&oacute;n a Estudiantes con Discapacidad (CAED)          del sistema de Preparatoria Abierta de la Direcci&oacute;n General de Bachillerato de la Secretear&iacute;a de          Educaci&oacute;n P&uacute;blica (DGB-SEP).        </p>      </mat-card-content>    </mat-card>  </mat-step></mat-vertical-stepper><div class="container">  <mat-tab-group animationDuration="1000ms" mat-align-tabs="center">    <mat-tab label="Docencia">      <mat-grid-list cols="2">        <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">          <mat-card class="dashboard-card">            <mat-card-header>              <mat-card-title>                {{card.title}}              </mat-card-title>            </mat-card-header>            <mat-card-content class="dashboard-card-content">              <div>Card Content Here</div>            </mat-card-content>          </mat-card>        </mat-grid-tile>      </mat-grid-list>    </mat-tab>    <mat-tab label="Industria">      <mat-grid-list cols="3">        <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">          <mat-card class="dashboard-card">            <mat-card-header>              <mat-card-title>                {{card.title}}              </mat-card-title>            </mat-card-header>            <mat-card-content class="dashboard-card-content">              <div>Card Content Here</div>            </mat-card-content>          </mat-card>        </mat-grid-tile>      </mat-grid-list>    </mat-tab>  </mat-tab-group></div></div>'
+        var COMPONENT_TEMPLATE = '<div><mat-vertical-stepper>  <mat-step>    <ng-template matStepLabel>      <div class="mat-step-custom-click"><span>2019</span></div>    </ng-template>    <ng-template matStepperIcon=edit><fa-icon [icon]="industry"></fa-icon></ng-template>    <ng-template matStepperIcon=done><fa-icon [icon]="industry"></fa-icon></ng-template>    <mat-card class="mt-2">      <mat-card-header>        <mat-card-title>          <a href="https://www.guerreroimports.com/" target="_blank" rel="noopener">Guerrero Floral and Sea Designs S. de R.L. de C.V.</a></mat-card-title>        <mat-card-subtitle>Gerente de Sistemas de Información.        </mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <img mat-card-image class="business-image" alt="logo de empresa Guerrero Floral"          src="assets/images/guerrero_floral.png">        <p>An&aacute;lisis y reestructuraci&oacute;n de procesos de producci&oacute;n,          control de mermas y manejo de personal implementando tecnolog&iacute;as de la          informaci&oacute;n.</p>      </mat-card-content>    </mat-card>  </mat-step>  <mat-step>    <ng-template matStepLabel>2018</ng-template>    <mat-card class="mt-2">      <mat-card-header>        <mat-card-title>          <a href="http://grupookunoba.com/site/" target="_blank" rel="noopener">Grupo Okunoba S.A. de C.V.</a>        </mat-card-title>        <mat-card-subtitle>Desarrollador .NET        </mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <img mat-card-image class="business-image"             alt="logo de empresa Grupo Okunoba"             src="assets/images/okunoba.png">        <p>An&aacute;lisis, diseño, desarrollo e implementaci&oacute;n de un sistema          personalizado para el control de inventarios para el uso dentro de la empresa con usuarios,          roles y restricciones.          Tecnolog&iacute;as usadas: Microsoft .NET Core, Microsoft SQL Server, Apache2.        </p>      </mat-card-content>    </mat-card>  </mat-step>  <mat-step>    <ng-template matStepLabel> <span class="">2017 - 2018</span></ng-template>    <mat-card class="mt-2">      <mat-card-header>        <mat-card-title>          <a href="https://www.softtek.com/es/" target="_blank" rel="noopener">Softtek</a>        </mat-card-title>        <mat-card-subtitle>Desarrollador Jr.</mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <img mat-card-image class="business-image"        alt="logo de empresa Softtek"         src="assets/images/softtek.gif">        <p>An&aacute;lisis, diseño en implementaci&oacute;n de un sistema administrativo para          restaurantes (backoffice y aplicación m&oacute;vil)          Tecnologias usadas: OutSystems, Microsoft Teams, ASP.NET, NodeJS, AngularJS, MonoDevelop.        </p>      </mat-card-content>    </mat-card>  </mat-step>  <mat-step>    <ng-template matStepLabel> <span class="">2017</span></ng-template>    <mat-card class="mt-2">      <mat-card-header>        <mat-card-title>          <a href="https://www.freelancer.com/" target="_blank" rel="noopener">Freelancer.com</a>        </mat-card-title>        <mat-card-subtitle>Desarrollador de Android</mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <img mat-card-image class="business-image" alt="logo de empresa Freelancer.com"        src="assets/images/freelancer.png">        <p>Desarrollo de una aplicaci&oacute;n m&oacute;vil para Android usando Google Maps API en          Android Studio.        </p>      </mat-card-content>    </mat-card>  </mat-step>  <mat-step>    <ng-template matStepLabel> <span class="">2015 - 2016</span></ng-template>    <mat-card class="mt-2">      <mat-card-header>        <mat-card-title>          <a href="http://www.fciencias.unam.mx/directorio/83353" target="_blank" rel="noopener">Universidad Nacional Aut&oacute;noma de M&eacute;xico</a></mat-card-title>        <mat-card-subtitle>            Profesor de Asignatura A - Departamento de F&iacute;sica        </mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <img mat-card-image class="business-image" alt="logo de la facultad de ciencias UNAM"         src="assets/images/logoFC.svg">        <p>Profesor de la Facultad de Ciencias en la asignatura Modelaci&oacute;n Clim&aacute;tica de la          Licenciatura en Ciencias de la Tierra.        </p>      </mat-card-content>    </mat-card>  </mat-step>  <mat-step>    <ng-template matStepLabel> <span class="">2013 - 2015</span></ng-template>    <mat-card class="mt-2">      <mat-card-header>        <mat-card-title>          <a href="https://sites.google.com/site/nuplespa/" target="_blank" rel="noopener">Bachillerato no Escolarizado para Estudiantes con Discapacidad (BNEED)</a></mat-card-title>        <mat-card-subtitle>          Profesor en el &aacute;rea de Ciencias.        </mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <img mat-card-image class="business-image" alt="logo de BENED"         src="assets/images/caed.png">        <p>Profesor en las materias de F&iacute;sica, Matem&aacute;ticas y Qu&iacute;mica en el Centro de          Atenci&oacute;n a Estudiantes con Discapacidad (CAED)          del sistema de Preparatoria Abierta de la Direcci&oacute;n General de Bachillerato de la Secretear&iacute;a de          Educaci&oacute;n P&uacute;blica (DGB-SEP).        </p>      </mat-card-content>    </mat-card>  </mat-step></mat-vertical-stepper><div class="container">  <mat-tab-group animationDuration="1000ms" mat-align-tabs="center">    <mat-tab label="Docencia">      <mat-grid-list cols="2">        <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">          <mat-card class="dashboard-card">            <mat-card-header>              <mat-card-title>                {{card.title}}              </mat-card-title>            </mat-card-header>            <mat-card-content class="dashboard-card-content">              <div>Card Content Here</div>            </mat-card-content>          </mat-card>        </mat-grid-tile>      </mat-grid-list>    </mat-tab>    <mat-tab label="Industria">      <mat-grid-list cols="3">        <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">          <mat-card class="dashboard-card">            <mat-card-header>              <mat-card-title>                {{card.title}}              </mat-card-title>            </mat-card-header>            <mat-card-content class="dashboard-card-content">              <div>Card Content Here</div>            </mat-card-content>          </mat-card>        </mat-grid-tile>      </mat-grid-list>    </mat-tab>  </mat-tab-group></div></div>'
     var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ExperienceComponent'};
@@ -717,6 +765,14 @@ export class ExperienceComponent implements OnInit {
           <script src="../js/search/search_index.js"></script>
        <script src="../js/lazy-load-graphs.js"></script>
 
+            <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                ga('create', '230312331', 'jcmelchorp');
+                ga('send', 'pageview');
+            </script>
 
     </body>
 </html>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Web Application Documentation</title>
+        <title>CWA documentación</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">Web Application Documentation</a>
+            <a href="../" class="navbar-brand">CWA documentación</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -138,8 +138,14 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#login">login</a>
+                            </li>
+                            <li>
                                     <span class="modifier">Public</span>
                                 <a href="#titleService">titleService</a>
+                            </li>
+                            <li>
+                                <a href="#toggledark">toggledark</a>
                             </li>
                         </ul>
                     </td>
@@ -179,7 +185,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/layout/full-page/full-page.component.ts:11</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/layout/full-page/full-page.component.ts:16</a></div>
                             </td>
                         </tr>
 
@@ -248,8 +254,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="15"
-                            class="link-to-prism">src/app/layout/full-page/full-page.component.ts:15</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="18"
+                            class="link-to-prism">src/app/layout/full-page/full-page.component.ts:18</a></div>
                 </td>
             </tr>
 
@@ -275,6 +281,32 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
+                        <a name="login"></a>
+                        <span class="name">
+                            <b>
+                            login</b>
+                            <a href="#login"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faSignInAlt</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/layout/full-page/full-page.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
                         <a name="titleService"></a>
                         <span class="name">
                             <b>
@@ -292,7 +324,33 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/layout/full-page/full-page.component.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/layout/full-page/full-page.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="toggledark"></a>
+                        <span class="name">
+                            <b>
+                            toggledark</b>
+                            <a href="#toggledark"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faSun</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/layout/full-page/full-page.component.ts:16</a></div>
                             </td>
                         </tr>
 
@@ -307,6 +365,9 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { Title } from &#x27;@angular/platform-browser&#x27;;
+import { faSignInAlt } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
+import { faSun } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
+
 /**
  * FullPage component
  */
@@ -316,9 +377,9 @@ import { Title } from &#x27;@angular/platform-browser&#x27;;
   styleUrls: [&#x27;./full-page.component.scss&#x27;]
 })
 export class FullPageComponent implements OnInit {
-
+  login &#x3D; faSignInAlt;
+  toggledark &#x3D; faSun;
   constructor(public titleService: Title) { }
-
   ngOnInit(): void {
   }
 
@@ -330,8 +391,9 @@ export class FullPageComponent implements OnInit {
         <pre class="line-numbers"><code class="language-html">&lt;mat-toolbar [class.mat-elevation-z4]&#x3D;&quot;true&quot;&gt;
   &lt;span class&#x3D;&quot;fill-space&quot;&gt;&lt;/span&gt;
   &lt;a type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-xs&quot; [routerLink]&#x3D;&quot;[&#x27;/login&#x27;]&quot; routerLinkActive&#x3D;&quot;router-link-active&quot;&gt;
-    &lt;i class&#x3D;&quot;fa fa-sign-in&quot;&gt;&lt;/i&gt;
+    &lt;fa-icon [icon]&#x3D;&quot;login&quot;&gt;&lt;/fa-icon&gt;
   &lt;/a&gt;
+  &lt;fa-icon [icon]&#x3D;&quot;toggledark&quot;&gt;&lt;/fa-icon&gt;
 &lt;/mat-toolbar&gt;
 &lt;app-wellcome&gt;&lt;/app-wellcome&gt;
 </code></pre>
@@ -379,7 +441,7 @@ export class FullPageComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-toolbar [class.mat-elevation-z4]="true">  <span class="fill-space"></span>  <a type="button" class="btn btn-xs" [routerLink]="[\'/login\']" routerLinkActive="router-link-active">    <i class="fa fa-sign-in"></i>  </a></mat-toolbar><app-wellcome></app-wellcome></div>'
+        var COMPONENT_TEMPLATE = '<div><mat-toolbar [class.mat-elevation-z4]="true">  <span class="fill-space"></span>  <a type="button" class="btn btn-xs" [routerLink]="[\'/login\']" routerLinkActive="router-link-active">    <fa-icon [icon]="login"></fa-icon>  </a>  <fa-icon [icon]="toggledark"></fa-icon></mat-toolbar><app-wellcome></app-wellcome></div>'
     var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'FullPageComponent'};
@@ -447,6 +509,14 @@ export class FullPageComponent implements OnInit {
           <script src="../js/search/search_index.js"></script>
        <script src="../js/lazy-load-graphs.js"></script>
 
+            <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                ga('create', '230312331', 'jcmelchorp');
+                ga('send', 'pageview');
+            </script>
 
     </body>
 </html>

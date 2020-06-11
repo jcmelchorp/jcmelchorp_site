@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Web Application Documentation</title>
+        <title>CWA documentación</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">Web Application Documentation</a>
+            <a href="../" class="navbar-brand">CWA documentación</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -237,6 +237,8 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { CommonModule } from &#x27;@angular/common&#x27;;
+import { BrowserAnimationsModule } from &#x27;@angular/platform-browser/animations&#x27;;
+
 import { RouterModule } from &#x27;@angular/router&#x27;;
 
 import { MainComponent } from &#x27;./main/main.component&#x27;;
@@ -256,10 +258,11 @@ import { ButtonsModule } from &#x27;ngx-bootstrap/buttons&#x27;;
   ],
   imports: [
     CommonModule,
+    BrowserAnimationsModule,
     RouterModule,
     AlertModule,
     CarouselModule,
-    ButtonsModule
+    ButtonsModule,
   ],
   exports: [
     MainComponent,
@@ -333,6 +336,14 @@ export class CoreModule { }
           <script src="../js/search/search_index.js"></script>
        <script src="../js/lazy-load-graphs.js"></script>
 
+            <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                ga('create', '230312331', 'jcmelchorp');
+                ga('send', 'pageview');
+            </script>
 
     </body>
 </html>

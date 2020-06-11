@@ -1,0 +1,12 @@
+{
+  "$schema":"./node_modules/@compodoc/compodoc/src/config/schema.json",
+  "customFavicon": "./src/assets/icons/favicon.ico",
+  "customLogo": "./src/assets/images/favicon.png",
+  "output": "docs",
+  "name": "CWA documentación",
+  "language": "es-ES",
+  "theme": "material",
+  "tsconfig": "./tsconfig.json",
+  "gaID": "230312331",
+  "gaSite": "jcmelchorp"
+}
