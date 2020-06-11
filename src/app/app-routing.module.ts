@@ -2,17 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { DefaultComponent } from './layout/default/default.component';
-import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
-import { WellcomeComponent } from './core/wellcome/wellcome.component';
 
-import { InfoComponent } from './sections/info/info.component';
-import { EducationComponent } from './sections/education/education.component';
-import { ExperienceComponent } from './sections/experience/experience.component';
-import { ProjectsComponent } from './sections/projects/projects.component';
-import { PublishComponent } from './sections/publish/publish.component';
-import { ContactComponent } from './sections/contact/contact.component';
-import { SkillsComponent } from './sections/skills/skills.component';
-import { PortfolioComponent } from './sections/portfolio/portfolio.component';
 import { FullPageComponent } from './layout/full-page/full-page.component';
 
 const APP_ROUTES: Routes = [

@@ -1,14 +1,8 @@
-<div class="alert">
-  <alert [type]="alert.type" [dismissible]="dismissible" (onClosed)="onClosed(alert)">
-    {{ alert.msg }}
-  </alert>
-</div>
+<alert [type]="alert.type" [dismissible]="dismissible" (onClosed)="onClosed(alert)">{{ alert.msg }}</alert>
 <div class="container">
-  <div>
-    <h1 class="mat-h1">Julio C&eacute;sar Melchor Pinto</h1>
-    <h3 class="mat-h3">F&iacute;sico, analista y desarrollador</h3>
-  </div>
-  <div class="fixed-left-socials">
+  <h1 class="mat-h1">Julio C&eacute;sar Melchor Pinto</h1>
+  <h3 class="mat-h3">F&iacute;sico, analista y desarrollador</h3>
+  <div class="fixed-right-socials">
     <ul class="list-unstiled">
       <li><a href="https://github.com/juliomelchorpinto" target="_blank" rel="noopener"><i class="fa fa-github"></i></a>
       </li>
@@ -20,10 +14,13 @@
             class="fa fa-google-plus"></i></a></li>
       <li><a href="https://linkedin.com/jmelchorp" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
       </li>
-      <li><a href="https://www.instagram.com/jmelchorp" target="_blank" rel="noopener"><i
-            class="fa fa-instagram"></i></a></li>
+      <li><a href="https://www.instagram.com/jmelchorp" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
+      </li>
       <li><a href="live:julioc.melchor" target="_blank" rel="noopener"><i class="fa fa-skype"></i></a></li>
     </ul>
   </div>
 </div>
-<router-outlet></router-outlet>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+

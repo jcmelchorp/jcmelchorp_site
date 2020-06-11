@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ProjectsRoutingModule } from './projects-routing.module';
 import { ProjectsComponent } from './projects.component';
-import { MaterialModule } from 'src/app/material-module';
+import { MaterialModule } from 'src/app/material.module';
 
 
 @NgModule({

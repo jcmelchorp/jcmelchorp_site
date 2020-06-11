@@ -3,6 +3,16 @@
   <a type="button" class="btn btn-xs" [routerLink]="['/login']" routerLinkActive="router-link-active">
     <fa-icon [icon]="login"></fa-icon>
   </a>
-  <fa-icon [icon]="toggledark"></fa-icon>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <fa-icon [icon]="cog"></fa-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <fa-icon [icon]="globe"></fa-icon>&nbsp;&nbsp;Language
+    </button>
+    <button mat-menu-item>
+      <fa-icon [icon]="toggledark"></fa-icon>&nbsp;&nbsp;Dark Theme
+    </button>
+  </mat-menu>
 </mat-toolbar>
 <app-wellcome></app-wellcome>

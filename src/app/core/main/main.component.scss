@@ -1,46 +1,28 @@
-
-/*expansion panels*/
-
-.app-headers-align .mat-expansion-panel-header-title,
-.app-headers-align .mat-expansion-panel-header-description {
-  flex-basis: 0;
-}
-
-.app-headers-align .mat-expansion-panel-header-description {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.app-headers-align .mat-form-field+.mat-form-field {
-  margin-left: 8px;
-}
-
-
 /* Social Icons */
 
-.fixed-left-socials {
+.fixed-right-socials {
 	bottom: 0;
 	position: fixed;
-	right: 20px;
-	top: 200px;
-	z-index: 5;
+	right: 15px;
+	top: 15%;
+	z-index: 9;
 }
-.fixed-left-socials ul {
+.fixed-right-socials ul {
     list-style: outside none none;
     padding: 0;
 }
-.fixed-left-socials li {
-    margin: 5px 0;
+.fixed-right-socials li {
+    margin: 9px 0;
 }
 .list-unstiled i {
   border-radius: 30px;
   color: #fff;
   font-size: 12px;
-  height: 25px;
-  line-height: 25px;
+  height: 23px;
+  line-height: 23px;
   text-align: center;
   transition: all 300ms ease 0s;
-  width: 25px;
+  width: 23px;
 }
 .list-unstiled .fa-github {
   background: #464646 none repeat scroll 0 0;
@@ -68,4 +50,3 @@
 .list-unstiled .fa-skype {
   background: #00aff0 none repeat scroll 0 0;
 }
-

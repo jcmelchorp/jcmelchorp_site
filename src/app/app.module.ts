@@ -5,7 +5,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // Angular Material Design Module import
-import {MaterialModule} from './material-module';
+import {MaterialModule} from './material.module';
 // Theme container for recursively theme implementation
 import {OverlayContainer} from '@angular/cdk/overlay';
 import {LayoutModule} from '@angular/cdk/layout';

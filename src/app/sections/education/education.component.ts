@@ -4,8 +4,9 @@ import { faAward } from '@fortawesome/free-solid-svg-icons';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import { MatDialog } from '@angular/material/dialog';
-import { PdfModalComponent } from '../shared/pdf-modal/pdf-modal.component';
-import { ImageModalComponent } from '../shared/image-modal/image-modal.component';
+import { ImageModalComponent } from 'src/app/shared/components/image-modal/image-modal.component';
+import { PdfModalComponent } from 'src/app/shared/components/pdf-modal/pdf-modal.component';
+
 /**
  * Education component
  */

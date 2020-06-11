@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { InfoRoutingModule } from './info-routing.module';
 import { InfoComponent } from './info.component';
-import { MaterialModule } from 'src/app/material-module';
+import { MaterialModule } from 'src/app/material.module';
 
 
 @NgModule({

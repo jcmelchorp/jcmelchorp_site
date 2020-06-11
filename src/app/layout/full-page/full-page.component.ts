@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { faSignInAlt } from '@fortawesome/free-solid-svg-icons';
-import { faSun } from '@fortawesome/free-solid-svg-icons';
+import { faSignInAlt, faGlobe, faCog } from '@fortawesome/free-solid-svg-icons';
+import { faSun } from '@fortawesome/free-regular-svg-icons';
 
 /**
  * FullPage component
@@ -14,6 +14,9 @@ import { faSun } from '@fortawesome/free-solid-svg-icons';
 export class FullPageComponent implements OnInit {
   login = faSignInAlt;
   toggledark = faSun;
+  globe = faGlobe;
+  cog = faCog;
+
   constructor(public titleService: Title) { }
   ngOnInit(): void {
   }

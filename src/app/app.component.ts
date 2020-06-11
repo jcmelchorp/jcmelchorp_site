@@ -2,9 +2,9 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { SwUpdate } from '@angular/service-worker';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { DialogAlert } from './sections/shared/viewmodels/dialog-alert';
-import { AlertModalComponent } from './sections/shared/alert-modal/alert-modal.component';
+
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { AlertModalComponent } from './shared/components/alert-modal/alert-modal.component';
 /**
  * App component
  *
