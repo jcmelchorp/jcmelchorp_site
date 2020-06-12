@@ -1,4 +1,4 @@
-export class SkillChip {
+export interface SkillChip {
   name: string;
   src: string;
 }

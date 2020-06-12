@@ -13,6 +13,7 @@
   <ng-container *ngFor="let lang of langs">
     <mat-card class="mb-2" fxFlex="0 1 calc(33.3% - 10px)" fxFlex.lt-md="0 1 calc(50% - 10px)" fxFlex.lt-sm="100%">
       <mat-card-header>
+        <img mat-card-avatar src="{{lang.src}}" alt="{{lang.name}} icon">
         <mat-card-title>
           {{lang.name}}
         </mat-card-title>

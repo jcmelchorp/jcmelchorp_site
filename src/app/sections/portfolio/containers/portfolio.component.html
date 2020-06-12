@@ -1,0 +1,21 @@
+<h2 class="mat-h2 mt-4 mb-4">Languages &amp; scripting</h2>
+<div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="10px" fxLayoutAlign="flex-start">
+  <ng-container *ngFor="let site of sites">
+    <mat-card class="mb-2" fxFlex="0 1 calc(33.3% - 10px)" fxFlex.lt-md="0 1 calc(50% - 10px)" fxFlex.lt-sm="100%">
+      <mat-card-header>
+        <mat-card-title>
+          <a href="{{site.url}}">{{site.name}}</a>
+        </mat-card-title>
+        <mat-card-subtitle>Hosted on: {{site.hosting}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          {{site.description}}
+        </p>
+        <img mat-card-image src="{{site.imgUrl}}" alt="{{site.name}} screenshot">
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
+</div>
+
+
