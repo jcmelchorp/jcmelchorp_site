@@ -1,7 +1,7 @@
 import { SkillCategories } from './skill-categories.enum';
-
 export interface Skill {
-  key?: any;
+  key?: string;
+  uid?: string;
   name: string;
   category?: SkillCategories[];
   imgUrl: string;
