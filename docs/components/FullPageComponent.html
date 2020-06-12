@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>CWA documentación</title>
+        <title>Curriculum Web Application Documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">CWA documentación</a>
+            <a href="../" class="navbar-brand">Curriculum Web Application Documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -138,6 +138,12 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#cog">cog</a>
+                            </li>
+                            <li>
+                                <a href="#globe">globe</a>
+                            </li>
+                            <li>
                                 <a href="#login">login</a>
                             </li>
                             <li>
@@ -185,7 +191,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/layout/full-page/full-page.component.ts:16</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/layout/full-page/full-page.component.ts:18</a></div>
                             </td>
                         </tr>
 
@@ -254,8 +260,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="18"
-                            class="link-to-prism">src/app/layout/full-page/full-page.component.ts:18</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="21"
+                            class="link-to-prism">src/app/layout/full-page/full-page.component.ts:21</a></div>
                 </td>
             </tr>
 
@@ -277,6 +283,58 @@
         <h3 id="inputs">
             Properties
         </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cog"></a>
+                        <span class="name">
+                            <b>
+                            cog</b>
+                            <a href="#cog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faCog</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/layout/full-page/full-page.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="globe"></a>
+                        <span class="name">
+                            <b>
+                            globe</b>
+                            <a href="#globe"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faGlobe</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/layout/full-page/full-page.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
@@ -324,7 +382,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/layout/full-page/full-page.component.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/layout/full-page/full-page.component.ts:20</a></div>
                             </td>
                         </tr>
 
@@ -365,8 +423,8 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { Title } from &#x27;@angular/platform-browser&#x27;;
-import { faSignInAlt } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
-import { faSun } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
+import { faSignInAlt, faGlobe, faCog } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
+import { faSun } from &#x27;@fortawesome/free-regular-svg-icons&#x27;;
 
 /**
  * FullPage component
@@ -379,6 +437,9 @@ import { faSun } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
 export class FullPageComponent implements OnInit {
   login &#x3D; faSignInAlt;
   toggledark &#x3D; faSun;
+  globe &#x3D; faGlobe;
+  cog &#x3D; faCog;
+
   constructor(public titleService: Title) { }
   ngOnInit(): void {
   }
@@ -393,7 +454,17 @@ export class FullPageComponent implements OnInit {
   &lt;a type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-xs&quot; [routerLink]&#x3D;&quot;[&#x27;/login&#x27;]&quot; routerLinkActive&#x3D;&quot;router-link-active&quot;&gt;
     &lt;fa-icon [icon]&#x3D;&quot;login&quot;&gt;&lt;/fa-icon&gt;
   &lt;/a&gt;
-  &lt;fa-icon [icon]&#x3D;&quot;toggledark&quot;&gt;&lt;/fa-icon&gt;
+  &lt;button mat-icon-button [matMenuTriggerFor]&#x3D;&quot;menu&quot;&gt;
+    &lt;fa-icon [icon]&#x3D;&quot;cog&quot;&gt;&lt;/fa-icon&gt;
+  &lt;/button&gt;
+  &lt;mat-menu #menu&#x3D;&quot;matMenu&quot;&gt;
+    &lt;button mat-menu-item&gt;
+      &lt;fa-icon [icon]&#x3D;&quot;globe&quot;&gt;&lt;/fa-icon&gt;&amp;nbsp;&amp;nbsp;Language
+    &lt;/button&gt;
+    &lt;button mat-menu-item&gt;
+      &lt;fa-icon [icon]&#x3D;&quot;toggledark&quot;&gt;&lt;/fa-icon&gt;&amp;nbsp;&amp;nbsp;Dark Theme
+    &lt;/button&gt;
+  &lt;/mat-menu&gt;
 &lt;/mat-toolbar&gt;
 &lt;app-wellcome&gt;&lt;/app-wellcome&gt;
 </code></pre>
@@ -404,9 +475,9 @@ export class FullPageComponent implements OnInit {
                     <code>./full-page.component.scss</code>
                 </p>
                 <pre class="line-numbers"><code class="language-scss">.mat-toolbar {
-  position: fixed;
+  position: sticky;
   top: 0;
-  z-index: 5;
+  z-index: 1;
   background: white;
 }
 
@@ -441,8 +512,8 @@ export class FullPageComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-toolbar [class.mat-elevation-z4]="true">  <span class="fill-space"></span>  <a type="button" class="btn btn-xs" [routerLink]="[\'/login\']" routerLinkActive="router-link-active">    <fa-icon [icon]="login"></fa-icon>  </a>  <fa-icon [icon]="toggledark"></fa-icon></mat-toolbar><app-wellcome></app-wellcome></div>'
-    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
+        var COMPONENT_TEMPLATE = '<div><mat-toolbar [class.mat-elevation-z4]="true">  <span class="fill-space"></span>  <a type="button" class="btn btn-xs" [routerLink]="[\'/login\']" routerLinkActive="router-link-active">    <fa-icon [icon]="login"></fa-icon>  </a>  <button mat-icon-button [matMenuTriggerFor]="menu">    <fa-icon [icon]="cog"></fa-icon>  </button>  <mat-menu #menu="matMenu">    <button mat-menu-item>      <fa-icon [icon]="globe"></fa-icon>&nbsp;&nbsp;Language    </button>    <button mat-menu-item>      <fa-icon [icon]="toggledark"></fa-icon>&nbsp;&nbsp;Dark Theme    </button>  </mat-menu></mat-toolbar><app-wellcome></app-wellcome></div>'
+    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'FullPageComponent'};
 </script>

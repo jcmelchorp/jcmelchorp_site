@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>CWA documentación</title>
+        <title>Curriculum Web Application Documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">CWA documentación</a>
+            <a href="../" class="navbar-brand">Curriculum Web Application Documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -75,17 +75,7 @@
 import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
 
 import { DefaultComponent } from &#x27;./layout/default/default.component&#x27;;
-import { PageNotFoundComponent } from &#x27;./core/page-not-found/page-not-found.component&#x27;;
-import { WellcomeComponent } from &#x27;./core/wellcome/wellcome.component&#x27;;
 
-import { InfoComponent } from &#x27;./sections/info/info.component&#x27;;
-import { EducationComponent } from &#x27;./sections/education/education.component&#x27;;
-import { ExperienceComponent } from &#x27;./sections/experience/experience.component&#x27;;
-import { ProjectsComponent } from &#x27;./sections/projects/projects.component&#x27;;
-import { PublishComponent } from &#x27;./sections/publish/publish.component&#x27;;
-import { ContactComponent } from &#x27;./sections/contact/contact.component&#x27;;
-import { SkillsComponent } from &#x27;./sections/skills/skills.component&#x27;;
-import { PortfolioComponent } from &#x27;./sections/portfolio/portfolio.component&#x27;;
 import { FullPageComponent } from &#x27;./layout/full-page/full-page.component&#x27;;
 
 const APP_ROUTES: Routes &#x3D; [
@@ -105,37 +95,27 @@ const APP_ROUTES: Routes &#x3D; [
         path: &#x27;info&#x27;,
         loadChildren: () &#x3D;&gt;
           &quot;import(&#x27;./sections/info/info.module&#x27;).then((m) &#x3D;&gt; m.InfoModule)&quot;
-      },
-      {
+      }, {
         path: &#x27;education&#x27;,
         loadChildren: () &#x3D;&gt;
           &quot;import(&#x27;./sections/education/education.module&#x27;).then((m) &#x3D;&gt; m.EducationModule)&quot;
-      },
-      {
+      }, {
         path: &#x27;experience&#x27;,
         loadChildren: () &#x3D;&gt;
           &quot;import(&#x27;./sections/experience/experience.module&#x27;).then((m) &#x3D;&gt; m.ExperienceModule)&quot;
-      },
-      {
+      }, {
         path: &#x27;portfolio&#x27;,
         loadChildren: () &#x3D;&gt;
           &quot;import(&#x27;./sections/portfolio/portfolio.module&#x27;).then((m) &#x3D;&gt; m.PortfolioModule)&quot;
-      },
-      {
+      }, {
         path: &#x27;publish&#x27;,
         loadChildren: () &#x3D;&gt;
           &quot;import(&#x27;./sections/publish/publish.module&#x27;).then((m) &#x3D;&gt; m.PublishModule)&quot;
-      },
-      {
-        path: &#x27;projects&#x27;,
-        loadChildren: () &#x3D;&gt;
-          &quot;import(&#x27;./sections/projects/projects.module&#x27;).then((m) &#x3D;&gt; m.ProjectsModule)&quot;
       }, {
         path: &#x27;skills&#x27;,
         loadChildren: () &#x3D;&gt;
           &quot;import(&#x27;./sections/skills/skills.module&#x27;).then((m) &#x3D;&gt; m.SkillsModule)&quot;
-      },
-      {
+      }, {
         path: &#x27;contact&#x27;,
         loadChildren: () &#x3D;&gt;
           &quot;import(&#x27;./sections/contact/contact.module&#x27;).then((m) &#x3D;&gt; m.ContactModule)&quot;

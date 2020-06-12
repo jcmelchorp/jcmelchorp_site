@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>CWA documentación</title>
+        <title>Curriculum Web Application Documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">CWA documentación</a>
+            <a href="../" class="navbar-brand">Curriculum Web Application Documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -62,7 +62,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/sections/skills/skills.component.ts</code>
+    <code>src/app/sections/skills/containers/skills.component.ts</code>
 </p>
 
     <p class="comment">
@@ -138,6 +138,12 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#envs">envs</a>
+                            </li>
+                            <li>
+                                <a href="#langs">langs</a>
+                            </li>
+                            <li>
                                 <a href="#title">title</a>
                             </li>
                         </ul>
@@ -154,6 +160,9 @@
                         <ul class="index-list">
                             <li>
                                 <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#remove">remove</a>
                             </li>
                         </ul>
                     </td>
@@ -178,7 +187,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/sections/skills/skills.component.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/sections/skills/containers/skills.component.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -247,8 +256,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="14"
-                            class="link-to-prism">src/app/sections/skills/skills.component.ts:14</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="16"
+                            class="link-to-prism">src/app/sections/skills/containers/skills.component.ts:16</a></div>
                 </td>
             </tr>
 
@@ -264,12 +273,195 @@
             </tr>
         </tbody>
     </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="remove"></a>
+                    <span class="name">
+                        <b>
+                            remove
+                        </b>
+                        <a href="#remove"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>remove(env: <a href="../interfaces/SkillChip.html">SkillChip</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/sections/skills/containers/skills.component.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>env</td>
+                                    <td>
+                                                <code><a href="../interfaces/SkillChip.html" target="_self" >SkillChip</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
     <section>
     
         <h3 id="inputs">
             Properties
         </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="envs"></a>
+                        <span class="name">
+                            <b>
+                            envs</b>
+                            <a href="#envs"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/SkillChip.html" target="_self" >SkillChip[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    { name: &#x27;Windows&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/windows8/windows8-original.svg&#x27; },
+    { name: &#x27;MacOS&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/apple/apple-original.svg&#x27; },
+    { name: &#x27;Debian&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/debian/debian-original.svg&#x27; },
+    { name: &#x27;Debian&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/debian/debian-original.svg&#x27; },
+    { name: &#x27;Xcode&#x27;, src: &#x27;https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/ca/72/ba/ca72ba99-f72f-4210-0da5-47587ab10ac4/Xcode-85-220-0-4-2x.png/246x0w.png&#x27; },
+    { name: &#x27;Visual Studio&#x27;, src: &#x27;https://visualstudio.microsoft.com/wp-content/uploads/2019/06/BrandVisualStudioWin2019-3.svg&#x27; },
+    { name: &#x27;Visual Studio Code&#x27;, src: &#x27;https://visualstudio.microsoft.com/wp-content/uploads/2019/09/vs-code-responsive-01-1.png&#x27; },
+    { name: &#x27;Android Studio&#x27;, src: &#x27;https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/1200px-Android_Studio_icon.svg.png&#x27; },
+    { name: &#x27;Atom&#x27;, src: &#x27;https://raw.githubusercontent.com/Thomas-A-Reinert/WebDev-Icons/master/src/SVG/atom.svg&#x27; },
+    { name: &#x27;NetBeans&#x27;, src: &#x27;https://netbeans.apache.org/images/apache-netbeans.svg&#x27; },
+    { name: &#x27;Bash / sh / zsh&#x27;, src: &#x27;https://raw.githubusercontent.com/leopiccionia/programmicons/master/src/bash.svg&#x27; },
+    { name: &#x27;Azure&#x27;, src: &#x27;https://portal.azure.com/favicon.ico&#x27; },
+    { name: &#x27;Github&#x27;, src: &#x27;https://github.com/fluidicon.png&#x27; },
+    { name: &#x27;Docker&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/docker/docker-original.svg&#x27; },
+    { name: &#x27;Google Cloud Plattform&#x27;, src: &#x27;https://www.gstatic.com/devrel-devsite/prod/v6d9a9c4ff910e26303d2496259d58a0deebff25b965fe32e6f4478e776a03445/cloud/images/favicons/onecloud/super_cloud.png&#x27; },
+    { name: &#x27;Google Tag Manager&#x27;, src: &#x27;https://ssl.gstatic.com/analytics-suite/header/suite/v2/Favicon_GTM_suite_16.png&#x27; },
+    { name: &#x27;Google Firebase&#x27;, src: &#x27;https://www.gstatic.com/devrel-devsite/prod/v6d9a9c4ff910e26303d2496259d58a0deebff25b965fe32e6f4478e776a03445/firebase/images/touchicon-180.png&#x27; },
+    { name: &#x27;Google Analytics&#x27;, src: &#x27;https://ssl.gstatic.com/analytics/20200609-00/app/static/analytics_standard_icon.png&#x27; },
+    { name: &#x27;OutSystems&#x27;, src: &#x27;https://www.outsystems.com/-/media/images/icons/favicon.png&#x27; }
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/sections/skills/containers/skills.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="langs"></a>
+                        <span class="name">
+                            <b>
+                            langs</b>
+                            <a href="#langs"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/SkillRate.html" target="_self" >SkillRate[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    { name: &#x27;ASP.NET / ADO.NET&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/dot-net/dot-net-original.svg&#x27;, rate: 88 },
+    { name: &#x27;.NET Core&#x27;, src: &#x27;https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg&#x27;, rate: 88 },
+    { name: &#x27;JavaScript&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/javascript/javascript-original.svg&#x27;, rate: 80 },
+    { name: &#x27;C / C++&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/cplusplus/cplusplus-original.svg&#x27;, rate: 80 },
+    { name: &#x27;C# / Razor&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/csharp/csharp-original.svg&#x27;, rate: 85 },
+    { name: &#x27;JSON&#x27;, src: &#x27;https://raw.githubusercontent.com/leopiccionia/programmicons/master/src/json.svg&#x27;, rate: 85 },
+    { name: &#x27;HTML5&#x27;, src: &#x27;https://cdn.rawgit.com/konpa/devicon/master/icons/html5/html5-plain.svg&#x27;, rate: 95 },
+    { name: &#x27;CSS3&#x27;, src: &#x27;https://cdn.rawgit.com/konpa/devicon/master/icons/css3/css3-plain.svg&#x27;, rate: 80 },
+    { name: &#x27;SASS / SCSS&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/sass/sass-original.svg&#x27;, rate: 80 },
+    { name: &#x27;Java&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/java/java-original.svg&#x27;, rate: 75 },
+    { name: &#x27;Swift&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/swift/swift-original.svg&#x27;, rate: 55 },
+    { name: &#x27;Objective-C&#x27;, src: &#x27;https://raw.githubusercontent.com/fizzed/font-mfizz/master/src/svg/objc.svg&#x27;, rate: 50 },
+    { name: &#x27;Git&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/git/git-original.svg&#x27;, rate: 90 },
+    { name: &#x27;TeX&#x27;, src: &#x27;https://upload.wikimedia.org/wikipedia/commons/9/95/TeXShop_icon.png&#x27;, rate: 82 },
+    { name: &#x27;Fortran 77 / 90&#x27;, src: &#x27;https://krvajalm.gallerycdn.vsassets.io/extensions/krvajalm/linter-gfortran/2.2.1/1590078791788/Microsoft.VisualStudio.Services.Icons.Default&#x27;, rate: 90 },
+    { name: &#x27;MySQL&#x27;, src: &#x27;https://raw.githubusercontent.com/drakon88/devicon/master/icons/mysql/mysql-original.svg&#x27;, rate: 65 },
+    { name: &#x27;SQLite&#x27;, src: &#x27;https://raw.githubusercontent.com/Thomas-A-Reinert/WebDev-Icons/master/src/SVG/sqllite.svg&#x27;, rate: 70 },
+    { name: &#x27;Microsoft SQL Server&#x27;, src: &#x27;https://cdn.worldvectorlogo.com/logos/microsoft-sql-server.svg&#x27;, rate: 60 },
+    { name: &#x27;NCL&#x27;, src: &#x27;https://www.ncl.ucar.edu/Images/NCLLogoWeb.jpg&#x27;, rate: 90 },
+    { name: &#x27;SSH&#x27;, src:&#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/ssh/ssh-original.svg&#x27;, rate: 75 },
+    { name: &#x27;Typescript&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/typescript/typescript-original.svg&#x27;, rate: 88 },
+    { name: &#x27;Bootstrap&#x27;, src:&#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/bootstrap/bootstrap-plain.svg&#x27;, rate: 90 },
+    { name: &#x27;Zurb Foundation&#x27;, src:&#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/foundation/foundation-original.svg&#x27;, rate: 68 },
+    { name: &#x27;Angular&#x27;, src:&#x27;https://angular.io/assets/images/logos/angular/angular.svg&#x27;, rate: 90 },
+    { name: &#x27;AngularJS&#x27;, src:&#x27;https://cdn.rawgit.com/konpa/devicon/master/icons/angularjs/angularjs-plain.svg&#x27;, rate: 90 },
+    { name: &#x27;JQuery&#x27;, src:&#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/jquery/jquery-original.svg&#x27;, rate: 65 },
+    { name: &#x27;NodeJS&#x27;, src:&#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/nodejs/nodejs-original.svg&#x27;, rate: 72 },
+    { name: &#x27;NPM&#x27;, src:&#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/npm/npm-original-wordmark.svg&#x27;, rate: 72 },
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/sections/skills/containers/skills.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
@@ -295,7 +487,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/sections/skills/skills.component.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/sections/skills/containers/skills.component.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -310,6 +502,8 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { Title } from &#x27;@angular/platform-browser&#x27;;
+import { SkillRate } from &#x27;../models/skill-rate&#x27;;
+import { SkillChip } from &#x27;../models/skill-chip&#x27;;
 /**
  * Skills component
  */
@@ -322,202 +516,106 @@ export class SkillsComponent implements OnInit {
   title &#x3D; &#x27;Skills&#x27;;
   constructor(private titleService: Title) {}
   ngOnInit() { this.titleService.setTitle(this.title); }
+
+  langs: SkillRate[] &#x3D; [
+    { name: &#x27;ASP.NET / ADO.NET&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/dot-net/dot-net-original.svg&#x27;, rate: 88 },
+    { name: &#x27;.NET Core&#x27;, src: &#x27;https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg&#x27;, rate: 88 },
+    { name: &#x27;JavaScript&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/javascript/javascript-original.svg&#x27;, rate: 80 },
+    { name: &#x27;C / C++&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/cplusplus/cplusplus-original.svg&#x27;, rate: 80 },
+    { name: &#x27;C# / Razor&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/csharp/csharp-original.svg&#x27;, rate: 85 },
+    { name: &#x27;JSON&#x27;, src: &#x27;https://raw.githubusercontent.com/leopiccionia/programmicons/master/src/json.svg&#x27;, rate: 85 },
+    { name: &#x27;HTML5&#x27;, src: &#x27;https://cdn.rawgit.com/konpa/devicon/master/icons/html5/html5-plain.svg&#x27;, rate: 95 },
+    { name: &#x27;CSS3&#x27;, src: &#x27;https://cdn.rawgit.com/konpa/devicon/master/icons/css3/css3-plain.svg&#x27;, rate: 80 },
+    { name: &#x27;SASS / SCSS&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/sass/sass-original.svg&#x27;, rate: 80 },
+    { name: &#x27;Java&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/java/java-original.svg&#x27;, rate: 75 },
+    { name: &#x27;Swift&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/swift/swift-original.svg&#x27;, rate: 55 },
+    { name: &#x27;Objective-C&#x27;, src: &#x27;https://raw.githubusercontent.com/fizzed/font-mfizz/master/src/svg/objc.svg&#x27;, rate: 50 },
+    { name: &#x27;Git&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/git/git-original.svg&#x27;, rate: 90 },
+    { name: &#x27;TeX&#x27;, src: &#x27;https://upload.wikimedia.org/wikipedia/commons/9/95/TeXShop_icon.png&#x27;, rate: 82 },
+    { name: &#x27;Fortran 77 / 90&#x27;, src: &#x27;https://krvajalm.gallerycdn.vsassets.io/extensions/krvajalm/linter-gfortran/2.2.1/1590078791788/Microsoft.VisualStudio.Services.Icons.Default&#x27;, rate: 90 },
+    { name: &#x27;MySQL&#x27;, src: &#x27;https://raw.githubusercontent.com/drakon88/devicon/master/icons/mysql/mysql-original.svg&#x27;, rate: 65 },
+    { name: &#x27;SQLite&#x27;, src: &#x27;https://raw.githubusercontent.com/Thomas-A-Reinert/WebDev-Icons/master/src/SVG/sqllite.svg&#x27;, rate: 70 },
+    { name: &#x27;Microsoft SQL Server&#x27;, src: &#x27;https://cdn.worldvectorlogo.com/logos/microsoft-sql-server.svg&#x27;, rate: 60 },
+    { name: &#x27;NCL&#x27;, src: &#x27;https://www.ncl.ucar.edu/Images/NCLLogoWeb.jpg&#x27;, rate: 90 },
+    { name: &#x27;SSH&#x27;, src:&#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/ssh/ssh-original.svg&#x27;, rate: 75 },
+    { name: &#x27;Typescript&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/typescript/typescript-original.svg&#x27;, rate: 88 },
+    { name: &#x27;Bootstrap&#x27;, src:&#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/bootstrap/bootstrap-plain.svg&#x27;, rate: 90 },
+    { name: &#x27;Zurb Foundation&#x27;, src:&#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/foundation/foundation-original.svg&#x27;, rate: 68 },
+    { name: &#x27;Angular&#x27;, src:&#x27;https://angular.io/assets/images/logos/angular/angular.svg&#x27;, rate: 90 },
+    { name: &#x27;AngularJS&#x27;, src:&#x27;https://cdn.rawgit.com/konpa/devicon/master/icons/angularjs/angularjs-plain.svg&#x27;, rate: 90 },
+    { name: &#x27;JQuery&#x27;, src:&#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/jquery/jquery-original.svg&#x27;, rate: 65 },
+    { name: &#x27;NodeJS&#x27;, src:&#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/nodejs/nodejs-original.svg&#x27;, rate: 72 },
+    { name: &#x27;NPM&#x27;, src:&#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/npm/npm-original-wordmark.svg&#x27;, rate: 72 },
+  ];
+
+  envs: SkillChip[] &#x3D; [
+    { name: &#x27;Windows&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/windows8/windows8-original.svg&#x27; },
+    { name: &#x27;MacOS&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/apple/apple-original.svg&#x27; },
+    { name: &#x27;Debian&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/debian/debian-original.svg&#x27; },
+    { name: &#x27;Debian&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/debian/debian-original.svg&#x27; },
+    { name: &#x27;Xcode&#x27;, src: &#x27;https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/ca/72/ba/ca72ba99-f72f-4210-0da5-47587ab10ac4/Xcode-85-220-0-4-2x.png/246x0w.png&#x27; },
+    { name: &#x27;Visual Studio&#x27;, src: &#x27;https://visualstudio.microsoft.com/wp-content/uploads/2019/06/BrandVisualStudioWin2019-3.svg&#x27; },
+    { name: &#x27;Visual Studio Code&#x27;, src: &#x27;https://visualstudio.microsoft.com/wp-content/uploads/2019/09/vs-code-responsive-01-1.png&#x27; },
+    { name: &#x27;Android Studio&#x27;, src: &#x27;https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/1200px-Android_Studio_icon.svg.png&#x27; },
+    { name: &#x27;Atom&#x27;, src: &#x27;https://raw.githubusercontent.com/Thomas-A-Reinert/WebDev-Icons/master/src/SVG/atom.svg&#x27; },
+    { name: &#x27;NetBeans&#x27;, src: &#x27;https://netbeans.apache.org/images/apache-netbeans.svg&#x27; },
+    { name: &#x27;Bash / sh / zsh&#x27;, src: &#x27;https://raw.githubusercontent.com/leopiccionia/programmicons/master/src/bash.svg&#x27; },
+    { name: &#x27;Azure&#x27;, src: &#x27;https://portal.azure.com/favicon.ico&#x27; },
+    { name: &#x27;Github&#x27;, src: &#x27;https://github.com/fluidicon.png&#x27; },
+    { name: &#x27;Docker&#x27;, src: &#x27;https://raw.githubusercontent.com/konpa/devicon/master/icons/docker/docker-original.svg&#x27; },
+    { name: &#x27;Google Cloud Plattform&#x27;, src: &#x27;https://www.gstatic.com/devrel-devsite/prod/v6d9a9c4ff910e26303d2496259d58a0deebff25b965fe32e6f4478e776a03445/cloud/images/favicons/onecloud/super_cloud.png&#x27; },
+    { name: &#x27;Google Tag Manager&#x27;, src: &#x27;https://ssl.gstatic.com/analytics-suite/header/suite/v2/Favicon_GTM_suite_16.png&#x27; },
+    { name: &#x27;Google Firebase&#x27;, src: &#x27;https://www.gstatic.com/devrel-devsite/prod/v6d9a9c4ff910e26303d2496259d58a0deebff25b965fe32e6f4478e776a03445/firebase/images/touchicon-180.png&#x27; },
+    { name: &#x27;Google Analytics&#x27;, src: &#x27;https://ssl.gstatic.com/analytics/20200609-00/app/static/analytics_standard_icon.png&#x27; },
+    { name: &#x27;OutSystems&#x27;, src: &#x27;https://www.outsystems.com/-/media/images/icons/favicon.png&#x27; }
+  ];
+
+  remove(env:SkillChip): void {
+    const index &#x3D; this.envs.indexOf(env);
+    if (index &gt;&#x3D; 0) {
+      this.envs.splice(index, 1);
+    }
+  }
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div fxLayout&#x3D;&quot;column&quot;&gt;
-    &lt;div fxLayout&#x3D;&quot;row&quot; fxLayout.sm&#x3D;&quot;column&quot; fxLayout.xs&#x3D;&quot;column&quot;&gt;
-        &lt;div flexorder&#x3D;&quot;1&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;100%&quot;&gt;
-            &lt;div class&#x3D;&quot;container&quot;&gt;
-                &lt;div class&#x3D;&quot;tech-box&quot;&gt;
-                    &lt;div class&#x3D;&quot;thumbnails&quot;&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/images/xcode.png&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/images/visual-studio.png&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/images/visual-studio-code.png&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/images//android-studio.png&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/images/net-beans.png&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/images/bash.png&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/images/azure.png&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/images/google-analytics.png&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/images/google-cloud.png&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/images/firebase.png&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/images/github.png&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/images/outsystems.jpeg&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/images/raspberry-pi.svg&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/images/angular.png&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;thumbnail&quot;&gt;
-                            &lt;img class&#x3D;&quot;img-fluid img-thumbnail&quot; src&#x3D;&quot;assets/image/sreact.png&quot; alt&#x3D;&quot;&quot;&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div flexLayout&#x3D;&quot;row&quot;&gt;
-    &lt;div fxLayout&#x3D;&quot;column&quot;&gt;
-        &lt;div fxLayout&#x3D;&quot;row&quot; fxLayout.sm&#x3D;&quot;column&quot; fxLayout.xs&#x3D;&quot;column&quot;&gt;
-            &lt;div flexorder&#x3D;&quot;1&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;33%&quot;&gt;
-                &lt;h4&gt;C/C++&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;70&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-                &lt;h4&gt;C# / Razor&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;85&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div flexorder&#x3D;&quot;2&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;33%&quot;&gt;
-                &lt;h4&gt;Fortran 77/90&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;95&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-                &lt;h4&gt;Objective-C&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;65&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div flexorder&#x3D;&quot;3&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;33%&quot;&gt;
-                &lt;h4&gt;Swift&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;80&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-                &lt;h4&gt;MS-SQL / MySQL / SQLite&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;90&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;h2 class&#x3D;&quot;mat-h2 mt-4 mb-4&quot;&gt;IDE &amp;amp; environments&lt;/h2&gt;
+&lt;div fxLayout&#x3D;&quot;row wrap&quot; fxLayout.lt-sm&#x3D;&quot;column&quot; fxLayoutGap&#x3D;&quot;10px&quot; fxLayoutAlign&#x3D;&quot;flex-start&quot;&gt;
+  &lt;mat-chip-list *ngFor&#x3D;&quot;let env of envs&quot;&gt;
+       &lt;mat-chip class&#x3D;&quot;mb-2&quot; [removable]&#x3D;&quot;true&quot; (removed)&#x3D;&quot;remove(env)&quot;&gt;
+        &lt;img matChipAvatar src&#x3D;&quot;{{env.src}}&quot; alt&#x3D;&quot;{{env.name}} icon&quot;&gt; {{env.name}}
+        &lt;mat-icon matChipRemove&gt;cancel&lt;/mat-icon&gt;
+      &lt;/mat-chip&gt;
+   &lt;/mat-chip-list&gt;
 &lt;/div&gt;
 
-&lt;div flexLayout&#x3D;&quot;row&quot;&gt;
-    &lt;div fxLayout&#x3D;&quot;column&quot;&gt;
-        &lt;div fxLayout&#x3D;&quot;row&quot; fxLayout.sm&#x3D;&quot;column&quot; fxLayout.xs&#x3D;&quot;column&quot;&gt;
-            &lt;div flexorder&#x3D;&quot;1&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;33%&quot;&gt;
-                &lt;h4&gt;HTML5&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;95&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-                &lt;h4&gt;CSS / SCSS / SASS&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;90&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div fxLayout&#x3D;&quot;column&quot;&gt;
-        &lt;div fxLayout&#x3D;&quot;row&quot; fxLayout.sm&#x3D;&quot;column&quot; fxLayout.xs&#x3D;&quot;column&quot;&gt;
-            &lt;div flexorder&#x3D;&quot;1&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;33%&quot;&gt;
-                &lt;h4&gt;Java&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;95&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-                &lt;h4&gt;JavaScript / AngularJS / ReactJS&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;85&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div fxLayout&#x3D;&quot;column&quot;&gt;
-        &lt;div fxLayout&#x3D;&quot;row&quot; fxLayout.sm&#x3D;&quot;column&quot; fxLayout.xs&#x3D;&quot;column&quot;&gt;
-            &lt;div flexorder&#x3D;&quot;1&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;33%&quot;&gt;
-                &lt;h4&gt;Typescript / Angular / React&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;90&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-                &lt;h4&gt;TeX&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;90&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;h2 class&#x3D;&quot;mat-h2 mt-4 mb-4&quot;&gt;Languages &amp;amp; scripting&lt;/h2&gt;
+&lt;div fxLayout&#x3D;&quot;row wrap&quot; fxLayout.lt-sm&#x3D;&quot;column&quot; fxLayoutGap&#x3D;&quot;10px&quot; fxLayoutAlign&#x3D;&quot;flex-start&quot;&gt;
+  &lt;ng-container *ngFor&#x3D;&quot;let lang of langs&quot;&gt;
+    &lt;mat-card [class.mat-elevation-z6]&#x3D;&quot;true&quot; class&#x3D;&quot;mb-2&quot; fxFlex&#x3D;&quot;0 1 calc(33.3% - 10px)&quot; fxFlex.lt-md&#x3D;&quot;0 1 calc(50% - 10px)&quot; fxFlex.lt-sm&#x3D;&quot;100%&quot;&gt;
+      &lt;mat-card-header&gt;
+        &lt;img mat-card-avatar src&#x3D;&quot;{{lang.src}}&quot; alt&#x3D;&quot;{{lang.name}} icon&quot;&gt;
+        &lt;mat-card-title&gt;
+          {{lang.name}}
+        &lt;/mat-card-title&gt;
+        &lt;mat-card-subtitle&gt;{{lang.rate}}%&lt;/mat-card-subtitle&gt;
+      &lt;/mat-card-header&gt;
+      &lt;mat-card-content&gt;
+        &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;{{lang.rate}}&quot;&gt;&lt;/mat-progress-bar&gt;
+      &lt;/mat-card-content&gt;
+    &lt;/mat-card&gt;
+  &lt;/ng-container&gt;
 &lt;/div&gt;
-&lt;div flexLayout&#x3D;&quot;row&quot;&gt;
-    &lt;div fxLayout&#x3D;&quot;column&quot;&gt;
-        &lt;div fxLayout&#x3D;&quot;row&quot; fxLayout.sm&#x3D;&quot;column&quot; fxLayout.xs&#x3D;&quot;column&quot;&gt;
-            &lt;div flexorder&#x3D;&quot;1&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;33%&quot;&gt;
-                &lt;h4&gt;Bash&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;85&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-                &lt;h4&gt;.NET / ASP.NET&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;90&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div fxLayout&#x3D;&quot;column&quot;&gt;
-        &lt;div fxLayout&#x3D;&quot;row&quot; fxLayout.sm&#x3D;&quot;column&quot; fxLayout.xs&#x3D;&quot;column&quot;&gt;
-            &lt;div flexorder&#x3D;&quot;1&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;33%&quot;&gt;
-                &lt;h4&gt;NCL&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;70&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-
-                &lt;h4&gt;Kotlin&lt;/h4&gt;
-                &lt;div class&#x3D;&quot;mb-2&quot;&gt;
-                    &lt;mat-progress-bar mode&#x3D;&quot;determinate&quot; value&#x3D;&quot;50&quot;&gt;&lt;/mat-progress-bar&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
                 <p class="comment">
                     <code>./skills.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">.tech-box {
-    margin-bottom: 30px;
-    width: auto;
-}
-.thumbnails {
-    text-align: center;
-}
-.thumbnails .thumbnail {
-    display: inline-block; margin: 0 0px; border: none;
-}
-.img-thumbnail {
-    background-color: rgba(0, 0, 0, 0.0);
-    max-height: 50px;
-    width:auto;
-    border: none;
-}</code></pre>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -545,8 +643,8 @@ export class SkillsComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div fxLayout="column">    <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">        <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="100%">            <div class="container">                <div class="tech-box">                    <div class="thumbnails">                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/images/xcode.png" alt="">                        </div>                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/images/visual-studio.png" alt="">                        </div>                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/images/visual-studio-code.png" alt="">                        </div>                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/images//android-studio.png" alt="">                        </div>                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/images/net-beans.png" alt="">                        </div>                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/images/bash.png" alt="">                        </div>                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/images/azure.png" alt="">                        </div>                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/images/google-analytics.png" alt="">                        </div>                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/images/google-cloud.png" alt="">                        </div>                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/images/firebase.png" alt="">                        </div>                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/images/github.png" alt="">                        </div>                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/images/outsystems.jpeg" alt="">                        </div>                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/images/raspberry-pi.svg" alt="">                        </div>                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/images/angular.png" alt="">                        </div>                        <div class="thumbnail">                            <img class="img-fluid img-thumbnail" src="assets/image/sreact.png" alt="">                        </div>                    </div>                </div>            </div>        </div>    </div></div><div flexLayout="row">    <div fxLayout="column">        <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">            <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="33%">                <h4>C/C++</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>                </div>                <h4>C# / Razor</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="85"></mat-progress-bar>                </div>            </div>            <div flexorder="2" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="33%">                <h4>Fortran 77/90</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="95"></mat-progress-bar>                </div>                <h4>Objective-C</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="65"></mat-progress-bar>                </div>            </div>            <div flexorder="3" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="33%">                <h4>Swift</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>                </div>                <h4>MS-SQL / MySQL / SQLite</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>                </div>            </div>        </div>    </div></div><div flexLayout="row">    <div fxLayout="column">        <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">            <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="33%">                <h4>HTML5</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="95"></mat-progress-bar>                </div>                <h4>CSS / SCSS / SASS</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>                </div>            </div>        </div>    </div>    <div fxLayout="column">        <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">            <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="33%">                <h4>Java</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="95"></mat-progress-bar>                </div>                <h4>JavaScript / AngularJS / ReactJS</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="85"></mat-progress-bar>                </div>            </div>        </div>    </div>    <div fxLayout="column">        <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">            <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="33%">                <h4>Typescript / Angular / React</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>                </div>                <h4>TeX</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>                </div>            </div>        </div>    </div></div><div flexLayout="row">    <div fxLayout="column">        <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">            <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="33%">                <h4>Bash</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="85"></mat-progress-bar>                </div>                <h4>.NET / ASP.NET</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>                </div>            </div>        </div>    </div>    <div fxLayout="column">        <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">            <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="33%">                <h4>NCL</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>                </div>                <h4>Kotlin</h4>                <div class="mb-2">                    <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>                </div>            </div>        </div>    </div></div></div>'
-    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
+        var COMPONENT_TEMPLATE = '<div><h2 class="mat-h2 mt-4 mb-4">IDE &amp; environments</h2><div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="10px" fxLayoutAlign="flex-start">  <mat-chip-list *ngFor="let env of envs">       <mat-chip class="mb-2" [removable]="true" (removed)="remove(env)">        <img matChipAvatar src="{{env.src}}" alt="{{env.name}} icon"> {{env.name}}        <mat-icon matChipRemove>cancel</mat-icon>      </mat-chip>   </mat-chip-list></div><h2 class="mat-h2 mt-4 mb-4">Languages &amp; scripting</h2><div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="10px" fxLayoutAlign="flex-start">  <ng-container *ngFor="let lang of langs">    <mat-card [class.mat-elevation-z6]="true" class="mb-2" fxFlex="0 1 calc(33.3% - 10px)" fxFlex.lt-md="0 1 calc(50% - 10px)" fxFlex.lt-sm="100%">      <mat-card-header>        <img mat-card-avatar src="{{lang.src}}" alt="{{lang.name}} icon">        <mat-card-title>          {{lang.name}}        </mat-card-title>        <mat-card-subtitle>{{lang.rate}}%</mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <mat-progress-bar mode="determinate" value="{{lang.rate}}"></mat-progress-bar>      </mat-card-content>    </mat-card>  </ng-container></div></div>'
+    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'SkillsComponent'};
 </script>

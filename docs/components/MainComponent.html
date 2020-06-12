@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>CWA documentación</title>
+        <title>Curriculum Web Application Documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">CWA documentación</a>
+            <a href="../" class="navbar-brand">Curriculum Web Application Documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -333,7 +333,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>this.defaultAlerts[1]</code>
+                            <i>Default value : </i><code>this.defaultAlerts[2]</code>
                         </td>
                     </tr>
                         <tr>
@@ -367,16 +367,16 @@
                         <td class="col-md-4">
                             <i>Default value : </i><code>[
     {
-      type: &#x27;success&#x27;,
+      type: &#x27;info&#x27;,
       msg: &#x60;Actualmente contratado&#x60;
     },
     {
-      type: &#x27;info&#x27;,
+      type: &#x27;success&#x27;,
       msg: &#x60;Disponible para contrataciones&#x60;
     },
     {
       type: &#x27;danger&#x27;,
-      msg: &#x60;No Disponible&#x60;
+      msg: &#x60;Sitio en consturcción&#x60;
     }
   ]</code>
                         </td>
@@ -436,19 +436,19 @@ export class MainComponent implements OnInit {
   dismissible &#x3D; true;
   defaultAlerts: any[] &#x3D; [
     {
-      type: &#x27;success&#x27;,
+      type: &#x27;info&#x27;,
       msg: &#x60;Actualmente contratado&#x60;
     },
     {
-      type: &#x27;info&#x27;,
+      type: &#x27;success&#x27;,
       msg: &#x60;Disponible para contrataciones&#x60;
     },
     {
       type: &#x27;danger&#x27;,
-      msg: &#x60;No Disponible&#x60;
+      msg: &#x60;Sitio en consturcción&#x60;
     }
   ];
-  alert &#x3D; this.defaultAlerts[1];
+  alert &#x3D; this.defaultAlerts[2];
   onClosed(dismissedAlert: any): void {}
 
   constructor() {}
@@ -461,17 +461,11 @@ export class MainComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;alert&quot;&gt;
-  &lt;alert [type]&#x3D;&quot;alert.type&quot; [dismissible]&#x3D;&quot;dismissible&quot; (onClosed)&#x3D;&quot;onClosed(alert)&quot;&gt;
-    {{ alert.msg }}
-  &lt;/alert&gt;
-&lt;/div&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;alert [type]&#x3D;&quot;alert.type&quot; [dismissible]&#x3D;&quot;dismissible&quot; (onClosed)&#x3D;&quot;onClosed(alert)&quot;&gt;{{ alert.msg }}&lt;/alert&gt;
 &lt;div class&#x3D;&quot;container&quot;&gt;
-  &lt;div&gt;
-    &lt;h1 class&#x3D;&quot;mat-h1&quot;&gt;Julio C&amp;eacute;sar Melchor Pinto&lt;/h1&gt;
-    &lt;h3 class&#x3D;&quot;mat-h3&quot;&gt;F&amp;iacute;sico, analista y desarrollador&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class&#x3D;&quot;fixed-left-socials&quot;&gt;
+  &lt;h1 class&#x3D;&quot;mat-h1&quot;&gt;Julio C&amp;eacute;sar Melchor Pinto&lt;/h1&gt;
+  &lt;h3 class&#x3D;&quot;mat-h3&quot;&gt;F&amp;iacute;sico, analista y desarrollador&lt;/h3&gt;
+  &lt;div class&#x3D;&quot;fixed-right-socials&quot;&gt;
     &lt;ul class&#x3D;&quot;list-unstiled&quot;&gt;
       &lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/juliomelchorpinto&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener&quot;&gt;&lt;i class&#x3D;&quot;fa fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
       &lt;/li&gt;
@@ -483,13 +477,16 @@ export class MainComponent implements OnInit {
             class&#x3D;&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href&#x3D;&quot;https://linkedin.com/jmelchorp&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener&quot;&gt;&lt;i class&#x3D;&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;
       &lt;/li&gt;
-      &lt;li&gt;&lt;a href&#x3D;&quot;https://www.instagram.com/jmelchorp&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener&quot;&gt;&lt;i
-            class&#x3D;&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href&#x3D;&quot;https://www.instagram.com/jmelchorp&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener&quot;&gt;&lt;i class&#x3D;&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/li&gt;
       &lt;li&gt;&lt;a href&#x3D;&quot;live:julioc.melchor&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener&quot;&gt;&lt;i class&#x3D;&quot;fa fa-skype&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;router-outlet&gt;&lt;/router-outlet&gt;
+&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;router-outlet&gt;&lt;/router-outlet&gt;
+&lt;/div&gt;
+
 </code></pre>
     </div>
 
@@ -497,49 +494,31 @@ export class MainComponent implements OnInit {
                 <p class="comment">
                     <code>./main.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">
-/*expansion panels*/
+                <pre class="line-numbers"><code class="language-scss">/* Social Icons */
 
-.app-headers-align .mat-expansion-panel-header-title,
-.app-headers-align .mat-expansion-panel-header-description {
-  flex-basis: 0;
-}
-
-.app-headers-align .mat-expansion-panel-header-description {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.app-headers-align .mat-form-field+.mat-form-field {
-  margin-left: 8px;
-}
-
-
-/* Social Icons */
-
-.fixed-left-socials {
+.fixed-right-socials {
 	bottom: 0;
 	position: fixed;
-	right: 20px;
-	top: 200px;
-	z-index: 5;
+	right: 15px;
+	top: 15%;
+	z-index: 9;
 }
-.fixed-left-socials ul {
+.fixed-right-socials ul {
     list-style: outside none none;
     padding: 0;
 }
-.fixed-left-socials li {
-    margin: 5px 0;
+.fixed-right-socials li {
+    margin: 9px 0;
 }
 .list-unstiled i {
   border-radius: 30px;
   color: #fff;
   font-size: 12px;
-  height: 25px;
-  line-height: 25px;
+  height: 23px;
+  line-height: 23px;
   text-align: center;
   transition: all 300ms ease 0s;
-  width: 25px;
+  width: 23px;
 }
 .list-unstiled .fa-github {
   background: #464646 none repeat scroll 0 0;
@@ -567,7 +546,6 @@ export class MainComponent implements OnInit {
 .list-unstiled .fa-skype {
   background: #00aff0 none repeat scroll 0 0;
 }
-
 </code></pre>
     </div>
 
@@ -596,8 +574,8 @@ export class MainComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="alert">  <alert [type]="alert.type" [dismissible]="dismissible" (onClosed)="onClosed(alert)">    {{ alert.msg }}  </alert></div><div class="container">  <div>    <h1 class="mat-h1">Julio C&eacute;sar Melchor Pinto</h1>    <h3 class="mat-h3">F&iacute;sico, analista y desarrollador</h3>  </div>  <div class="fixed-left-socials">    <ul class="list-unstiled">      <li><a href="https://github.com/juliomelchorpinto" target="_blank" rel="noopener"><i class="fa fa-github"></i></a>      </li>      <li><a href="https://facebook.com/jmelchorp" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>      </li>      <li><a href="https://twitter.com/MelchorPinto" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>      </li>      <li><a href="https://plus.google.com/u/0/106279502125173938597" target="_blank" rel="noopener"><i            class="fa fa-google-plus"></i></a></li>      <li><a href="https://linkedin.com/jmelchorp" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>      </li>      <li><a href="https://www.instagram.com/jmelchorp" target="_blank" rel="noopener"><i            class="fa fa-instagram"></i></a></li>      <li><a href="live:julioc.melchor" target="_blank" rel="noopener"><i class="fa fa-skype"></i></a></li>    </ul>  </div></div><router-outlet></router-outlet></div>'
-    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
+        var COMPONENT_TEMPLATE = '<div><alert [type]="alert.type" [dismissible]="dismissible" (onClosed)="onClosed(alert)">{{ alert.msg }}</alert><div class="container">  <h1 class="mat-h1">Julio C&eacute;sar Melchor Pinto</h1>  <h3 class="mat-h3">F&iacute;sico, analista y desarrollador</h3>  <div class="fixed-right-socials">    <ul class="list-unstiled">      <li><a href="https://github.com/juliomelchorpinto" target="_blank" rel="noopener"><i class="fa fa-github"></i></a>      </li>      <li><a href="https://facebook.com/jmelchorp" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>      </li>      <li><a href="https://twitter.com/MelchorPinto" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>      </li>      <li><a href="https://plus.google.com/u/0/106279502125173938597" target="_blank" rel="noopener"><i            class="fa fa-google-plus"></i></a></li>      <li><a href="https://linkedin.com/jmelchorp" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>      </li>      <li><a href="https://www.instagram.com/jmelchorp" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>      </li>      <li><a href="live:julioc.melchor" target="_blank" rel="noopener"><i class="fa fa-skype"></i></a></li>    </ul>  </div></div><div class="container">  <router-outlet></router-outlet></div></div>'
+    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'MainComponent'};
 </script>

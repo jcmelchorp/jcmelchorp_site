@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>CWA documentación</title>
+        <title>Curriculum Web Application Documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">CWA documentación</a>
+            <a href="../" class="navbar-brand">Curriculum Web Application Documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -62,7 +62,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/sections/info/info.component.ts</code>
+    <code>src/app/sections/info/containers/info.component.ts</code>
 </p>
 
     <p class="comment">
@@ -190,7 +190,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/sections/info/info.component.ts:25</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/sections/info/containers/info.component.ts:25</a></div>
                             </td>
                         </tr>
 
@@ -260,7 +260,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="19"
-                            class="link-to-prism">src/app/sections/info/info.component.ts:19</a></div>
+                            class="link-to-prism">src/app/sections/info/containers/info.component.ts:19</a></div>
                 </td>
             </tr>
 
@@ -299,7 +299,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="29"
-                            class="link-to-prism">src/app/sections/info/info.component.ts:29</a></div>
+                            class="link-to-prism">src/app/sections/info/containers/info.component.ts:29</a></div>
                 </td>
             </tr>
 
@@ -338,7 +338,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="23"
-                            class="link-to-prism">src/app/sections/info/info.component.ts:23</a></div>
+                            class="link-to-prism">src/app/sections/info/containers/info.component.ts:23</a></div>
                 </td>
             </tr>
 
@@ -377,7 +377,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="15"
-                            class="link-to-prism">src/app/sections/info/info.component.ts:15</a></div>
+                            class="link-to-prism">src/app/sections/info/containers/info.component.ts:15</a></div>
                 </td>
             </tr>
 
@@ -455,7 +455,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/sections/info/info.component.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/sections/info/containers/info.component.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -487,7 +487,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/sections/info/info.component.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/sections/info/containers/info.component.ts:12</a></div>
                             </td>
                         </tr>
 
@@ -535,130 +535,152 @@ export class InfoComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;mat-accordion class&#x3D;&quot;app-headers-align&quot;&gt;
-    &lt;mat-expansion-panel [expanded]&#x3D;&quot;step &#x3D;&#x3D;&#x3D; 0&quot; (opened)&#x3D;&quot;setStep(0)&quot; hideToggle&gt;
-        &lt;mat-expansion-panel-header&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;mt-2 ml-2 mr-2&quot;&gt;
+      &lt;mat-accordion class&#x3D;&quot;app-headers-align&quot;&gt;
+        &lt;mat-expansion-panel [expanded]&#x3D;&quot;step &#x3D;&#x3D;&#x3D; 0&quot; (opened)&#x3D;&quot;setStep(0)&quot; hideToggle&gt;
+          &lt;mat-expansion-panel-header&gt;
             &lt;mat-panel-title&gt;
-                &lt;strong&gt;Descripci&amp;oacute;n&lt;/strong&gt;
+              &lt;strong&gt;Descripci&amp;oacute;n&lt;/strong&gt;
             &lt;/mat-panel-title&gt;
-        &lt;/mat-expansion-panel-header&gt;
-        &lt;p&gt;Especialista en modelado computacional de fen&amp;oacute;menos clim&amp;aacute;ticos, c&amp;aacute;lculo
+          &lt;/mat-expansion-panel-header&gt;
+          &lt;p&gt;Especialista en modelado computacional de fen&amp;oacute;menos clim&amp;aacute;ticos, c&amp;aacute;lculo
             num&amp;eacute;rico y an&amp;aacute;lisis de datos.
             Creador y desarrollador de software en m&amp;uacute;ltiples plataformas y lenguajes, con experiencia en
             projectos &lt;strong&gt;DevOps&lt;/strong&gt;.
             Habituado al trabajo bajo los m&amp;eacute;todos &lt;strong&gt;Scrumb&lt;/strong&gt; y &lt;strong&gt;Agile&lt;/strong&gt;,
             apegados a la cultura de servicio. Preferencia por proyectos que se venefician
             de metodolog&amp;iacute;as para la reducci&amp;oacute;n de defectos &lt;strong&gt;Six-Sigma&lt;/strong&gt;&lt;/p&gt;
-    &lt;/mat-expansion-panel&gt;
+        &lt;/mat-expansion-panel&gt;
 
 
-    &lt;mat-expansion-panel [expanded]&#x3D;&quot;step &#x3D;&#x3D;&#x3D; 1&quot; (opened)&#x3D;&quot;setStep(1)&quot; hideToggle&gt;
-        &lt;mat-expansion-panel-header&gt;
+        &lt;mat-expansion-panel [expanded]&#x3D;&quot;step &#x3D;&#x3D;&#x3D; 1&quot; (opened)&#x3D;&quot;setStep(1)&quot; hideToggle&gt;
+          &lt;mat-expansion-panel-header&gt;
             &lt;mat-panel-title&gt;
-                &lt;strong&gt;Datos Personales&lt;/strong&gt;
+              &lt;strong&gt;Datos Personales&lt;/strong&gt;
             &lt;/mat-panel-title&gt;
-        &lt;/mat-expansion-panel-header&gt;
-            Direccion:
-            Tel&amp;eacute;fonos:
-            Estado civil:
-    &lt;/mat-expansion-panel&gt;
+          &lt;/mat-expansion-panel-header&gt;
+          Direccion:
+          Tel&amp;eacute;fonos:
+          Estado civil:
+        &lt;/mat-expansion-panel&gt;
 
-    &lt;mat-expansion-panel [expanded]&#x3D;&quot;step &#x3D;&#x3D;&#x3D; 2&quot; (opened)&#x3D;&quot;setStep(2)&quot; hideToggle&gt;
-        &lt;mat-expansion-panel-header&gt;
+        &lt;mat-expansion-panel [expanded]&#x3D;&quot;step &#x3D;&#x3D;&#x3D; 2&quot; (opened)&#x3D;&quot;setStep(2)&quot; hideToggle&gt;
+          &lt;mat-expansion-panel-header&gt;
             &lt;mat-panel-title&gt;
-                &lt;strong&gt;Servicios&lt;/strong&gt;
+              &lt;strong&gt;Servicios&lt;/strong&gt;
             &lt;/mat-panel-title&gt;
-        &lt;/mat-expansion-panel-header&gt;
-     
-            &lt;div class&#x3D;&quot;row&quot;&gt;
-                &lt;div fxLayout&#x3D;&quot;column&quot;&gt;
-                    &lt;div fxLayout&#x3D;&quot;row&quot; fxLayout.sm&#x3D;&quot;column&quot; fxLayout.xs&#x3D;&quot;column&quot;&gt;
-                        &lt;div flexorder&#x3D;&quot;1&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;25%&quot;&gt;
-                            &lt;div class&#x3D;&quot;container&quot;&gt;
-                                &lt;!-- Service box 1 --&gt;
-                                &lt;div class&#x3D;&quot;service-box&quot;&gt;
-                                    &lt;div&gt;
-                                        &lt;i class&#x3D;&quot;icon icon_building_alt&quot;&gt;&lt;/i&gt;
-                                    &lt;/div&gt;
-                                    &lt;div&gt;
-                                        &lt;h3&gt;Desarrollo en negocios&lt;/h3&gt;
-                                        &lt;p&gt;Analista y desarrollador de sistemas de inventarios
-                                            y trazabilidad de productos, aplicaciones de control de personal,
-                                            puntos de venta y servicios administrativos.
-                                            Creaci&amp;oacute;n, migraci&amp;oacute;n, respaldo y
-                                            optimizaci&amp;oacute;n de bases de datos.
-                                        &lt;/p&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                        
-                        &lt;div flexorder&#x3D;&quot;2&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;25%&quot;&gt;
-                            &lt;div class&#x3D;&quot;container&quot;&gt;
-                                &lt;div class&#x3D;&quot;service-box&quot;&gt;
-                                    &lt;div&gt;
-                                        &lt;i class&#x3D;&quot;icon icon_mobile&quot;&gt;&lt;/i&gt;
-                                    &lt;/div&gt;
-                                    &lt;div&gt;
-                                        &lt;h3&gt;Desarrollo&lt;/h3&gt;
-                                        &lt;p&gt;Creaci&amp;oacute;n de aplicaciones m&amp;oacute;viles en iOS y Android.&lt;/p&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
+          &lt;/mat-expansion-panel-header&gt;
+
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div fxLayout&#x3D;&quot;column&quot;&gt;
+              &lt;div fxLayout&#x3D;&quot;row&quot; fxLayout.sm&#x3D;&quot;column&quot; fxLayout.xs&#x3D;&quot;column&quot;&gt;
+                &lt;div flexorder&#x3D;&quot;1&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;25%&quot;&gt;
+                  &lt;div class&#x3D;&quot;container&quot;&gt;
+                    &lt;!-- Service box 1 --&gt;
+                    &lt;div class&#x3D;&quot;service-box&quot;&gt;
+                      &lt;div&gt;
+                        &lt;i class&#x3D;&quot;icon icon_building_alt&quot;&gt;&lt;/i&gt;
+                      &lt;/div&gt;
+                      &lt;div&gt;
+                        &lt;h3&gt;Desarrollo en negocios&lt;/h3&gt;
+                        &lt;p&gt;Analista y desarrollador de sistemas de inventarios
+                          y trazabilidad de productos, aplicaciones de control de personal,
+                          puntos de venta y servicios administrativos.
+                          Creaci&amp;oacute;n, migraci&amp;oacute;n, respaldo y
+                          optimizaci&amp;oacute;n de bases de datos.
+                        &lt;/p&gt;
+                      &lt;/div&gt;
                     &lt;/div&gt;
+                  &lt;/div&gt;
                 &lt;/div&gt;
-                &lt;div fxLayout&#x3D;&quot;column&quot;&gt;
-                    &lt;div fxLayout&#x3D;&quot;row&quot; fxLayout.sm&#x3D;&quot;column&quot; fxLayout.xs&#x3D;&quot;column&quot;&gt;
-                        &lt;div flexorder&#x3D;&quot;1&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;25%&quot;&gt;
-                            &lt;div class&#x3D;&quot;container&quot;&gt;
-                                &lt;!-- Service box 3 --&gt;
-                                &lt;div class&#x3D;&quot;service-box&quot;&gt;
-                                    &lt;div&gt;
-                                        &lt;i class&#x3D;&quot;icon social_myspace&quot;&gt;&lt;/i&gt;
-                                    &lt;/div&gt;
-                                    &lt;div&gt;
-                                        &lt;h3&gt;Conectividad y SEO&lt;/h3&gt;
-                                        &lt;p&gt;Mercadotecnia de redes sociales, posicionamiento en motores de
-                                            b&amp;uacute;squeda.
-                                            Servicios en nube como an&amp;aacute;lisis de contenido, estad&amp;iacute;sticas de
-                                            uso,
-                                            administraci&amp;oacute;n del cliente.
-                                        &lt;/p&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                        &lt;div flexorder&#x3D;&quot;2&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;25%&quot;&gt;
-                            &lt;div class&#x3D;&quot;container&quot;&gt;
-                                &lt;!-- Service box 2 --&gt;
-                                &lt;div class&#x3D;&quot;service-box&quot;&gt;
-                                    &lt;div&gt;
-                                        &lt;i class&#x3D;&quot;icon icon_pens&quot;&gt;&lt;/i&gt;
-                                    &lt;/div&gt;
-                                    &lt;div&gt;
-                                        &lt;h3&gt;Docencia&lt;/h3&gt;
-                                        &lt;p&gt;Clases particulares, creador de contenidos y educaci&amp;oacute;n continua con
-                                            especialidad en ciencias exactas, filosof&amp;iacute;a y tecnolog&amp;iacute;as de
-                                            la
-                                            informaci&amp;oacute;n. Atenci&amp;oacute;n a estudiantes con discapacidad en lengua
-                                            de señas y braille.&lt;/p&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
+
+                &lt;div flexorder&#x3D;&quot;2&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;25%&quot;&gt;
+                  &lt;div class&#x3D;&quot;container&quot;&gt;
+                    &lt;div class&#x3D;&quot;service-box&quot;&gt;
+                      &lt;div&gt;
+                        &lt;i class&#x3D;&quot;icon icon_mobile&quot;&gt;&lt;/i&gt;
+                      &lt;/div&gt;
+                      &lt;div&gt;
+                        &lt;h3&gt;Desarrollo&lt;/h3&gt;
+                        &lt;p&gt;Creaci&amp;oacute;n de aplicaciones m&amp;oacute;viles en iOS y Android.&lt;/p&gt;
+                      &lt;/div&gt;
                     &lt;/div&gt;
-                &lt;/div&gt;&lt;!-- end row --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
             &lt;/div&gt;
-    &lt;/mat-expansion-panel&gt;
-&lt;/mat-accordion&gt;</code></pre>
+            &lt;div fxLayout&#x3D;&quot;column&quot;&gt;
+              &lt;div fxLayout&#x3D;&quot;row&quot; fxLayout.sm&#x3D;&quot;column&quot; fxLayout.xs&#x3D;&quot;column&quot;&gt;
+                &lt;div flexorder&#x3D;&quot;1&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;25%&quot;&gt;
+                  &lt;div class&#x3D;&quot;container&quot;&gt;
+                    &lt;!-- Service box 3 --&gt;
+                    &lt;div class&#x3D;&quot;service-box&quot;&gt;
+                      &lt;div&gt;
+                        &lt;i class&#x3D;&quot;icon social_myspace&quot;&gt;&lt;/i&gt;
+                      &lt;/div&gt;
+                      &lt;div&gt;
+                        &lt;h3&gt;Conectividad y SEO&lt;/h3&gt;
+                        &lt;p&gt;Mercadotecnia de redes sociales, posicionamiento en motores de
+                          b&amp;uacute;squeda.
+                          Servicios en nube como an&amp;aacute;lisis de contenido, estad&amp;iacute;sticas de
+                          uso,
+                          administraci&amp;oacute;n del cliente.
+                        &lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div flexorder&#x3D;&quot;2&quot; fxFlex.xs&#x3D;&quot;&quot; fxFlex.sm&#x3D;&quot;&quot; fxflex.xs&#x3D;&quot;&quot; fxflex&#x3D;&quot;25%&quot;&gt;
+                  &lt;div class&#x3D;&quot;container&quot;&gt;
+                    &lt;!-- Service box 2 --&gt;
+                    &lt;div class&#x3D;&quot;service-box&quot;&gt;
+                      &lt;div&gt;
+                        &lt;i class&#x3D;&quot;icon icon_pens&quot;&gt;&lt;/i&gt;
+                      &lt;/div&gt;
+                      &lt;div&gt;
+                        &lt;h3&gt;Docencia&lt;/h3&gt;
+                        &lt;p&gt;Clases particulares, creador de contenidos y educaci&amp;oacute;n continua con
+                          especialidad en ciencias exactas, filosof&amp;iacute;a y tecnolog&amp;iacute;as de
+                          la
+                          informaci&amp;oacute;n. Atenci&amp;oacute;n a estudiantes con discapacidad en lengua
+                          de señas y braille.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- end row --&gt;
+          &lt;/div&gt;
+        &lt;/mat-expansion-panel&gt;
+      &lt;/mat-accordion&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
                 <p class="comment">
                     <code>./info.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">/*expansion panels*/
+
+.app-headers-align .mat-expansion-panel-header-title,
+.app-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.app-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-headers-align .mat-form-field+.mat-form-field {
+  margin-left: 8px;
+}
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -686,8 +708,8 @@ export class InfoComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-accordion class="app-headers-align">    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>        <mat-expansion-panel-header>            <mat-panel-title>                <strong>Descripci&oacute;n</strong>            </mat-panel-title>        </mat-expansion-panel-header>        <p>Especialista en modelado computacional de fen&oacute;menos clim&aacute;ticos, c&aacute;lculo            num&eacute;rico y an&aacute;lisis de datos.            Creador y desarrollador de software en m&uacute;ltiples plataformas y lenguajes, con experiencia en            projectos <strong>DevOps</strong>.            Habituado al trabajo bajo los m&eacute;todos <strong>Scrumb</strong> y <strong>Agile</strong>,            apegados a la cultura de servicio. Preferencia por proyectos que se venefician            de metodolog&iacute;as para la reducci&oacute;n de defectos <strong>Six-Sigma</strong></p>    </mat-expansion-panel>    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>        <mat-expansion-panel-header>            <mat-panel-title>                <strong>Datos Personales</strong>            </mat-panel-title>        </mat-expansion-panel-header>            Direccion:            Tel&eacute;fonos:            Estado civil:    </mat-expansion-panel>    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>        <mat-expansion-panel-header>            <mat-panel-title>                <strong>Servicios</strong>            </mat-panel-title>        </mat-expansion-panel-header>                 <div class="row">                <div fxLayout="column">                    <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">                        <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">                            <div class="container">                                <!-- Service box 1 -->                                <div class="service-box">                                    <div>                                        <i class="icon icon_building_alt"></i>                                    </div>                                    <div>                                        <h3>Desarrollo en negocios</h3>                                        <p>Analista y desarrollador de sistemas de inventarios                                            y trazabilidad de productos, aplicaciones de control de personal,                                            puntos de venta y servicios administrativos.                                            Creaci&oacute;n, migraci&oacute;n, respaldo y                                            optimizaci&oacute;n de bases de datos.                                        </p>                                    </div>                                </div>                            </div>                        </div>                                                <div flexorder="2" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">                            <div class="container">                                <div class="service-box">                                    <div>                                        <i class="icon icon_mobile"></i>                                    </div>                                    <div>                                        <h3>Desarrollo</h3>                                        <p>Creaci&oacute;n de aplicaciones m&oacute;viles en iOS y Android.</p>                                    </div>                                </div>                            </div>                        </div>                    </div>                </div>                <div fxLayout="column">                    <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">                        <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">                            <div class="container">                                <!-- Service box 3 -->                                <div class="service-box">                                    <div>                                        <i class="icon social_myspace"></i>                                    </div>                                    <div>                                        <h3>Conectividad y SEO</h3>                                        <p>Mercadotecnia de redes sociales, posicionamiento en motores de                                            b&uacute;squeda.                                            Servicios en nube como an&aacute;lisis de contenido, estad&iacute;sticas de                                            uso,                                            administraci&oacute;n del cliente.                                        </p>                                    </div>                                </div>                            </div>                        </div>                        <div flexorder="2" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">                            <div class="container">                                <!-- Service box 2 -->                                <div class="service-box">                                    <div>                                        <i class="icon icon_pens"></i>                                    </div>                                    <div>                                        <h3>Docencia</h3>                                        <p>Clases particulares, creador de contenidos y educaci&oacute;n continua con                                            especialidad en ciencias exactas, filosof&iacute;a y tecnolog&iacute;as de                                            la                                            informaci&oacute;n. Atenci&oacute;n a estudiantes con discapacidad en lengua                                            de señas y braille.</p>                                    </div>                                </div>                            </div>                        </div>                    </div>                </div><!-- end row -->            </div>    </mat-expansion-panel></mat-accordion></div>'
-    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
+        var COMPONENT_TEMPLATE = '<div><div class="container">  <div class="row">    <div class="mt-2 ml-2 mr-2">      <mat-accordion class="app-headers-align">        <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>          <mat-expansion-panel-header>            <mat-panel-title>              <strong>Descripci&oacute;n</strong>            </mat-panel-title>          </mat-expansion-panel-header>          <p>Especialista en modelado computacional de fen&oacute;menos clim&aacute;ticos, c&aacute;lculo            num&eacute;rico y an&aacute;lisis de datos.            Creador y desarrollador de software en m&uacute;ltiples plataformas y lenguajes, con experiencia en            projectos <strong>DevOps</strong>.            Habituado al trabajo bajo los m&eacute;todos <strong>Scrumb</strong> y <strong>Agile</strong>,            apegados a la cultura de servicio. Preferencia por proyectos que se venefician            de metodolog&iacute;as para la reducci&oacute;n de defectos <strong>Six-Sigma</strong></p>        </mat-expansion-panel>        <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>          <mat-expansion-panel-header>            <mat-panel-title>              <strong>Datos Personales</strong>            </mat-panel-title>          </mat-expansion-panel-header>          Direccion:          Tel&eacute;fonos:          Estado civil:        </mat-expansion-panel>        <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>          <mat-expansion-panel-header>            <mat-panel-title>              <strong>Servicios</strong>            </mat-panel-title>          </mat-expansion-panel-header>          <div class="row">            <div fxLayout="column">              <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">                <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">                  <div class="container">                    <!-- Service box 1 -->                    <div class="service-box">                      <div>                        <i class="icon icon_building_alt"></i>                      </div>                      <div>                        <h3>Desarrollo en negocios</h3>                        <p>Analista y desarrollador de sistemas de inventarios                          y trazabilidad de productos, aplicaciones de control de personal,                          puntos de venta y servicios administrativos.                          Creaci&oacute;n, migraci&oacute;n, respaldo y                          optimizaci&oacute;n de bases de datos.                        </p>                      </div>                    </div>                  </div>                </div>                <div flexorder="2" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">                  <div class="container">                    <div class="service-box">                      <div>                        <i class="icon icon_mobile"></i>                      </div>                      <div>                        <h3>Desarrollo</h3>                        <p>Creaci&oacute;n de aplicaciones m&oacute;viles en iOS y Android.</p>                      </div>                    </div>                  </div>                </div>              </div>            </div>            <div fxLayout="column">              <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">                <div flexorder="1" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">                  <div class="container">                    <!-- Service box 3 -->                    <div class="service-box">                      <div>                        <i class="icon social_myspace"></i>                      </div>                      <div>                        <h3>Conectividad y SEO</h3>                        <p>Mercadotecnia de redes sociales, posicionamiento en motores de                          b&uacute;squeda.                          Servicios en nube como an&aacute;lisis de contenido, estad&iacute;sticas de                          uso,                          administraci&oacute;n del cliente.                        </p>                      </div>                    </div>                  </div>                </div>                <div flexorder="2" fxFlex.xs="" fxFlex.sm="" fxflex.xs="" fxflex="25%">                  <div class="container">                    <!-- Service box 2 -->                    <div class="service-box">                      <div>                        <i class="icon icon_pens"></i>                      </div>                      <div>                        <h3>Docencia</h3>                        <p>Clases particulares, creador de contenidos y educaci&oacute;n continua con                          especialidad en ciencias exactas, filosof&iacute;a y tecnolog&iacute;as de                          la                          informaci&oacute;n. Atenci&oacute;n a estudiantes con discapacidad en lengua                          de señas y braille.</p>                      </div>                    </div>                  </div>                </div>              </div>            </div><!-- end row -->          </div>        </mat-expansion-panel>      </mat-accordion>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'InfoComponent'};
 </script>
