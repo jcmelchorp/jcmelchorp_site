@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { InfoRoutingModule } from './info-routing.module';
-import { InfoComponent } from './info.component';
+import { InfoComponent } from './containers/info.component';
 import { MaterialModule } from 'src/app/material.module';
 
 

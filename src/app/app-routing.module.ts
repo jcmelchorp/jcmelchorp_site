@@ -22,37 +22,27 @@ const APP_ROUTES: Routes = [
         path: 'info',
         loadChildren: () =>
           import('./sections/info/info.module').then((m) => m.InfoModule)
-      },
-      {
+      }, {
         path: 'education',
         loadChildren: () =>
           import('./sections/education/education.module').then((m) => m.EducationModule)
-      },
-      {
+      }, {
         path: 'experience',
         loadChildren: () =>
           import('./sections/experience/experience.module').then((m) => m.ExperienceModule)
-      },
-      {
+      }, {
         path: 'portfolio',
         loadChildren: () =>
           import('./sections/portfolio/portfolio.module').then((m) => m.PortfolioModule)
-      },
-      {
+      }, {
         path: 'publish',
         loadChildren: () =>
           import('./sections/publish/publish.module').then((m) => m.PublishModule)
-      },
-      {
-        path: 'projects',
-        loadChildren: () =>
-          import('./sections/projects/projects.module').then((m) => m.ProjectsModule)
       }, {
         path: 'skills',
         loadChildren: () =>
           import('./sections/skills/skills.module').then((m) => m.SkillsModule)
-      },
-      {
+      }, {
         path: 'contact',
         loadChildren: () =>
           import('./sections/contact/contact.module').then((m) => m.ContactModule)

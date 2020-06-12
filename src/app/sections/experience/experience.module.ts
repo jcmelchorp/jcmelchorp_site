@@ -5,7 +5,7 @@ import { MaterialModule } from 'src/app/material.module';
 // Font Awesome module
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ExperienceRoutingModule } from './experience-routing.module';
-import { ExperienceComponent } from './experience.component';
+import { ExperienceComponent } from './containers/experience.component';
 
 
 @NgModule({

@@ -14,7 +14,6 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { InfoModule } from 'src/app/sections/info/info.module';
 import { ContactModule } from 'src/app/sections/contact/contact.module';
 import { PortfolioModule } from 'src/app/sections/portfolio/portfolio.module';
-import { ProjectsModule } from 'src/app/sections/projects/projects.module';
 import { EducationModule } from 'src/app/sections/education/education.module';
 import { ExperienceModule } from 'src/app/sections/experience/experience.module';
 import { PublishModule } from 'src/app/sections/publish/publish.module';
@@ -41,7 +40,6 @@ import { ImageModalComponent } from 'src/app/shared/components/image-modal/image
     InfoModule,
     ContactModule,
     PortfolioModule,
-    ProjectsModule,
     ContactModule,
     EducationModule,
     ExperienceModule,

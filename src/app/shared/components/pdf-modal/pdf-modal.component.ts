@@ -1,7 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { DialogPdf } from '../viewmodels/dialog-pdf';
-import { EducationComponent } from 'src/app/sections/education/education.component';
+import { EducationComponent } from 'src/app/sections/education/containers/education.component';
 /**
  * PdfModal component
  */

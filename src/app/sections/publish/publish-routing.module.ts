@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PublishComponent } from './publish.component';
+import { PublishComponent } from './containers/publish.component';
 
 
 const APP_ROUTES: Routes = [

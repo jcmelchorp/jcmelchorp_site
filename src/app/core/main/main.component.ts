@@ -12,19 +12,19 @@ export class MainComponent implements OnInit {
   dismissible = true;
   defaultAlerts: any[] = [
     {
-      type: 'success',
+      type: 'info',
       msg: `Actualmente contratado`
     },
     {
-      type: 'info',
+      type: 'success',
       msg: `Disponible para contrataciones`
     },
     {
       type: 'danger',
-      msg: `No Disponible`
+      msg: `Sitio en consturcción`
     }
   ];
-  alert = this.defaultAlerts[1];
+  alert = this.defaultAlerts[2];
   onClosed(dismissedAlert: any): void {}
 
   constructor() {}

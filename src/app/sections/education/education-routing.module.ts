@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EducationComponent } from './education.component';
+import { EducationComponent } from './containers/education.component';
 
 
 const APP_ROUTES: Routes = [
