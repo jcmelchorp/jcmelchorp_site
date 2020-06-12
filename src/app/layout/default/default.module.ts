@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 // Angular Material Design Module import
 import { MaterialModule } from 'src/app/material.module';
 // Font Awesome module
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';import { RouterModule } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { CoreModule } from '../../core/core.module';
@@ -22,6 +23,8 @@ import { PdfModalComponent } from 'src/app/shared/components/pdf-modal/pdf-modal
 import { ImageModalComponent } from 'src/app/shared/components/image-modal/image-modal.component';
 /**
  * Default module
+ *
+ * Module for rendering app sections.
  */
 @NgModule({
   declarations: [

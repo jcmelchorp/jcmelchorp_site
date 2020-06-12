@@ -1,4 +1,4 @@
-export interface SiteCard {
+export interface Site {
   name: string;
   url: string;
   hosting: string;

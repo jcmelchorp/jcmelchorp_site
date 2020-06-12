@@ -2,7 +2,7 @@
 <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="10px" fxLayoutAlign="flex-start">
   <mat-chip-list *ngFor="let env of envs">
        <mat-chip class="mb-2" [removable]="true" (removed)="remove(env)">
-        <img matChipAvatar src="{{env.src}}" alt="{{env.name}} icon"> {{env.name}}
+        <img matChipAvatar src="{{env.imgUrl}}" alt="{{env.name}} icon"> {{env.name}}
         <mat-icon matChipRemove>cancel</mat-icon>
       </mat-chip>
    </mat-chip-list>
@@ -13,7 +13,7 @@
   <ng-container *ngFor="let lang of langs">
     <mat-card [class.mat-elevation-z6]="true" class="mb-2" fxFlex="0 1 calc(33.3% - 10px)" fxFlex.lt-md="0 1 calc(50% - 10px)" fxFlex.lt-sm="100%">
       <mat-card-header>
-        <img mat-card-avatar src="{{lang.src}}" alt="{{lang.name}} icon">
+        <img mat-card-avatar src="{{lang.imgUrl}}" alt="{{lang.name}} icon">
         <mat-card-title>
           {{lang.name}}
         </mat-card-title>

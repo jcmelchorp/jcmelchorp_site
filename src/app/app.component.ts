@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
     private metaTagService: Meta,
     private titleService: Title,
     private swUpdate: SwUpdate,
-    private _snackBar: MatSnackBar,
+    private snackBar: MatSnackBar,
     public matDialog: MatDialog,
   ) { }
 
@@ -63,8 +63,7 @@ export class AppComponent implements OnInit {
     ]);
     if (this.swUpdate.isEnabled) {
       this.swUpdate.available.subscribe(async () => {
-        this._snackBar.open('Se han hecho cambios desde la última visita.!')
-
+        this.snackBar.open('Se han hecho cambios desde la última visita.!');
         const alert = await this.matDialog.open(AlertModalComponent, {
           data: {
             header: `This app has been updated!`,

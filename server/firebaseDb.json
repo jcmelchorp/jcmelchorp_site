@@ -1,0 +1,47 @@
+{
+  "skills": [
+    {
+      "xBgPoLyQv7UquyQ38L7YXT6TmKg1": {
+        "-M6b0kOA5wkIX6JeVtTl": {
+          "key": "-M6b0kOA5wkIX6JeVtTl",
+          "name": "Objective-C",
+          "imgUrl": "https://raw.githubusercontent.com/fizzed/font-mfizz/master/src/svg/objc.svg",
+          "rate": 50
+        }
+      }
+    }
+  ],
+  "sites": [
+    {
+      "xBgPoLyQv7UquyQ38L7YXT6TmKg1": {
+        "-M6bcp7WbKHeAHPXZ9Ya": {
+          "name": "COVID 19",
+          "url": "https://juliomelchorpinto.github.io/covid19",
+          "hosting": "Github Pages",
+          "imgUrl": "https://juliomelchorpinto.github.io/covid19/screenshot02.png.png",
+          "description": "Aplicación en tiempo real que conecta con API de datos y produce gráficos históricos por país de los principales marcadores de la pandemia por coronavirus. Implementa integración continua.",
+          "category": ["API client", "React"]
+        }
+      }
+    }
+  ],
+  "jobs": [],
+  "users": [
+    {
+      "xBgPoLyQv7UquyQ38L7YXT6TmKg1": {
+        "displayName": "Julio César Melchor Pinto",
+        "email": "julio.melchor@ciencias.unam.mx",
+        "isAdmin": true,
+        "isNewUser": true,
+        "isOnline": false,
+        "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14GhpAX4uWhf74xMBgTe5PZneBzUOqhoJeTwxXu0cEQ",
+        "prividerId": "password",
+        "uid": "xBgPoLyQv7UquyQ38L7YXT6TmKg1"
+      }
+    }
+  ],
+  "admins": {
+    "xBgPoLyQv7UquyQ38L7YXT6TmKg1": true
+  }
+
+}

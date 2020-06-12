@@ -4,6 +4,9 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+// Angular Firebase module
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 // Angular Material Design Module import
 import {MaterialModule} from './material.module';
 // Theme container for recursively theme implementation
@@ -31,6 +34,8 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     BrowserAnimationsModule,
     ServiceWorkerModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
     MaterialModule,
     LayoutModule,
     DefaultModule,

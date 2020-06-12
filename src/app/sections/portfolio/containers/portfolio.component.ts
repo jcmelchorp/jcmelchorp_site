@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { SiteCard } from '../models/site-card';
+import { Site } from '../models/site';
 /**
  * Portfolio component
  */
@@ -10,12 +10,11 @@ import { SiteCard } from '../models/site-card';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-
   title = 'Portfolio';
   constructor(private titleService: Title) { }
   ngOnInit() { this.titleService.setTitle(this.title); }
 
-  sites: SiteCard[] = [
+  sites: Site[] = [
     {
       name: 'COVID 19',
       url: 'https://juliomelchorpinto.github.io/covid19',
@@ -29,7 +28,7 @@ export class PortfolioComponent implements OnInit {
       hosting: 'Google Firebase',
       imgUrl: 'https://coronavirus-mx.web.app/assets/images/preview.png',
       description: 'Aplicación web construida en Angular 8 que conecta con diversas fuentes de datos para ofrecer un panorama estadístico mundial del avance de la pandemia debida al coronavirus. Ofrece ademas enlaces e información más relevante focalizada en la República Mexicana.',
-      category: ['API client','Material Design', 'Bootstrap']
+      category: ['API client', 'Material Design', 'Bootstrap']
     },
     {
       name: 'Angular Flex Layout',

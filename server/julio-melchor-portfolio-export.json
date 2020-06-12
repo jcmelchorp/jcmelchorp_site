@@ -1,0 +1,274 @@
+{
+  "admins" : {
+    "sps907ft0fW8GZVz1WNiYYGnPVr1" : true,
+    "xBgPoLyQv7UquyQ38L7YXT6TmKg1" : true
+  },
+  "customers" : {
+    "H1XgzPKFHNdWe9i1HQY6TR0z6UG3" : {
+      "-M6bcp7WbKHeAHPXZ9YZ" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 1,
+        "name" : "Example customer 1"
+      },
+      "-M6bcp7WbKHeAHPXZ9Y_" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 2,
+        "name" : "Example customer 2"
+      },
+      "-M6bcp7WbKHeAHPXZ9Ya" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 3,
+        "name" : "Example customer 3"
+      },
+      "-M6bcp7XjLwBumsSHqVr" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 4,
+        "name" : "Example customer 4"
+      },
+      "-M6bcp7YhnHTwJL6kU8G" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 5,
+        "name" : "Example customer 5"
+      }
+    },
+    "YiIKiqgu4RcOKCo9bPi98iyCbc03" : {
+      "-M6bWrjnjz8Gz8X7qQ5C" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 1,
+        "name" : "Example customer 1"
+      },
+      "-M6bWrjpkJpjKbLz0lOY" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 2,
+        "name" : "Example customer 2"
+      },
+      "-M6bWrjpkJpjKbLz0lOZ" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 3,
+        "name" : "Example customer 3"
+      },
+      "-M6bWrjpkJpjKbLz0lO_" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 4,
+        "name" : "Example customer 4"
+      },
+      "-M6bWrjqp89oFT2aOaF7" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 5,
+        "name" : "Example customer 5"
+      }
+    },
+    "cCLI1dK94oZZVafZX2oyDLbbMcP2" : {
+      "-M6Xr5zKnzAHC3HUl3fb" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 1,
+        "name" : "Example customer 1"
+      },
+      "-M6Xr5zL0FGNkIjWwulN" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 2,
+        "name" : "Example customer 2"
+      },
+      "-M6Xr5zM16RFkfnEuHjo" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 3,
+        "name" : "Example customer 3"
+      },
+      "-M6Xr5zNxfycNCjz8NPX" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 4,
+        "name" : "Example customer 4"
+      },
+      "-M6Xr5zOJM6dvR74AFBz" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 5,
+        "name" : "Example customer 5"
+      }
+    },
+    "sps907ft0fW8GZVz1WNiYYGnPVr1" : {
+      "-M6Xq-NKvjarj6cvCJYk" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 1,
+        "name" : "Example customer 1"
+      },
+      "-M6Xq-NMvAcmczvYTMEe" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 2,
+        "name" : "Example customer 2"
+      },
+      "-M6Xq-NNCnW5Inypft3W" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 3,
+        "name" : "Example customer 3"
+      },
+      "-M6Xq-NO-HtblucwYcC2" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 4,
+        "name" : "Example customer 4"
+      },
+      "-M6Xq-NPb-OUkTijGQ60" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "id" : 5,
+        "name" : "Example customer 5"
+      }
+    },
+    "xBgPoLyQv7UquyQ38L7YXT6TmKg1" : {
+      "-M6b0kOA5wkIX6JeVtTl" : {
+        "description" : "Empresa realizadora de proyectos eléctricos en alta tensión",
+        "id" : 1,
+        "name" : "Ingeniería y Diseños Eléctricos"
+      }
+    }
+  },
+  "projects" : {
+    "H1XgzPKFHNdWe9i1HQY6TR0z6UG3" : {
+      "-M6bcp7NUzQWnbS_mDSc" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg",
+        "title" : "Project 1"
+      },
+      "-M6bcp7R02APzXSLUWUt" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(98).jpg",
+        "title" : "Project 2"
+      },
+      "-M6bcp7Si97dyobYup7T" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(99).jpg",
+        "title" : "Project 3"
+      },
+      "-M6bcp7Si97dyobYup7U" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(95).jpg",
+        "title" : "Project 4"
+      }
+    },
+    "YiIKiqgu4RcOKCo9bPi98iyCbc03" : {
+      "-M6b7I3SnbgY-2Ts-gab" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg",
+        "title" : "Project 1"
+      },
+      "-M6b7I3V9IImWArLhtZl" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(98).jpg",
+        "title" : "Project 2"
+      },
+      "-M6b7I3V9IImWArLhtZm" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(99).jpg",
+        "title" : "Project 3"
+      },
+      "-M6b7I3V9IImWArLhtZn" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(95).jpg",
+        "title" : "Project 4"
+      }
+    },
+    "cCLI1dK94oZZVafZX2oyDLbbMcP2" : {
+      "-M6Xr5zBX9LBy7rf0mi8" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://drive.google.com/file/d/1eZUuOXUUGUdtZJzWoaK-hFF-oYz-SQAw/view?usp=sharing",
+        "title" : "Project 1"
+      },
+      "-M6Xr5zD5iHVxsl_Ihl7" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(98).jpg",
+        "title" : "Project 2"
+      },
+      "-M6Xr5zE_gsYQnUiP3pD" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(99).jpg",
+        "title" : "Project 3"
+      },
+      "-M6Xr5zFJlf7TGvbTUD0" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(95).jpg",
+        "title" : "Project 4"
+      }
+    },
+    "sps907ft0fW8GZVz1WNiYYGnPVr1" : {
+      "-M6Xq-N6QhCcwf79UhGC" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg",
+        "title" : "Project 1"
+      },
+      "-M6Xq-N8tZD4G5hbqzS1" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(98).jpg",
+        "title" : "Project 2"
+      },
+      "-M6Xq-N9f8mu8FnvIHov" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(99).jpg",
+        "title" : "Project 3"
+      },
+      "-M6Xq-NCGM1q6-vv5Fvm" : {
+        "description" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "photoUrl" : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(95).jpg",
+        "title" : "Project 4"
+      }
+    },
+    "xBgPoLyQv7UquyQ38L7YXT6TmKg1" : {
+      "-M6avuRwBRQRheNGUMDi" : {
+        "description" : "Sitio web informativo sobre la evolución de la enfermedad causada por el virus SARS-CoV2 en México y el mundo.",
+        "photoUrl" : "https://coronavirus-mx.web.app/assets/images/preview.png",
+        "title" : "coronavirus-mx"
+      },
+      "-M6awGrzx17VEx4JmG9F" : {
+        "description" : "Sitio básico sobre el covid19.",
+        "photoUrl" : "https://juliomelchorpinto.github.io/covid19/screenshot02.png.png",
+        "title" : "covid19"
+      },
+      "-M6bPcs2Zb_FLyc_VMlG" : {
+        "description" : "Aplicación que administra usuarios en modo \"in-memory\", sin base de datos requerida ",
+        "photoUrl" : "https://github.com/JulioMelchorPinto/beaverNet.InMemoryWebApp/blob/master/beaverNet.InMemoryWebApp/wwwroot/img/screenshot_B.png?raw=true",
+        "title" : "In Memory App"
+      },
+      "-M6bQE_mNwNUhDuv6zVf" : {
+        "description" : "Applicacion web que implementa un punto de venta con sistema de inventario y trazabilidad de productos",
+        "photoUrl" : "https://github.com/JulioMelchorPinto/beaverNet.InMemoryWebApp/blob/master/beaverNet.InMemoryWebApp/wwwroot/img/screenshot_A.png?raw=true",
+        "title" : "Punto de Venta"
+      }
+    }
+  },
+  "users" : {
+    "H1XgzPKFHNdWe9i1HQY6TR0z6UG3" : {
+      "displayName" : "jmelchorp",
+      "email" : "jmelchorp@hotmail.com",
+      "isAdmin" : false,
+      "isNewUser" : false,
+      "isOnline" : false,
+      "photoUrl" : "https://www.gravatar.com/avatar/3b9cec61076eda3472b711e5e665d190",
+      "providerId" : "password",
+      "uid" : "H1XgzPKFHNdWe9i1HQY6TR0z6UG3"
+    },
+    "YiIKiqgu4RcOKCo9bPi98iyCbc03" : {
+      "isAdmin" : false,
+      "isOnline" : false
+    },
+    "cCLI1dK94oZZVafZX2oyDLbbMcP2" : {
+      "isOnline" : false
+    },
+    "sps907ft0fW8GZVz1WNiYYGnPVr1" : {
+      "displayName" : "julio-melchor",
+      "email" : "julioc.melchor@hotmail.com",
+      "isAdmin" : true,
+      "isNewUser" : false,
+      "isOnline" : false,
+      "photoUrl" : "https://www.gravatar.com/avatar/3e6d3400a4914ed4ce373cb4ccb61592",
+      "providerId" : "password",
+      "uid" : "sps907ft0fW8GZVz1WNiYYGnPVr1"
+    },
+    "xBgPoLyQv7UquyQ38L7YXT6TmKg1" : {
+      "displayName" : "Julio César Melchor Pinto",
+      "email" : "julio.melchor@ciencias.unam.mx",
+      "isAdmin" : true,
+      "isNewUser" : true,
+      "isOnline" : false,
+      "photoUrl" : "https://lh3.googleusercontent.com/a-/AOh14GhpAX4uWhf74xMBgTe5PZneBzUOqhoJeTwxXu0cEQ",
+      "prividerId" : "password",
+      "uid" : "xBgPoLyQv7UquyQ38L7YXT6TmKg1"
+    }
+  }
+}

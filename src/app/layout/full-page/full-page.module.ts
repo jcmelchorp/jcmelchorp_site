@@ -13,6 +13,8 @@ import { FullPageComponent } from './full-page.component';
 import { AlertModalComponent } from 'src/app/shared/components/alert-modal/alert-modal.component';
 /**
  * FullPage module
+ *
+ * Module for rendering full-page contents like Wellcome page and NotFound page.
  */
 @NgModule({
   declarations: [
