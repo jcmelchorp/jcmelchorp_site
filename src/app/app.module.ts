@@ -1,18 +1,18 @@
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Angular Firebase module
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 // Angular Material Design Module import
-import {MaterialModule} from './material.module';
+import { MaterialModule } from './material.module';
 // Theme container for recursively theme implementation
-import {OverlayContainer} from '@angular/cdk/overlay';
-import {LayoutModule} from '@angular/cdk/layout';
-import {DefaultModule} from './layout/default/default.module';
-import {FullPageModule} from './layout/full-page/full-page.module';
+import { OverlayContainer } from '@angular/cdk/overlay';
+import { LayoutModule } from '@angular/cdk/layout';
+import { DefaultModule } from './layout/default/default.module';
+import { FullPageModule } from './layout/full-page/full-page.module';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
@@ -50,11 +50,15 @@ import { reducers, metaReducers } from './reducers';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     AuthModule,
     StoreModule.forRoot(reducers, {
-      metaReducers
+      metaReducers: !environment.production ? [] : [],
+      runtimeChecks: {
+        strictActionImmutability: true,
+        strictStateImmutability: true
+      }
     })
-    ],
+  ],
   providers: [AuthService],
   bootstrap: [AppComponent]
 })
 
-export class AppModule {}
+export class AppModule { }
