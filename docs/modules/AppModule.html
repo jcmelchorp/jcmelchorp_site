@@ -285,29 +285,31 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {NgModule} from &#x27;@angular/core&#x27;;
-import {BrowserModule} from &#x27;@angular/platform-browser&#x27;;
-import {AppRoutingModule} from &#x27;./app-routing.module&#x27;;
-import {AppComponent} from &#x27;./app.component&#x27;;
-import {BrowserAnimationsModule} from &#x27;@angular/platform-browser/animations&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
+import { BrowserModule } from &#x27;@angular/platform-browser&#x27;;
+import { AppRoutingModule } from &#x27;./app-routing.module&#x27;;
+import { AppComponent } from &#x27;./app.component&#x27;;
+import { BrowserAnimationsModule } from &#x27;@angular/platform-browser/animations&#x27;;
 // Angular Firebase module
 import { AngularFireModule } from &#x27;@angular/fire&#x27;;
 import { AngularFireDatabaseModule } from &#x27;@angular/fire/database&#x27;;
 // Angular Material Design Module import
-import {MaterialModule} from &#x27;./material.module&#x27;;
+import { MaterialModule } from &#x27;./material.module&#x27;;
 // Theme container for recursively theme implementation
-import {OverlayContainer} from &#x27;@angular/cdk/overlay&#x27;;
-import {LayoutModule} from &#x27;@angular/cdk/layout&#x27;;
-import {DefaultModule} from &#x27;./layout/default/default.module&#x27;;
-import {FullPageModule} from &#x27;./layout/full-page/full-page.module&#x27;;
+import { OverlayContainer } from &#x27;@angular/cdk/overlay&#x27;;
+import { LayoutModule } from &#x27;@angular/cdk/layout&#x27;;
+import { DefaultModule } from &#x27;./layout/default/default.module&#x27;;
+import { FullPageModule } from &#x27;./layout/full-page/full-page.module&#x27;;
 import { PdfViewerModule } from &#x27;ng2-pdf-viewer&#x27;;
-import { AlertModule } from &#x27;ngx-bootstrap/alert&#x27;;
 import { CarouselModule } from &#x27;ngx-bootstrap/carousel&#x27;;
 import { ProgressbarModule } from &#x27;ngx-bootstrap/progressbar&#x27;;
 import { ServiceWorkerModule } from &#x27;@angular/service-worker&#x27;;
 import { environment } from &#x27;../environments/environment&#x27;;
 import { AuthModule } from &#x27;./modules/auth/auth.module&#x27;;
 import { AuthService } from &#x27;./modules/auth/services/auth.service&#x27;;
+import { StoreModule } from &#x27;@ngrx/store&#x27;;
+import { reducers, metaReducers } from &#x27;./reducers&#x27;;
+import { AlertModule } from &#x27;ngx-bootstrap/alert&#x27;;
 /**
  * App module
  *
@@ -334,12 +336,19 @@ import { AuthService } from &#x27;./modules/auth/services/auth.service&#x27;;
     ProgressbarModule.forRoot(),
     ServiceWorkerModule.register(&#x27;ngsw-worker.js&#x27;, { enabled: environment.production }),
     AuthModule,
+    StoreModule.forRoot(reducers, {
+      metaReducers: !environment.production ? [] : [],
+      runtimeChecks: {
+        strictActionImmutability: true,
+        strictStateImmutability: true
+      }
+    })
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
 })
 
-export class AppModule {}
+export class AppModule { }
 </code></pre>
     </div>
 </div>

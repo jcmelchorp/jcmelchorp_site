@@ -269,8 +269,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="24"
-                            class="link-to-prism">src/app/layout/full-page/full-page.component.ts:24</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">src/app/layout/full-page/full-page.component.ts:33</a></div>
                 </td>
             </tr>
 
@@ -531,6 +531,15 @@ export class FullPageComponent implements OnInit {
   paw &#x3D; faPaw;
 
   constructor(public titleService: Title) { }
+  /* alerts: any[] &#x3D; [
+    {
+      type: &#x27;success&#x27;,
+      msg: &#x27;&lt;strong&gt;Privacy policy&lt;/strong&gt; Learn more about data collecting.&#x27;,
+      comp: &#x27;register&#x27;
+    }
+  ];
+  alert &#x3D; this.alerts[0];
+  onClosed(dismissedAlert: any): void {} */
   ngOnInit(): void {
   }
 
@@ -623,7 +632,7 @@ export class FullPageComponent implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><mat-toolbar [class.mat-elevation-z4]="true">  <span class="fill-space"></span>  <button mat-button [matMenuTriggerFor]="accessMenu">    <fa-icon [icon]="userTie" size="lg"></fa-icon>  </button>  <mat-menu #accessMenu="matMenu">    <button mat-menu-item [routerLink]="[\'/auth/login\']">      <fa-icon [icon]="login" size="lg"></fa-icon>&nbsp;&nbsp;Login    </button>    <button mat-menu-item [routerLink]="[\'/auth/register\']">      <fa-icon [icon]="concierge" size="lg"></fa-icon>&nbsp;&nbsp;Register    </button>    <button mat-menu-item [routerLink]="[\'/info\']">      <fa-icon [icon]="paw" size="lg"></fa-icon>&nbsp;&nbsp;Enter anonymously    </button>  </mat-menu>  <button mat-button [matMenuTriggerFor]="menu">    <fa-icon [icon]="cog" size="lg"></fa-icon>  </button>  <mat-menu #menu="matMenu">    <button mat-menu-item>      <fa-icon [icon]="globe" size="lg"></fa-icon>&nbsp;&nbsp;Language    </button>    <button mat-menu-item>      <fa-icon [icon]="toggledark" size="lg"></fa-icon>&nbsp;&nbsp;Dark Theme    </button>  </mat-menu></mat-toolbar><router-outlet></router-outlet><img class="footer-image" src="assets/background/piso.jpg" alt="Piso hecho con tablas de madera"></div>'
-    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
+    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'PrivacyComponent', 'selector': ''},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'FullPageComponent'};
 </script>

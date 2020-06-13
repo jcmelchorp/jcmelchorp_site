@@ -362,7 +362,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/sections/portfolio/containers/portfolio.component.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/sections/portfolio/containers/portfolio.component.ts:21</a></div>
                             </td>
                         </tr>
 
@@ -421,7 +421,11 @@ import { Site } from &#x27;../models/site&#x27;;
 export class PortfolioComponent implements OnInit {
   title &#x3D; &#x27;Portfolio&#x27;;
   constructor(private titleService: Title) { }
-  ngOnInit() { this.titleService.setTitle(this.title); }
+  ngOnInit() {
+    setTimeout(() &#x3D;&gt; {
+      this.titleService.setTitle(this.title);
+    });
+   }
 
   sites: Site[] &#x3D; [
     {
@@ -550,7 +554,7 @@ export class PortfolioComponent implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><h2 class="mat-h2 mt-4 mb-4">Online Work</h2><div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="10px" fxLayoutAlign="flex-start">  <ng-container *ngFor="let site of sites">    <mat-card [class.mat-elevation-z6]="true" class="mb-2" fxFlex="0 1 calc(33.3% - 10px)" fxFlex.lt-md="0 1 calc(50% - 10px)" fxFlex.lt-sm="100%">      <mat-card-header>        <mat-card-title>          <a href="{{site.url}}">{{site.name}}</a>        </mat-card-title>        <mat-card-subtitle>Hosted on: {{site.hosting}}</mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <p>          {{site.description}}        </p>        <img mat-card-image src="{{site.imgUrl}}" alt="{{site.name}} screenshot">      </mat-card-content>    </mat-card>  </ng-container></div></div>'
-    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
+    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'PrivacyComponent', 'selector': ''},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'PortfolioComponent'};
 </script>

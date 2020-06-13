@@ -417,7 +417,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/sections/publish/containers/publish.component.ts:16</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/sections/publish/containers/publish.component.ts:20</a></div>
                             </td>
                         </tr>
 
@@ -476,7 +476,11 @@ import { Publication } from &#x27;../models/publication&#x27;;
 export class PublishComponent implements OnInit {
   title &#x3D; &#x27;Publications&#x27;;
   constructor(private titleService: Title) { }
-  ngOnInit() { this.titleService.setTitle(this.title); }
+  ngOnInit() {
+    setTimeout(() &#x3D;&gt; {
+      this.titleService.setTitle(this.title);
+    });
+  }
   publications: Publication[] &#x3D; [
     {
       title: &#x27;Mid-troposphere temperature anomaly on the Gulf of Mexico induced by El Niño&#x27;,
@@ -734,7 +738,7 @@ button.mfp-close:hover {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><h2 class="mat-h2 mt-4 mb-4">Publications</h2><div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="10px" fxLayoutAlign="flex-start">  <ng-container *ngFor="let publication of publications">    <mat-card [class.mat-elevation-z6]="true" class="mb-2" fxFlex="0 1 calc(33.3% - 10px)" fxFlex.lt-md="0 1 calc(50% - 10px)" fxFlex.lt-sm="100%">      <mat-card-header>        <mat-card-title>          <a href="{{publication.url}}">{{publication.title}}</a>        </mat-card-title>        <mat-card-subtitle>Published by: {{publication.journal}}</mat-card-subtitle>      </mat-card-header>      <mat-card-content>        <p>{{publication.abstract}}</p>        <img mat-card-image src="{{publication.imgUrl}}" alt="{{publication.title}} screenshot">      </mat-card-content>      <mat-card-footer>        <p>{{publication.bibcode}}</p>      </mat-card-footer>    </mat-card>  </ng-container></div></div>'
-    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
+    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'PrivacyComponent', 'selector': ''},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'PublishComponent'};
 </script>

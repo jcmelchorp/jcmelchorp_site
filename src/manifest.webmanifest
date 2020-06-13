@@ -10,16 +10,19 @@
   "scope": "./",
   "start_url": "./?utm_source=a2hs",
   "screenshots": [{
-    "src": "./assets/images/screenshot01.png",
-    "sizes": "853x711",
+    "src": "./assets/screenshots/screenshot01.png",
     "type": "image/png"
   },{
-    "src": "./assets/images/screenshot02.png",
-    "sizes": "837x729",
+    "src": "./assets/screenshots/screenshot02.png",
     "type": "image/png"
   },{
-    "src": "./assets/images/screenshot03.png",
-    "sizes": "1000x757",
+    "src": "./assets/screenshots/screenshot03.png",
+    "type": "image/png"
+  },{
+    "src": "./assets/screenshots/screenshot04.png",
+    "type": "image/png"
+  },{
+    "src": "./assets/screenshots/screenshot05.png",
     "type": "image/png"
   }],
   "icons": [
