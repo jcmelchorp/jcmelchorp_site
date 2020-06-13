@@ -21,6 +21,15 @@ export class FullPageComponent implements OnInit {
   paw = faPaw;
 
   constructor(public titleService: Title) { }
+  /* alerts: any[] = [
+    {
+      type: 'success',
+      msg: '<strong>Privacy policy</strong> Learn more about data collecting.',
+      comp: 'register'
+    }
+  ];
+  alert = this.alerts[0];
+  onClosed(dismissedAlert: any): void {} */
   ngOnInit(): void {
   }
 

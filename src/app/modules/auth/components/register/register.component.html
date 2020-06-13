@@ -1,3 +1,7 @@
+<alert [type]="alert.type" [dismissible]="true" (onClosed)="onClosedAlert(alert)">
+  <button mat-button color="primary" (click)="modalPrivacy()"><span [innerHtml]="alert.msg"></span></button>
+</alert>
+
 <div class="register-wrapper mt-4" fxLayout="row" fxLayoutAlign="center center">
   <mat-card>
     <mat-card-header>
@@ -20,7 +24,7 @@
       </form>
     </mat-card-content>
     <mat-card-footer>
-      <p>already have an account?<a mat-button [routerLink]="['/auth/login']">Login</a></p>
+      <p>Got an account already?<a mat-button [routerLink]="['/auth/login']">Login</a></p>
     </mat-card-footer>
   </mat-card>
 </div>

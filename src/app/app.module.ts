@@ -14,7 +14,6 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { DefaultModule } from './layout/default/default.module';
 import { FullPageModule } from './layout/full-page/full-page.module';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
-import { AlertModule } from 'ngx-bootstrap/alert';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -23,6 +22,7 @@ import { AuthModule } from './modules/auth/auth.module';
 import { AuthService } from './modules/auth/services/auth.service';
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './reducers';
+import { AlertModule } from 'ngx-bootstrap/alert';
 /**
  * App module
  *
