@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { RouterModule } from '@angular/router';
-
+import { CoreRoutingModule } from './core-routing.module';
 import { MainComponent } from './main/main.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { WellcomeComponent } from './wellcome/wellcome.component';
@@ -21,8 +19,8 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
   ],
   imports: [
     CommonModule,
-    BrowserAnimationsModule,
     RouterModule,
+    CoreRoutingModule,
     AlertModule,
     CarouselModule,
     ButtonsModule,

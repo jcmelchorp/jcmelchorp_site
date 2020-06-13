@@ -1,0 +1,31 @@
+<div class="login-wrapper mt-4" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <h3 class="mat-h3">Login</h3>
+      </mat-card-title>
+      <mat-card-subtitle>
+        <h4 class="mat-h4">Sign in to create your own curriculum.</h4>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="form" formGroup="loginForm" (ngSubmit)="onLogin()">
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Email" type="email" id="email" formControlName="email">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Password" type="password" id="password" class="form-control" formControlName="password">
+        </mat-form-field>
+        <button mat-raised-button color="primary" class="btn-block" type="submit">Login</button>
+      </form>
+      <h3 class="mat-h3 mt-2">Or try a social login:&nbsp;
+        <a mat-icon-button (click)="onSocialLogin('facebook')"><fa-icon [icon]="facebook" size="lg"></fa-icon></a>
+        <a mat-icon-button (click)="onSocialLogin('twitter')"><fa-icon [icon]="google" size="lg"></fa-icon></a>
+        <a mat-icon-button (click)="onSocialLogin('google')"><fa-icon [icon]="twitter" size="lg"></fa-icon></a>
+      </h3>
+    </mat-card-content>
+    <mat-card-footer>
+      <p>Don't have an account?<a mat-button [routerLink]="['/auth/register']">Register</a></p>
+    </mat-card-footer>
+  </mat-card>
+</div>

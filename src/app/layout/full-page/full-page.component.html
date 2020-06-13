@@ -1,9 +1,19 @@
 <mat-toolbar [class.mat-elevation-z4]="true">
   <span class="fill-space"></span>
-  <a type="button" class="btn btn-xs" [routerLink]="['/login']" routerLinkActive="router-link-active">
-    <fa-icon [icon]="login"></fa-icon>
-  </a>
-  <button mat-icon-button [matMenuTriggerFor]="menu">
+
+  <button mat-button [matMenuTriggerFor]="accessMenu">
+    <fa-icon [icon]="login" size="lg"></fa-icon>
+  </button>
+  <mat-menu #accessMenu="matMenu">
+    <button mat-menu-item [routerLink]="['/auth/login']">
+      <fa-icon [icon]="login" size="lg"></fa-icon>&nbsp;&nbsp;Login
+    </button>
+    <button mat-menu-item [routerLink]="['/auth/register']">
+      <fa-icon [icon]="login" size="lg"></fa-icon>&nbsp;&nbsp;Register
+    </button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="menu">
     <fa-icon [icon]="cog"></fa-icon>
   </button>
   <mat-menu #menu="matMenu">
@@ -15,4 +25,5 @@
     </button>
   </mat-menu>
 </mat-toolbar>
-<app-wellcome></app-wellcome>
+<router-outlet></router-outlet>
+<img class="footer-image" src="assets/background/piso.jpg" alt="Piso hecho con tablas de madera">

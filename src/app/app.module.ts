@@ -1,6 +1,5 @@
-import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-
+import {BrowserModule} from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -20,6 +19,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { AuthModule } from './modules/auth/auth.module';
+import { AuthService } from './modules/auth/services/auth.service';
 /**
  * App module
  *
@@ -45,8 +46,9 @@ import { environment } from '../environments/environment';
     CarouselModule.forRoot(),
     ProgressbarModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    AuthModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 

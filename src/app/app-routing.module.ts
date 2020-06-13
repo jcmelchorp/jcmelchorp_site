@@ -1,18 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { DefaultComponent } from './layout/default/default.component';
-
 import { FullPageComponent } from './layout/full-page/full-page.component';
+import { WellcomeComponent } from './core/wellcome/wellcome.component';
+import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 
 const APP_ROUTES: Routes = [
-  /*   { path: '', redirectTo: 'wellcome', pathMatch: 'full' },*/
+  { path: '', redirectTo: 'wellcome', pathMatch: 'full' },
   {
     path: '', component: FullPageComponent, children: [
       {
-        path: 'wellcome',
+        path: 'auth',
         loadChildren: () =>
-          import('./core/core.module').then((m) => m.CoreModule)
+          import('./modules/auth/auth.module').then((m) => m.AuthModule)
+      },
+      {
+        path: 'wellcome',
+        component: WellcomeComponent
       },
     ]
   },
@@ -49,9 +53,9 @@ const APP_ROUTES: Routes = [
       }
     ]
   },
-  {
-    path: '**', loadChildren: () =>
-      import('./core/core.module').then((m) => m.CoreModule)
+   {
+    path: '**',
+    component: PageNotFoundComponent
   }
 ];
 /**
