@@ -38,6 +38,10 @@ export class ExperienceComponent implements OnInit {
   constructor(
     private titleService: Title,
     private breakpointObserver: BreakpointObserver) {}
-  ngOnInit() { this.titleService.setTitle(this.title); }
+  ngOnInit() {
+    setTimeout(() => {
+      this.titleService.setTitle(this.title);
+    });
+   }
 
 }

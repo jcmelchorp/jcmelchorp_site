@@ -13,6 +13,10 @@ export class ContactComponent implements OnInit {
 
   title = 'Contact';
   constructor(private titleService: Title) {}
-  ngOnInit() { this.titleService.setTitle(this.title); }
+  ngOnInit() {
+    setTimeout(() => {
+      this.titleService.setTitle(this.title);
+    });
+   }
 
 }

@@ -12,7 +12,11 @@ import { Site } from '../models/site';
 export class PortfolioComponent implements OnInit {
   title = 'Portfolio';
   constructor(private titleService: Title) { }
-  ngOnInit() { this.titleService.setTitle(this.title); }
+  ngOnInit() {
+    setTimeout(() => {
+      this.titleService.setTitle(this.title);
+    });
+   }
 
   sites: Site[] = [
     {

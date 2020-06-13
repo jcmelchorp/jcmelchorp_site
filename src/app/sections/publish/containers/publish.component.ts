@@ -12,7 +12,11 @@ import { Publication } from '../models/publication';
 export class PublishComponent implements OnInit {
   title = 'Publications';
   constructor(private titleService: Title) { }
-  ngOnInit() { this.titleService.setTitle(this.title); }
+  ngOnInit() {
+    setTimeout(() => {
+      this.titleService.setTitle(this.title);
+    });
+  }
   publications: Publication[] = [
     {
       title: 'Mid-troposphere temperature anomaly on the Gulf of Mexico induced by El Niño',

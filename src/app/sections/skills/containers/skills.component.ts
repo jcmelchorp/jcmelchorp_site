@@ -13,7 +13,9 @@ export class SkillsComponent implements OnInit {
   title = 'Skills';
   constructor(private titleService: Title) { }
   ngOnInit() {
-    this.titleService.setTitle(this.title);
+    setTimeout(() => {
+      this.titleService.setTitle(this.title);
+    });
   }
 
 
@@ -26,110 +28,137 @@ export class SkillsComponent implements OnInit {
     {
       name: '.NET Core',
       imgUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg',
-      rate: 88 },
+      rate: 88
+    },
     {
       name: 'JavaScript',
       imgUrl: 'https://raw.githubusercontent.com/konpa/devicon/master/icons/javascript/javascript-original.svg',
-      rate: 80 },
+      rate: 80
+    },
     {
       name: 'C / C++',
       imgUrl: 'https://raw.githubusercontent.com/konpa/devicon/master/icons/cplusplus/cplusplus-original.svg',
-      rate: 80 },
+      rate: 80
+    },
     {
       name: 'C# / Razor',
       imgUrl: 'https://raw.githubusercontent.com/konpa/devicon/master/icons/csharp/csharp-original.svg',
-      rate: 85 },
+      rate: 85
+    },
     {
       name: 'JSON',
       imgUrl: 'https://raw.githubusercontent.com/leopiccionia/programmicons/master/src/json.svg',
-      rate: 85 },
+      rate: 85
+    },
     {
       name: 'HTML5',
       imgUrl: 'https://cdn.rawgit.com/konpa/devicon/master/icons/html5/html5-plain.svg',
-      rate: 95 },
+      rate: 95
+    },
     {
       name: 'CSS3',
       imgUrl: 'https://cdn.rawgit.com/konpa/devicon/master/icons/css3/css3-plain.svg',
-      rate: 80 },
+      rate: 80
+    },
     {
       name: 'SASS / SCSS',
       imgUrl: 'https://raw.githubusercontent.com/konpa/devicon/master/icons/sass/sass-original.svg',
-      rate: 80 },
+      rate: 80
+    },
     {
       name: 'Java',
       imgUrl: 'https://raw.githubusercontent.com/konpa/devicon/master/icons/java/java-original.svg',
-      rate: 75 },
+      rate: 75
+    },
     {
       name: 'Swift',
       imgUrl: 'https://raw.githubusercontent.com/konpa/devicon/master/icons/swift/swift-original.svg',
-      rate: 55 },
+      rate: 55
+    },
     {
       name: 'Objective-C',
       imgUrl: 'https://raw.githubusercontent.com/fizzed/font-mfizz/master/src/svg/objc.svg',
-      rate: 50 },
+      rate: 50
+    },
     {
       name: 'Git',
       imgUrl: 'https://raw.githubusercontent.com/konpa/devicon/master/icons/git/git-original.svg',
-      rate: 90 },
+      rate: 90
+    },
     {
       name: 'TeX',
       imgUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/95/TeXShop_icon.png',
-      rate: 82 },
+      rate: 82
+    },
     {
       name: 'Fortran 77 / 90',
-      imgUrl: 'https://krvajalm.gallerycdn.vsassets.io/extensions/krvajalm/linter-gfortran/2.2.1/1590078791788/Microsoft.VisualStudio.Services.Icons.Default', rate: 90 },
+      imgUrl: 'https://krvajalm.gallerycdn.vsassets.io/extensions/krvajalm/linter-gfortran/2.2.1/1590078791788/Microsoft.VisualStudio.Services.Icons.Default', rate: 90
+    },
     {
       name: 'MySQL',
       imgUrl: 'https://raw.githubusercontent.com/drakon88/devicon/master/icons/mysql/mysql-original.svg',
-      rate: 65 },
+      rate: 65
+    },
     {
       name: 'SQLite',
       imgUrl: 'https://raw.githubusercontent.com/Thomas-A-Reinert/WebDev-Icons/master/src/SVG/sqllite.svg',
-      rate: 70 },
+      rate: 70
+    },
     {
       name: 'Microsoft SQL Server',
       imgUrl: 'https://cdn.worldvectorlogo.com/logos/microsoft-sql-server.svg',
-      rate: 60 },
+      rate: 60
+    },
     {
       name: 'NCL',
       imgUrl: 'https://www.ncl.ucar.edu/Images/NCLLogoWeb.jpg',
-      rate: 90 },
+      rate: 90
+    },
     {
       name: 'SSH',
       imgUrl: 'https://raw.githubusercontent.com/konpa/devicon/master/icons/ssh/ssh-original.svg',
-      rate: 75 },
+      rate: 75
+    },
     {
       name: 'Typescript',
       imgUrl: 'https://raw.githubusercontent.com/konpa/devicon/master/icons/typescript/typescript-original.svg',
-      rate: 88 },
+      rate: 88
+    },
     {
       name: 'Bootstrap',
       imgUrl: 'https://raw.githubusercontent.com/konpa/devicon/master/icons/bootstrap/bootstrap-plain.svg',
-      rate: 90 },
+      rate: 90
+    },
     {
       name: 'Zurb Foundation',
       imgUrl: 'https://raw.githubusercontent.com/konpa/devicon/master/icons/foundation/foundation-original.svg',
-      rate: 68 },
+      rate: 68
+    },
     {
       name: 'Angular',
       imgUrl: 'https://angular.io/assets/images/logos/angular/angular.svg',
-      rate: 90 },
+      rate: 90
+    },
     {
       name: 'AngularJS',
       imgUrl: 'https://cdn.rawgit.com/konpa/devicon/master/icons/angularjs/angularjs-plain.svg',
-      rate: 90 },
+      rate: 90
+    },
     {
       name: 'JQuery',
       imgUrl: 'https://raw.githubusercontent.com/konpa/devicon/master/icons/jquery/jquery-original.svg',
-      rate: 65 },
+      rate: 65
+    },
     {
       name: 'NodeJS',
       imgUrl: 'https://raw.githubusercontent.com/konpa/devicon/master/icons/nodejs/nodejs-original.svg',
-      rate: 72 },
+      rate: 72
+    },
     {
       name: 'NPM',
       imgUrl: 'https://raw.githubusercontent.com/konpa/devicon/master/icons/npm/npm-original-wordmark.svg',
-      rate: 72 },
+      rate: 72
+    },
   ];
 
 

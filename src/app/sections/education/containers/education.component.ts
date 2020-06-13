@@ -99,5 +99,9 @@ export class EducationComponent implements OnInit {
 
     }
   }
-  ngOnInit() { this.titleService.setTitle(this.title); }
+  ngOnInit() {
+    setTimeout(() => {
+      this.titleService.setTitle(this.title);
+    });
+   }
 }
