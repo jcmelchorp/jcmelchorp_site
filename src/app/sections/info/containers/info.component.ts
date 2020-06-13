@@ -26,6 +26,10 @@ export class InfoComponent implements OnInit {
 
 
   constructor(private titleService: Title) { }
-  ngOnInit() { this.titleService.setTitle(this.title); }
+  ngOnInit() {
+    setTimeout(() => {
+      this.titleService.setTitle(this.title);
+    });
+   }
 
 }
