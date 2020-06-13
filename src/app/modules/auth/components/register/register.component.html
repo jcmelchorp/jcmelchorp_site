@@ -9,7 +9,7 @@
       </mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      <form class="form" formGroup="registerForm" (ngSubmit)="onRegister()">
+      <form class="form" [formGroup]="registerForm" (ngSubmit)="onRegister()">
         <mat-form-field class="full-width">
           <input matInput placeholder="Email" type="email" id="email" formControlName="email">
         </mat-form-field>
