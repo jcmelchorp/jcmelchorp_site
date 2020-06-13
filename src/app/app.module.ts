@@ -49,7 +49,6 @@ import { reducers, metaReducers } from './reducers';
     ProgressbarModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     AuthModule,
-    StoreModule.forRoot({}, {}),
     StoreModule.forRoot(reducers, {
       metaReducers
     })
