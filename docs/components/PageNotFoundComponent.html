@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Curriculum Web Application Documentation</title>
+        <title>CWA documentación</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">Curriculum Web Application Documentation</a>
+            <a href="../" class="navbar-brand">CWA documentación</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -247,14 +247,13 @@ export class PageNotFoundComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;not-found-container&quot;&gt;
-    &lt;div class&#x3D;&quot;row h-100 justify-content-center align-items-center&quot;&gt;
-        &lt;div class&#x3D;&quot;col-md-8 text-center fadeIn animated&quot;&gt;
-            &lt;h1 class&#x3D;&quot;not-found-heading mb-4&quot;&gt;&lt;span class&#x3D;&quot;text-danger&quot;&gt;404&lt;/span&gt; Página no encontrada&lt;/h1&gt;
-            &lt;h3 class&#x3D;&quot;mb-4&quot;&gt;&lt;strong&gt;Si estas viendo esto es porque el vínculo al que trataste de acceder no existe.&lt;/strong&gt;&lt;/h3&gt;
-            &lt;button mat-raised-button color&#x3D;&quot;primary&quot; routerLink&#x3D;&quot;/wellcome&quot;&gt;Regresar al sitio&lt;/button&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row h-100 justify-content-center align-items-center&quot;&gt;
+  &lt;div class&#x3D;&quot;col-md-8 text-center fadeIn animated&quot;&gt;
+    &lt;h1 class&#x3D;&quot;not-found-heading mb-4&quot;&gt;&lt;span class&#x3D;&quot;text-danger&quot;&gt;404&lt;/span&gt; Página no encontrada&lt;/h1&gt;
+    &lt;h3 class&#x3D;&quot;mb-4&quot;&gt;&lt;strong&gt;Si estas viendo esto es porque el vínculo al que trataste de acceder no existe.&lt;/strong&gt;
+    &lt;/h3&gt;
+    &lt;button mat-raised-button color&#x3D;&quot;primary&quot; routerLink&#x3D;&quot;/wellcome&quot;&gt;Regresar al sitio&lt;/button&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
     </div>
@@ -263,22 +262,11 @@ export class PageNotFoundComponent implements OnInit {
                 <p class="comment">
                     <code>./page-not-found.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">.not-found-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: url(&quot;../../../assets/background/philippe-ramakers-GEc9p9avZP8-unsplash.jpg&quot;) no-repeat center top;
-    background-size: cover;
-    opacity: 1.0;
-    content: &#x27;&#x27;;
-    z-index: 0;
-}
-.not-found-heading {
+                <pre class="line-numbers"><code class="language-scss">.not-found-heading {
     font-size: 3.5rem;
     font-weight: 100;
-}</code></pre>
+}
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -306,8 +294,8 @@ export class PageNotFoundComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="not-found-container">    <div class="row h-100 justify-content-center align-items-center">        <div class="col-md-8 text-center fadeIn animated">            <h1 class="not-found-heading mb-4"><span class="text-danger">404</span> Página no encontrada</h1>            <h3 class="mb-4"><strong>Si estas viendo esto es porque el vínculo al que trataste de acceder no existe.</strong></h3>            <button mat-raised-button color="primary" routerLink="/wellcome">Regresar al sitio</button>        </div>    </div></div></div>'
-    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
+        var COMPONENT_TEMPLATE = '<div><div class="row h-100 justify-content-center align-items-center">  <div class="col-md-8 text-center fadeIn animated">    <h1 class="not-found-heading mb-4"><span class="text-danger">404</span> Página no encontrada</h1>    <h3 class="mb-4"><strong>Si estas viendo esto es porque el vínculo al que trataste de acceder no existe.</strong>    </h3>    <button mat-raised-button color="primary" routerLink="/wellcome">Regresar al sitio</button>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DefaultComponent', 'selector': 'app-default'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FullPageComponent', 'selector': 'app-full-page'},{'name': 'ImageModalComponent', 'selector': 'app-image-modal'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PdfModalComponent', 'selector': 'app-pdf-modal'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'PublishComponent', 'selector': 'app-publish'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'WellcomeComponent', 'selector': 'app-wellcome'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'PageNotFoundComponent'};
 </script>

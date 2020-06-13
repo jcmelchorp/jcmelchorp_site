@@ -2,29 +2,29 @@
   <span class="fill-space"></span>
 
   <button mat-button [matMenuTriggerFor]="accessMenu">
-    <fa-icon [icon]="login" size="lg"></fa-icon>
+    <fa-icon [icon]="userTie" size="lg"></fa-icon>
   </button>
   <mat-menu #accessMenu="matMenu">
     <button mat-menu-item [routerLink]="['/auth/login']">
       <fa-icon [icon]="login" size="lg"></fa-icon>&nbsp;&nbsp;Login
     </button>
     <button mat-menu-item [routerLink]="['/auth/register']">
-      <fa-icon [icon]="login" size="lg"></fa-icon>&nbsp;&nbsp;Register
+      <fa-icon [icon]="concierge" size="lg"></fa-icon>&nbsp;&nbsp;Register
     </button>
     <button mat-menu-item [routerLink]="['/info']">
-      <fa-icon [icon]="login" size="lg"></fa-icon>&nbsp;&nbsp;Enter anonymously
+      <fa-icon [icon]="paw" size="lg"></fa-icon>&nbsp;&nbsp;Enter anonymously
     </button>
   </mat-menu>
 
   <button mat-button [matMenuTriggerFor]="menu">
-    <fa-icon [icon]="cog"></fa-icon>
+    <fa-icon [icon]="cog" size="lg"></fa-icon>
   </button>
   <mat-menu #menu="matMenu">
     <button mat-menu-item>
-      <fa-icon [icon]="globe"></fa-icon>&nbsp;&nbsp;Language
+      <fa-icon [icon]="globe" size="lg"></fa-icon>&nbsp;&nbsp;Language
     </button>
     <button mat-menu-item>
-      <fa-icon [icon]="toggledark"></fa-icon>&nbsp;&nbsp;Dark Theme
+      <fa-icon [icon]="toggledark" size="lg"></fa-icon>&nbsp;&nbsp;Dark Theme
     </button>
   </mat-menu>
 </mat-toolbar>

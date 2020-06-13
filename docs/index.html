@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Curriculum Web Application Documentation</title>
+        <title>CWA documentación</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="./" class="navbar-brand">Curriculum Web Application Documentation</a>
+            <a href="./" class="navbar-brand">CWA documentación</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -37,10 +37,10 @@
 <p>This project includes the following features:</p>
 <ul>
 <li>Angular 9.1.7</li>
-<li>🚀 Full Angular PWA, Lasy Loading &amp; SEO.</li>
-<li>🔨 Angular MetaService for metadata injection.</li>
-<li>🔥 Google Firebase for FireHosting and Realtime Database.</li>
-<li>📌 Google Tag Manager.</li>
+<li>Full Angular PWA, Lasy Loading &amp; SEO.</li>
+<li>Angular MetaService for metadata injection.</li>
+<li>Google Firebase for FireHosting and Realtime Database.</li>
+<li>Google Tag Manager.</li>
 <li>Angular Material 9.2.4 with custom theme.</li>
 <li>Ngx-Bootstrap 5.6.1</li>
 <li>Responsive flex layout.</li>
@@ -54,22 +54,30 @@
 <p>Find a demostration on <a href="https://jcmelchorp.web.app/" title="Firebase Hosting">https://jcmelchorp.web.app</a>.
 For documentation, see <a href="https://juliomelchorpinto.github.io/jcmelchorp/" title="Github Pages">docs/</a>.</p>
 <h2 id="screenshots">Screenshots</h2>
-<p><img src="src/assets/images/screenshot01.png" alt="" class="img-responsive">
-<strong>Fig. 1</strong> - View example</p>
-<p><img src="src/assets/images/screenshot03.png" alt="" class="img-responsive">
-<strong>Fig. 2</strong> - Wellcome page</p>
+<p><img src="src/assets/images/screenshot01.png" alt="" class="img-responsive"></p>
+<p><strong>Fig. 1</strong> - View example</p>
+<p><img src="src/assets/images/screenshot03.png" alt="" class="img-responsive"></p>
+<p><strong>Fig. 2</strong> - Wellcome page</p>
 <h2 id="install-this-repository">Install this repository</h2>
 <p>If you want to use this repository as a template, run:</p>
-<div><pre class="line-numbers"><code class="language-none">git clone https://github.com/JulioMelchorPinto/jcmelchorp.git</code></pre></div><h2 id="build-requirements">Build requirements</h2>
+<div><pre class="line-numbers"><code class="language-bash">git clone https://github.com/JulioMelchorPinto/jcmelchorp.git</code></pre></div><p>then, enter the workspace directory:</p>
+<div><pre class="line-numbers"><code class="language-bash">cd jcmelchorp</code></pre></div><p>and install NPM packages:</p>
+<div><pre class="line-numbers"><code class="language-bash">npm install</code></pre></div><h2 id="build-requirements">Build requirements</h2>
 <p>This repository has the following pre-requisites:</p>
 <ul>
 <li><a href="https://nodejs.org/">NodeJS</a></li>
-<li>Google []Firebase](<a href="https://firebase.google.com/">https://firebase.google.com/</a>) Account (optional for Hosting and further features)</li>
+<li><a href="https://firebase.google.com/">Google Firebase</a> Account (optional for Hosting and further features)</li>
 <li><a href="https://tagmanager.google.com/">Google Tag Manager</a> Account</li>
 <li><a href="https://cli.angular.io/">Angular CLI</a></li>
 </ul>
 <p>The Angular CLI, CompoDoc, PWA asset generator comes with NPM install. If you want to use Angular CLI as a shell command:</p>
-<div><pre class="line-numbers"><code class="language-bash">npm -i -g &#64;angular/cli</code></pre></div><h2 id="commands">Commands</h2>
+<div><pre class="line-numbers"><code class="language-bash">npm i -g &#64;angular/cli</code></pre></div><p>Also, it is recommended that you install globaly the complementary tools:</p>
+<p>For generate documentation project:</p>
+<div><pre class="line-numbers"><code class="language-bash">npm i -g &#64;compodoc/compodoc</code></pre></div><p>To run a local server:</p>
+<div><pre class="line-numbers"><code class="language-bash">npm i -g json-server</code></pre></div><p>For assets generator:</p>
+<div><pre class="line-numbers"><code class="language-bash">npm i -g pwa-asset-generator</code></pre></div><p>If you want to include SEO auditioning:</p>
+<div><pre class="line-numbers"><code class="language-bash">npm i -g lighthouse</code></pre></div><p>And for Firebase deploy:</p>
+<div><pre class="line-numbers"><code class="language-bash">npm i -g firebase-tools</code></pre></div><h2 id="commands">Commands</h2>
 <p>Besides the built-in commands from @angular/cli, this proyect contains other some:</p>
 <h3 id="local-server">Local server</h3>
 <p>First, generate a mock database with <em>faker</em>:</p>

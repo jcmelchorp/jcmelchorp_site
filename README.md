@@ -7,10 +7,10 @@ Angular Application for curriculum vitae.
 This project includes the following features:
 
 - Angular 9.1.7
-- 🚀 Full Angular PWA, Lasy Loading & SEO.
-- 🔨 Angular MetaService for metadata injection.
-- 🔥 Google Firebase for FireHosting and Realtime Database.
-- 📌 Google Tag Manager.
+- Full Angular PWA, Lasy Loading & SEO.
+- Angular MetaService for metadata injection.
+- Google Firebase for FireHosting and Realtime Database.
+- Google Tag Manager.
 - Angular Material 9.2.4 with custom theme.
 - Ngx-Bootstrap 5.6.1
 - Responsive flex layout.
@@ -28,17 +28,31 @@ For documentation, see [docs/](https://juliomelchorpinto.github.io/jcmelchorp/ "
 ## Screenshots
 
 ![](src/assets/images/screenshot01.png)
+
 **Fig. 1** - View example
 
 ![](src/assets/images/screenshot03.png)
+
 **Fig. 2** - Wellcome page
 
 ## Install this repository
 
 If you want to use this repository as a template, run:
 
-````
+```` bash
 git clone https://github.com/JulioMelchorPinto/jcmelchorp.git
+````
+
+then, enter the workspace directory:
+
+```` bash
+cd jcmelchorp
+````
+
+and install NPM packages:
+
+```` bash
+npm install
 ````
 
 ## Build requirements
@@ -46,14 +60,47 @@ git clone https://github.com/JulioMelchorPinto/jcmelchorp.git
 This repository has the following pre-requisites:
 
 - [NodeJS](https://nodejs.org/)
-- Google []Firebase](https://firebase.google.com/) Account (optional for Hosting and further features)
+- [Google Firebase](https://firebase.google.com/) Account (optional for Hosting and further features)
 - [Google Tag Manager](https://tagmanager.google.com/) Account
 - [Angular CLI](https://cli.angular.io/)
+
 
 The Angular CLI, CompoDoc, PWA asset generator comes with NPM install. If you want to use Angular CLI as a shell command:
 
 ```` bash
-npm -i -g @angular/cli
+npm i -g @angular/cli
+````
+
+Also, it is recommended that you install globaly the complementary tools:
+
+For generate documentation project:
+
+```` bash
+npm i -g @compodoc/compodoc
+````
+
+To run a local server:
+
+```` bash
+npm i -g json-server
+````
+
+For assets generator:
+
+```` bash
+npm i -g pwa-asset-generator
+````
+
+If you want to include SEO auditioning:
+
+```` bash
+npm i -g lighthouse
+````
+
+And for Firebase deploy:
+
+```` bash
+npm i -g firebase-tools
 ````
 
 ## Commands
