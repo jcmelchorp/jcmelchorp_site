@@ -21,6 +21,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { AuthModule } from './modules/auth/auth.module';
 import { AuthService } from './modules/auth/services/auth.service';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './reducers';
 /**
  * App module
  *
@@ -47,7 +49,11 @@ import { AuthService } from './modules/auth/services/auth.service';
     ProgressbarModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     AuthModule,
-  ],
+    StoreModule.forRoot({}, {}),
+    StoreModule.forRoot(reducers, {
+      metaReducers
+    })
+    ],
   providers: [AuthService],
   bootstrap: [AppComponent]
 })
