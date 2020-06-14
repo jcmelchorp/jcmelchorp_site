@@ -5,6 +5,8 @@ import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { AlertModalComponent } from './shared/components/alert-modal/alert-modal.component';
+import { Observable } from 'rxjs';
+import { ThemeService } from './shared/services/theme.service';
 /**
  * App component
  *
@@ -21,15 +23,18 @@ export class AppComponent implements OnInit {
    * Title for the page component
    */
   title = 'Curriculum';
+  isDarkTheme: Observable<boolean>;
   constructor(
     private metaTagService: Meta,
     private titleService: Title,
     private swUpdate: SwUpdate,
     private snackBar: MatSnackBar,
     public matDialog: MatDialog,
+    public themeService: ThemeService
   ) { }
 
   ngOnInit() {
+    this.isDarkTheme = this.themeService.isDarkTheme;
     this.titleService.setTitle(this.title);
     this.metaTagService.addTags([
       { charset: 'UTF-8' },

@@ -8,6 +8,7 @@ import { WellcomeComponent } from './wellcome/wellcome.component';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { ThemeService } from '../shared/services/theme.service';
 /**
  * Core module
  */
@@ -29,6 +30,7 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
     MainComponent,
     PageNotFoundComponent,
     WellcomeComponent,
-  ]
+  ],
+  providers: [ThemeService]
 })
 export class CoreModule { }

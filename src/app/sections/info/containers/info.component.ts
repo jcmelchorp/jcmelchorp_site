@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Observable } from 'rxjs';
+import { ThemeService } from 'src/app/shared/services/theme.service';
 /**
  * Info component
  */
@@ -9,6 +11,8 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent implements OnInit {
+  isDarkTheme: Observable<boolean>;
+
   title = 'Information';
   step = 0;
 
@@ -24,12 +28,20 @@ export class InfoComponent implements OnInit {
     this.step--;
   }
 
-
-  constructor(private titleService: Title) { }
+  constructor(
+    private titleService: Title,
+    public themeService: ThemeService,
+    ) {}
   ngOnInit() {
+    this.isDarkTheme = this.themeService.isDarkTheme;
     setTimeout(() => {
       this.titleService.setTitle(this.title);
     });
    }
+
+   toggleDarkTheme(checked: boolean) {
+    this.themeService.setDarkTheme(checked);
+  }
+
 
 }

@@ -18,11 +18,11 @@ import { ThemeService } from 'src/app/shared/services/theme.service';
     FullPageComponent,
     AlertModalComponent
    ],
-   providers: [
-    ThemeService
-  ],
   imports: [
     CommonModule, RouterModule, MaterialModule, FlexLayoutModule, FontAwesomeModule, CoreModule
+  ],
+  exports: [
+    FullPageComponent
   ]
 })
 export class FullPageModule { }

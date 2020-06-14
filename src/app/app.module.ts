@@ -23,6 +23,8 @@ import { AuthService } from './modules/auth/services/auth.service';
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './reducers';
 import { AlertModule } from 'ngx-bootstrap/alert';
+import { HttpClientModule } from '@angular/common/http';
+import { ThemeService } from './shared/services/theme.service';
 /**
  * App module
  *
@@ -36,6 +38,7 @@ import { AlertModule } from 'ngx-bootstrap/alert';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     ServiceWorkerModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
@@ -57,7 +60,7 @@ import { AlertModule } from 'ngx-bootstrap/alert';
       }
     })
   ],
-  providers: [AuthService],
+  providers: [AuthService,ThemeService],
   bootstrap: [AppComponent]
 })
 

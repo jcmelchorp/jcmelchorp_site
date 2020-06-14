@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Title, DomSanitizer } from '@angular/platform-browser';
 import { faSignInAlt, faGlobe, faCog, faUserTie, faConciergeBell, faPaw } from '@fortawesome/free-solid-svg-icons';
 import { faFilePdf, faSun } from '@fortawesome/free-regular-svg-icons';
 import { ThemeService } from 'src/app/shared/services/theme.service';
 import { Observable } from 'rxjs';
+import { MatIconRegistry } from '@angular/material/icon';
 /**
  * Default component
  */
@@ -25,9 +26,13 @@ export class DefaultComponent {
 
   constructor(
     public titleService: Title,
-    private themeService: ThemeService
-    ) { }
+    private themeService: ThemeService,iconRegistry: MatIconRegistry,
+    sanitizer: DomSanitizer
+    ) {
+      iconRegistry.addSvgIcon('en', sanitizer.bypassSecurityTrustResourceUrl('assets/flags/en.svg'));
+      iconRegistry.addSvgIcon('es', sanitizer.bypassSecurityTrustResourceUrl('assets/flags/es.svg'));
 
+    }
   ngOnInit() {
     this.isDarkTheme = this.themeService.isDarkTheme;
   }

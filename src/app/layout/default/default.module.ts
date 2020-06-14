@@ -21,6 +21,7 @@ import { PublishModule } from 'src/app/sections/publish/publish.module';
 import { SkillsModule } from 'src/app/sections/skills/skills.module';
 import { PdfModalComponent } from 'src/app/shared/components/pdf-modal/pdf-modal.component';
 import { ImageModalComponent } from 'src/app/shared/components/image-modal/image-modal.component';
+import { ThemeService } from 'src/app/shared/services/theme.service';
 /**
  * Default module
  *
@@ -48,6 +49,9 @@ import { ImageModalComponent } from 'src/app/shared/components/image-modal/image
     ExperienceModule,
     PublishModule,
     SkillsModule
+  ],
+  exports: [
+    DefaultComponent
   ]
 })
 export class DefaultModule {}
