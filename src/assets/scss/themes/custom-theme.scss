@@ -8,24 +8,22 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$app-light-primary: mat-palette($mat-blue-grey);
-$app-light-accent: mat-palette($mat-light-green, A400, A600, A900);
+$light-primary: mat-palette($mat-blue-grey);
+$light-accent: mat-palette($mat-green, A200, A100, A400);
 // The warn palette is optional (defaults to red).
-$app-light-warn: mat-palette($mat-amber);
+$light-warn: mat-palette($mat-amber);
 // Create the theme object (a Sass map containing all of the palettes).
-$app-light-theme: mat-light-theme($app-light-primary, $app-light-accent, $app-light-warn);
+$light-theme: mat-light-theme($light-primary, $light-accent, $light-warn);
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($app-light-theme);
+@include angular-material-theme($light-theme);
 // Define an alternate dark theme.
-$app-dark-primary: mat-palette($mat-blue-grey);
-$app-dark-accent:   mat-palette($mat-amber, A200, A100, A400);
-$app-dark-warn:    mat-palette($mat-deep-orange);
-$app-dark-theme:   mat-dark-theme($app-dark-primary, $app-dark-accent, $app-dark-warn);
-// Include the alternative theme styles inside of a block with a CSS class. You can make this
-// CSS class whatever you want. In this example, any component inside of an element with
-// `.unicorn-dark-theme` will be affected by this alternate dark theme instead of the default theme.
-.app-dark-theme {
-  @include angular-material-theme($app-dark-theme);
+.dark-theme {
+  color: $light-primary-text;
+  $dark-primary: mat-palette($mat-yellow);
+  $dark-accent: mat-palette($mat-amber, A400, A100, A700);
+  $dark-warn: mat-palette($mat-red);
+  $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+  @include angular-material-theme($dark-theme);
 }

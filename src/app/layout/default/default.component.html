@@ -1,62 +1,75 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport mode="push" role="navigation">
-    <mat-toolbar>
-      <a mat-list-icon (click)="drawer.toggle()" routerLink="/wellcome">
-        <img src="https://raw.githubusercontent.com/JulioMelchorPinto/jcmelchorp/master/src/assets/icons/android-icon-48x48.png" alt="Imagen circular de Julio Melchor">
-      </a>
-      <img class="signature" src="https://raw.githubusercontent.com/JulioMelchorPinto/jcmelchorp/master/src/assets/images/signature-120x80.png" alt="Rubrica de Julio Melchor">
-    </mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item (click)="drawer.toggle()" routerLink="/info">
-        <!-- <fa-icon [icon]="info"></fa-icon>&nbsp;&nbsp;-->Information
-      </a>
-      <a mat-list-item (click)="drawer.toggle()" routerLink="/education">
-        <!-- <fa-icon [icon]="userGraduate"></fa-icon>&nbsp;&nbsp;-->Education
-      </a>
-      <a mat-list-item (click)="drawer.toggle()" routerLink="/experience">Experience</a>
-      <a mat-list-item (click)="drawer.toggle()" routerLink="/publish">Publish</a>
-      <a mat-list-item (click)="drawer.toggle()" routerLink="/portfolio">Portfolio</a>
-      <a mat-list-item (click)="drawer.toggle()" routerLink="/skills">Skills</a>
-      <a mat-list-item (click)="drawer.toggle()" routerLink="/contact">Contact</a>
-      <a mat-list-item href="https://raw.githubusercontent.com/JulioMelchorPinto/jcmelchorp/master/src/assets/pdf/curriculum2020-en.pdf" target="_blank">
-        <fa-icon [icon]="print" [inverse]></fa-icon>&nbsp;&nbsp;PDF File
-      </a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar [class.mat-elevation-z4]="true" class="mb-2">
-      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>{{this.titleService.getTitle()}}</span>
-      <span class="fill-space"></span>
-      <button mat-button [matMenuTriggerFor]="accessMenu">
-        <fa-icon [icon]="userTie" size="lg"></fa-icon>
-      </button>
-      <mat-menu #accessMenu="matMenu">
-        <button mat-menu-item [routerLink]="['/auth/login']">
-          <fa-icon [icon]="login" size="lg"></fa-icon>&nbsp;&nbsp;Login
-        </button>
-        <button mat-menu-item [routerLink]="['/auth/register']">
-          <fa-icon [icon]="concierge" size="lg"></fa-icon>&nbsp;&nbsp;Register
-        </button>
-        <button mat-menu-item [routerLink]="['/info']">
-          <fa-icon [icon]="paw" size="lg"></fa-icon>&nbsp;&nbsp;Enter anonymously
-        </button>
-      </mat-menu>
+<div [ngClass]="{'dark-theme': isDarkTheme | async}">
+  <div class="mat-app-background">
+    <mat-sidenav-container class="sidenav-container">
+      <mat-sidenav #drawer class="sidenav" fixedInViewport mode="push" role="navigation">
+        <mat-toolbar>
+          <a mat-list-icon (click)="drawer.toggle()" routerLink="/wellcome">
+            <img
+              src="https://raw.githubusercontent.com/JulioMelchorPinto/jcmelchorp/master/src/assets/icons/android-icon-48x48.png"
+              alt="Imagen circular de Julio Melchor">
+          </a>
+          <img class="signature"
+            src="https://raw.githubusercontent.com/JulioMelchorPinto/jcmelchorp/master/src/assets/images/signature-120x80.png"
+            alt="Rubrica de Julio Melchor">
+        </mat-toolbar>
+        <mat-nav-list>
+          <a mat-list-item (click)="drawer.toggle()" routerLink="/info">
+            <!-- <fa-icon [icon]="info"></fa-icon>&nbsp;&nbsp;-->Information
+          </a>
+          <a mat-list-item (click)="drawer.toggle()" routerLink="/education">
+            <!-- <fa-icon [icon]="userGraduate"></fa-icon>&nbsp;&nbsp;-->Education
+          </a>
+          <a mat-list-item (click)="drawer.toggle()" routerLink="/experience">Experience</a>
+          <a mat-list-item (click)="drawer.toggle()" routerLink="/publish">Publish</a>
+          <a mat-list-item (click)="drawer.toggle()" routerLink="/portfolio">Portfolio</a>
+          <a mat-list-item (click)="drawer.toggle()" routerLink="/skills">Skills</a>
+          <a mat-list-item (click)="drawer.toggle()" routerLink="/contact">Contact</a>
+          <a mat-list-item
+            href="https://raw.githubusercontent.com/JulioMelchorPinto/jcmelchorp/master/src/assets/pdf/curriculum2020-en.pdf"
+            target="_blank">
+            <fa-icon [icon]="print" [inverse]></fa-icon>&nbsp;&nbsp;PDF File
+          </a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <mat-toolbar [class.mat-elevation-z4]="true" class="mb-2">
+          <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+          </button>
+          <span>{{this.titleService.getTitle()}}</span>
+          <span class="fill-space"></span>
+          <button mat-button [matMenuTriggerFor]="accessMenu">
+            <fa-icon [icon]="userTie" size="lg"></fa-icon>
+          </button>
+          <mat-menu #accessMenu="matMenu">
+            <button mat-menu-item [routerLink]="['/auth/login']">
+              <fa-icon [icon]="login" size="lg"></fa-icon>&nbsp;&nbsp;Login
+            </button>
+            <button mat-menu-item [routerLink]="['/auth/register']">
+              <fa-icon [icon]="concierge" size="lg"></fa-icon>&nbsp;&nbsp;Register
+            </button>
+            <button mat-menu-item [routerLink]="['/info']">
+              <fa-icon [icon]="paw" size="lg"></fa-icon>&nbsp;&nbsp;Enter anonymously
+            </button>
+          </mat-menu>
 
-      <button mat-button [matMenuTriggerFor]="menu">
-        <fa-icon [icon]="cog" size="lg"></fa-icon>
-      </button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>
-          <fa-icon [icon]="globe" size="lg"></fa-icon>&nbsp;&nbsp;Language
-        </button>
-        <button mat-menu-item>
-          <fa-icon [icon]="toggledark" size="lg"></fa-icon>&nbsp;&nbsp;Dark Theme
-        </button>
-      </mat-menu>
-    </mat-toolbar>
-    <app-main></app-main>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+          <button mat-button [matMenuTriggerFor]="menu">
+            <fa-icon [icon]="cog" size="lg"></fa-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <fa-icon [icon]="globe" size="lg"></fa-icon>&nbsp;&nbsp;Language
+            </button>
+            <button mat-menu-item>
+              <fa-icon [icon]="toggledark" size="lg"></fa-icon>&nbsp;&nbsp;Dark Theme
+            </button>
+          </mat-menu>
+          <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before"
+          (change)="toggleDarkTheme($event.checked)">Dark theme
+        </mat-slide-toggle>
+        </mat-toolbar>
+        <app-main></app-main>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+</div>

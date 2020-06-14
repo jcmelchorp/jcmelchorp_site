@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { faSignInAlt, faGlobe, faCog, faUserTie, faConciergeBell, faPaw } from '@fortawesome/free-solid-svg-icons';
 import { faFilePdf, faSun } from '@fortawesome/free-regular-svg-icons';
+import { ThemeService } from 'src/app/shared/services/theme.service';
+import { Observable } from 'rxjs';
 /**
  * Default component
  */
@@ -19,8 +21,19 @@ export class DefaultComponent {
   concierge = faConciergeBell;
   paw = faPaw;
   print = faFilePdf;
-  constructor(public titleService: Title) { }
+  isDarkTheme: Observable<boolean>;
 
+  constructor(
+    public titleService: Title,
+    private themeService: ThemeService
+    ) { }
 
+  ngOnInit() {
+    this.isDarkTheme = this.themeService.isDarkTheme;
+  }
+
+  toggleDarkTheme(checked: boolean) {
+    this.themeService.setDarkTheme(checked);
+  }
 
 }

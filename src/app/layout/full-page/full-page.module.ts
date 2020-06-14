@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { CoreModule } from 'src/app/core/core.module';
 import { FullPageComponent } from './full-page.component';
 import { AlertModalComponent } from 'src/app/shared/components/alert-modal/alert-modal.component';
+import { ThemeService } from 'src/app/shared/services/theme.service';
 /**
  * FullPage module
  *
@@ -17,6 +18,9 @@ import { AlertModalComponent } from 'src/app/shared/components/alert-modal/alert
     FullPageComponent,
     AlertModalComponent
    ],
+   providers: [
+    ThemeService
+  ],
   imports: [
     CommonModule, RouterModule, MaterialModule, FlexLayoutModule, FontAwesomeModule, CoreModule
   ]

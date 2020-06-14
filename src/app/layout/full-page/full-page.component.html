@@ -1,32 +1,40 @@
-<mat-toolbar [class.mat-elevation-z4]="true">
-  <span class="fill-space"></span>
+<div [ngClass]="{'dark-theme': isDarkTheme | async}">
+  <div class="mat-app-background">
+    <mat-toolbar [class.mat-elevation-z4]="true">
+      <span class="fill-space"></span>
 
-  <button mat-button [matMenuTriggerFor]="accessMenu">
-    <fa-icon [icon]="userTie" size="lg"></fa-icon>
-  </button>
-  <mat-menu #accessMenu="matMenu">
-    <button mat-menu-item [routerLink]="['/auth/login']">
-      <fa-icon [icon]="login" size="lg"></fa-icon>&nbsp;&nbsp;Login
-    </button>
-    <button mat-menu-item [routerLink]="['/auth/register']">
-      <fa-icon [icon]="concierge" size="lg"></fa-icon>&nbsp;&nbsp;Register
-    </button>
-    <button mat-menu-item [routerLink]="['/info']">
-      <fa-icon [icon]="paw" size="lg"></fa-icon>&nbsp;&nbsp;Enter anonymously
-    </button>
-  </mat-menu>
+      <button mat-button [matMenuTriggerFor]="accessMenu">
+        <fa-icon [icon]="userTie" size="lg"></fa-icon>
+      </button>
+      <mat-menu #accessMenu="matMenu">
+        <button mat-menu-item [routerLink]="['/auth/login']">
+          <fa-icon [icon]="login" size="lg"></fa-icon>&nbsp;&nbsp;Login
+        </button>
+        <button mat-menu-item [routerLink]="['/auth/register']">
+          <fa-icon [icon]="concierge" size="lg"></fa-icon>&nbsp;&nbsp;Register
+        </button>
+        <button mat-menu-item [routerLink]="['/info']">
+          <fa-icon [icon]="paw" size="lg"></fa-icon>&nbsp;&nbsp;Enter anonymously
+        </button>
+      </mat-menu>
 
-  <button mat-button [matMenuTriggerFor]="menu">
-    <fa-icon [icon]="cog" size="lg"></fa-icon>
-  </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <fa-icon [icon]="globe" size="lg"></fa-icon>&nbsp;&nbsp;Language
-    </button>
-    <button mat-menu-item>
-      <fa-icon [icon]="toggledark" size="lg"></fa-icon>&nbsp;&nbsp;Dark Theme
-    </button>
-  </mat-menu>
-</mat-toolbar>
-<router-outlet></router-outlet>
-<img class="footer-image" src="assets/background/piso.jpg" alt="Piso hecho con tablas de madera">
+      <button mat-button [matMenuTriggerFor]="menu">
+        <fa-icon [icon]="globe" size="lg"></fa-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <fa-icon [icon]="globe" size="lg"></fa-icon>&nbsp;&nbsp;Language
+        </button>
+        <button mat-menu-item>
+          <fa-icon [icon]="globe" size="lg"></fa-icon>&nbsp;&nbsp;Language
+        </button>
+      </mat-menu>
+      <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before"
+        (change)="toggleDarkTheme($event.checked)">
+        <fa-icon [icon]="toggledark" size="lg"></fa-icon>
+      </mat-slide-toggle>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+<!--     <img class="footer-image" src="assets/background/piso.jpg" alt="Piso hecho con tablas de madera">
+ -->  </div>
+</div>
